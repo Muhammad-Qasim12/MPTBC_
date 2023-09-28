@@ -1,0 +1,170 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+
+namespace MPTBCBussinessLayer
+{
+    public class PRIN_GroupCreation : ICommon
+    {
+        // start
+        private int _GroupId, _UserId, _isSatellite_I, _DepoTrno_I, _BlockDepoTrno_I, _UserTrno_I;
+
+        private string _GroupName, _DepotIds, _Description, _ACYear;
+
+        public int GroupId { get { return _GroupId; } set { _GroupId = value; } }
+        public int UserId { get { return _UserId; } set { _UserId = value; } }
+        public int isSatellite_I { get { return _isSatellite_I; } set { _isSatellite_I = value; } }
+        public int DepoTrno_I { get { return _DepoTrno_I; } set { _DepoTrno_I = value; } }
+        public int BlockDepoTrno_I { get { return _BlockDepoTrno_I; } set { _BlockDepoTrno_I = value; } }
+        public int UserTrno_I { get { return _UserTrno_I; } set { _UserTrno_I = value; } }
+
+        public string GroupName { get { return _GroupName; } set { _GroupName = value; } }
+        public string DepotIds { get { return _DepotIds; } set { _DepotIds = value; } }
+        public string Description { get { return _Description; } set { _Description = value; } }
+        public string ACYear { get { return _ACYear; } set { _ACYear = value; } }
+
+
+        public int SaveBlockDepo()
+        {
+            DBAccess obDbAccess = new DBAccess();
+            int i = 0;
+            obDbAccess.execute("USP_PRIN002_BlockDepotMasterDetailSaveUpdate", DBAccess.SQLType.IS_PROC);
+            obDbAccess.addParam("mBlockDepoTrno_I", BlockDepoTrno_I);
+            obDbAccess.addParam("mGroupId", GroupId);
+            obDbAccess.addParam("mDepoTrno_I", DepoTrno_I);
+            obDbAccess.addParam("mUserTrno_I", UserTrno_I);
+            obDbAccess.addParam("mACyear", ACYear);
+            obDbAccess.addParam("mDelStatus", 1);
+
+            i = obDbAccess.executeMyQuery();
+
+            return i;
+        }
+
+
+        public int InsertUpdate()
+        {
+            DBAccess obDbAccess = new DBAccess();
+            int i = 0;
+
+
+            obDbAccess.execute("USP_PRIN002_GroupCreationSave", DBAccess.SQLType.IS_PROC);
+
+            obDbAccess.addParam("mGroupId", GroupId);
+            obDbAccess.addParam("mGroupName", GroupName);
+            obDbAccess.addParam("mDepotIds", DepotIds);
+            obDbAccess.addParam("mDescription", Description);
+            obDbAccess.addParam("mUserId", UserId);
+            obDbAccess.addParam("mACYear", ACYear);
+
+            i = Convert.ToInt32(obDbAccess.executeMyScalar());
+
+            return i;
+        }
+
+
+        public DataSet DepotListLoadGroup()
+        {
+            DBAccess obDbAccess = new DBAccess();
+            DataSet ds = new DataSet();
+
+
+            obDbAccess.execute("USP_PRIN002_DepotsListLoadGroup", DBAccess.SQLType.IS_PROC);
+            obDbAccess.addParam("mGroupId", GroupId);
+            ds = obDbAccess.records();
+
+            return ds;
+        }
+
+
+
+
+        public DataSet GroupListLoad()
+        {
+            DBAccess obDbAccess = new DBAccess();
+            DataSet ds = new DataSet();
+
+
+            obDbAccess.execute("USP_ADM018_SelectTypeWiseDepot", DBAccess.SQLType.IS_PROC);
+            obDbAccess.addParam("misSatellite_I", isSatellite_I);
+            ds = obDbAccess.records();
+
+            return ds;
+        }
+
+        public DataSet MultGroupTitleListLoad(string BookMarkId)
+        {
+            DBAccess obDbAccess = new DBAccess();
+            DataSet ds = new DataSet();
+            //USP_PRIN002_GroupTitleDetailsLoadMul
+            obDbAccess.execute("USP_PRIN002_GroupTitleDetailsLoadSumofMul", DBAccess.SQLType.IS_PROC);
+            obDbAccess.addParam("mGroupId", BookMarkId);
+            obDbAccess.addParam("mACYear", ACYear);
+            ds = obDbAccess.records();
+            return ds;
+        }
+        public DataSet GroupTitleListLoad()
+        {
+            DBAccess obDbAccess = new DBAccess();
+            DataSet ds = new DataSet();
+
+
+            obDbAccess.execute("USP_PRIN002_GroupTitleDetailsLoad", DBAccess.SQLType.IS_PROC);
+            obDbAccess.addParam("mGroupId", GroupId);
+            obDbAccess.addParam("mACYear", ACYear);
+
+
+            ds = obDbAccess.records();
+
+            return ds;
+        }
+        public DataSet GroupTitleListLoadAll(int medium_i, int Classtrno_i,string GrpIds)
+        {
+            DBAccess obDbAccess = new DBAccess();
+            DataSet ds = new DataSet();
+
+
+            obDbAccess.execute("USP_PRIN002_GroupTitleDetailsLoadSearch", DBAccess.SQLType.IS_PROC);
+            obDbAccess.addParam("mGroupId", GrpIds);
+            obDbAccess.addParam("mACYear", ACYear);
+            obDbAccess.addParam("mmedium_i", medium_i);
+            obDbAccess.addParam("mclasstrno_i", Classtrno_i);
+
+            ds = obDbAccess.records();
+
+            return ds;
+        }
+
+        public System.Data.DataSet Select()
+        {
+            DBAccess obDbAccess = new DBAccess();
+            DataSet ds = new DataSet();
+
+
+            obDbAccess.execute("USP_PRIN002_GroupCreationLoad", DBAccess.SQLType.IS_PROC);
+            obDbAccess.addParam("mGroupId", GroupId);
+            obDbAccess.addParam("mACYear", ACYear);
+            ds = obDbAccess.records();
+
+            return ds;
+        }
+
+        public int Delete(int id)
+        {
+            DBAccess obDbAccess = new DBAccess();
+            int i = 0;
+
+
+            obDbAccess.execute("USP_Prin002_GroupDelete", DBAccess.SQLType.IS_PROC);
+            obDbAccess.addParam("mGroupId", id);
+            i = obDbAccess.executeMyQuery();
+
+            return i;
+        }
+    }
+}
+
+
+// end

@@ -1,0 +1,154 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true"
+    CodeFile="InterDepotTransfer1.aspx.cs" Inherits="Distribution_dreport4" 
+    Title="&#2309;&#2306;&#2340;&#2352; &#2337;&#2367;&#2346;&#2379; &#2335;&#2381;&#2352;&#2366;&#2344;&#2381;&#2360;&#2347;&#2352;" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div class="box">
+        <div class="card-header">
+            <h2>
+                <span style="font-size: medium;">&#2309;&#2306;&#2340;&#2352; &#2337;&#2367;&#2346;&#2379; &#2335;&#2381;&#2352;&#2366;&#2344;&#2381;&#2360;&#2347;&#2352; </span>
+            </h2>
+        </div>
+        <div style="padding: 0 10px;">
+            <table style="width: 100%">
+                <tr>
+                    <td>   डिपो चुने
+                        </td>
+                        <td>
+                            <asp:DropDownList ID="ddlReqDepo" runat="server" AutoPostBack="True" 
+                                oninit="ddlReqDepo_Init" 
+                                onselectedindexchanged="ddlReqDepo_SelectedIndexChanged">
+                            </asp:DropDownList>
+                        </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        
+                        <asp:GridView ID="GrdDepoQtyMaster" runat="server" AutoGenerateColumns="false" GridLines="None"
+                            CssClass="tab" Width="100%" EmptyDataText="Record Not Found." 
+                            onrowdatabound="GrdDepoQtyMaster_RowDataBound">
+                            <Columns>
+                                <asp:TemplateField HeaderText="&#2325;&#2381;&#2352;&#2350;&#2366;&#2306;&#2325;">
+                                    <ItemTemplate>
+                                        <%# Container.DataItemIndex+1 %>.
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="  &#2346;&#2381;&#2352;&#2366;&#2346;&#2381;&#2340;&#2325; &#2337;&#2367;&#2346;&#2379; &#2325;&#2366; &#2344;&#2366;&#2350;">
+                                    <ItemTemplate>
+                                    
+                                        <asp:Label ID="lblDemandTrNo" runat="server" Text='<%#Eval("DemandTrNo")%>' Visible="false"></asp:Label>
+                                        <asp:Label ID="lblNetDemand" runat="server" Text='<%#Eval("NetDemand")%>' Visible="false"></asp:Label>
+                                        <asp:Label ID="lblDemandingDepotID" runat="server" Text='<%#Eval("DemandingDepotID")%>' Visible="false"></asp:Label>
+                                        <asp:Label ID="lblReqNo" runat="server" Text='<%#Eval("ReqNo")%>' Visible="false"></asp:Label>
+                                        <asp:Label ID="lblTitleID_I" runat="server" Text='<%#Eval("TitleID_I")%>' Visible="false"></asp:Label>
+                                        <asp:Label ID="lblIsScheme" runat="server" Text='<%#Eval("IsScheme")%>' Visible="false"></asp:Label>
+                                        <%#Eval("DepoName_V")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="&#2325;&#2325;&#2381;&#2359;&#2366;">
+                                    <ItemTemplate>
+                                        <%#Eval("Classdet_V")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="&#2350;&#2366;&#2343;&#2381;&#2351;&#2350;">
+                                    <ItemTemplate>
+                                        <%#Eval("MediunNameHindi_V")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="&#2357;&#2367;&#2359;&#2351;">
+                                    <ItemTemplate>
+                                        <asp:LinkButton ID="lnkBookDetails" runat="server" Width="92px" OnClick="lnkBookDetails_Click"><%#Eval("TitleHindi_V")%></asp:LinkButton>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="&#2350;&#2366;&#2306;&#2327;">
+                                    <ItemTemplate>
+                                        <%#Eval("NetDemand")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                 <asp:TemplateField HeaderText="शेष">
+                                    <ItemTemplate>
+                                        <%#Eval("TotRemaing")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                  <asp:TemplateField HeaderText="चुने">
+                                    <ItemTemplate>
+                                        <asp:CheckBox ID="ChkSelect" runat="server" />
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText=" &#2335;&#2381;&#2352;&#2366;&#2306;&#2360;&#2347;&#2352; &#2325;&#2352;&#2375;
+                                                      &#2325;&#2368; &#2332;&#2366;&#2344;&#2375;&#2357;&#2366;&#2354;&#2368; <br> &#2346;&#2369;&#2360;&#2381;&#2340;&#2325;&#2379;&#2306; &#2325;&#2368; &#2360;&#2306;&#2326;&#2381;&#2351;&#2366;">
+                                    <ItemTemplate>
+                                        <asp:TextBox ID="txtQtySupp" onkeypress='javascript:tbx_fnInteger(event, this);' runat="server" MaxLength="10" CssClass="txtbox" Width="78px"></asp:TextBox>
+                                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ForeColor="Red" ControlToValidate="txtQtySupp" Text="*" ErrorMessage="Invalid Quantity."  runat="server" ValidationExpression="[0-9]+"></asp:RegularExpressionValidator>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="&#2346;&#2381;&#2352;&#2375;&#2359;&#2325; &#2337;&#2367;&#2346;&#2379;">
+                                    <ItemTemplate>
+                                        <asp:DropDownList ID="ddlDepoSupp" runat="server" CssClass="txtbox" OnInit="ddlDepoSupp_Init">
+                                          
+                                        </asp:DropDownList>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                            
+                            </Columns>
+							 <PagerStyle CssClass="Gvpaging" /> <EmptyDataRowStyle CssClass="GvEmptyText" />
+                        </asp:GridView>
+                   
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                          <asp:Button ID="btnSave" runat="server" CssClass="btn"   
+                              Text="&#2335;&#2381;&#2352;&#2366;&#2306;&#2360;&#2347;&#2352; &#2325;&#2352;&#2375;" 
+                              onclick="btnSave_Click"/>
+                          </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="fadeDiv" class="modalBackground" style="display: none;" runat="server">
+    </div>
+    <div id="Messages" style="display: none;" class="popupnew" runat="server">
+        <h2>
+            &nbsp;</h2>
+        <div class="msg MT10">
+            <p>
+                <table class="tab" style="font-size: medium;">
+                    <tr>
+                        <th style="width: 100px">
+                            &#2337;&#2367;&#2346;&#2379; &#2325;&#2366; &#2344;&#2366;&#2350;
+                        </th>
+                        <th style="width: 100px">
+                            &#2346;&#2369;&#2360;&#2381;&#2340;&#2325; &#2325;&#2366; &#2344;&#2366;&#2350;
+                        </th>
+                        <th style="width: 100px">
+                            &#2360;&#2381;&#2335;&#2377;&#2325; &#2350;&#2375;&#2306; &#2313;&#2346;&#2354;&#2348;&#2381;&#2343; &#2360;&#2306;&#2326;&#2381;&#2351;&#2366;
+                        </th>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; height: 23px">
+                            &#2349;&#2379;&#2346;&#2366;&#2354;
+                        </td>
+                        <td style="width: 100px; height: 23px">
+                            <span style="color: #0e8eab">&#2349;&#2366;&#2359;&#2366; &#2349;&#2366;&#2352;&#2340;&#2368; </span>
+                        </td>
+                        <td style="width: 100px; height: 23px">
+                            4000
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px">
+                            &#2360;&#2366;&#2327;&#2352;
+                        </td>
+                        <td style="width: 100px">
+                            <span style="color: #0e8eab">&#2349;&#2366;&#2359;&#2366; &#2349;&#2366;&#2352;&#2340;&#2368; </span>
+                        </td>
+                        <td style="width: 100px">
+                            2000
+                        </td>
+                    </tr>
+                </table>
+            </p>
+            <asp:Button ID="Button2" runat="server" CssClass="btn" Text="Close" OnClick="Button2_Click" /></div>
+    </div>
+</asp:Content>

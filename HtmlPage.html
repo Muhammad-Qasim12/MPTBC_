@@ -1,0 +1,328 @@
+﻿<!Doctype html>
+<html lang="en">
+<head>
+
+
+
+    <meta charset="windows-1252" />
+    <meta name="description" content="ESMS-Service">
+    <meta name="author" content="CDAC-MUMBAI">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="language" content="english">
+    <title>ESMS-Service</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login3.css">
+    <link href="css/login1.css" rel="stylesheet">
+    <script src="md5.js"></script>
+    <script src="jcap.js"></script>
+    <script src="js/sha1.js"></script>
+    <script type="text/javascript">
+        var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+        if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+
+        function mischandler() {
+            return false;
+        }
+
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton == 2) || (eventbutton == 3)) {
+                alert("Right click is disabled");
+                return false;
+            }
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+
+    </script>
+
+
+
+</head>
+<body class="container" onload="DrawCaptcha();">
+
+
+    <div class="top_head">
+        <div style="text-align: right;">
+            <a href="#dept_id" style="text-decoration: none;">Go to main content&nbsp;|&nbsp;</a>
+            <img alt="Helpline" src="images/new.gif"><a href="#" style="cursor: default; text-decoration: none;">Helpline: 022-67870166</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="logo">
+            <!-- Defining the logo element -->
+            <img src="images/header.jpg" title="ESMS_Service" alt="ESMS_Service" width="925">
+
+        </div>
+    </div>
+    <div class="top_head">
+        <!-- Defining the top head element -->
+        <p></p>
+
+    </div>
+
+    <div id='cssmenu'>
+        <ul id="nav">
+            <li class='active '><a href='login.jsp'><span>Home</span></a></li>
+
+            <li class='has-sub'>
+                <a href='#'><span>Support</span></a>
+                <ul>
+                    <li><a href='HowToUseSite1.jsp'><span>How to Use</span></a></li>
+                    <li><a href='http://mgov.gov.in/doc/Services%20Portal%20User%20Manual_v0.2.pdf' target="_blank"><span>User Manual</span></a></li>
+                </ul>
+            </li>
+
+            <li><a href='support1.do'><span>Feedback</span></a> </li>
+
+            <li><a href='contactus.jsp'><span>Contact Us</span></a></li>
+        </ul>
+    </div>
+
+
+    <div id="main">
+        <div id="content">
+
+
+
+            <!-- <div id="left-sidebar">
+                    <div id="leftcolumn">
+                     <div id="rightcolumn">
+                       <h3>Categories</h3>
+                     <div class="marq-style">
+                               <MARQUEE WIDTH=100% scrolldelay="175" height ="230" direction="up" BEHAVIOR=SCROLL onmouseover="this.stop();" onmouseout="this.start();"><a href="#">A Single Number to access all m-Governance service </a> <br /> <br/> <a href="#">Launch of mobile based services for farmers (IASF) in manipur</a> <br /> <br/> <a href="#">More channels soon for delivery of mobile services through government gateway - THE HINDU</a> <br /> <br/> <a href="#">Framework for Mobile Governance - Gazette of India Notification</a></MARQUEE>
+                       </div>
+                  </div>
+
+
+                         <h3>Links</h3>
+                       <ul>
+                           <li>
+                               <a href="http://deity.gov.in/content/framework-mobile-governance" target="_blank"><img src="images/framework2.png" alt="" width="160" height="50" /></a>
+                           </li>
+                           <li>
+                               <a href="http://apps.mgov.gov.in" target="_blank"><img src="images/AppStore1231.png" alt="AppStore" width="150" height="75" /></a>
+                           </li>
+                           <li>
+                               <a href="https://services.mgov.gov.in/" target="_blank"><img src="images/esms_icon_1.png" alt="eSMS" width="150" height="70" /></a>
+                           </li>
+                           <li>
+                               <a href="http://www.india.gov.in/" target="_blank"><img src="images/banner5.jpg" alt="National Portal" width="158" height="60" /></a>
+                           </li>
+                           <li>
+                               <a href="http://www.negp.gov.in/" target="_blank"><img src="images/NeGP_0.jpeg" alt="NeGP" width="158" height="65" /></a>
+                           </li>
+
+                       </ul>
+                  </div>
+                  </div>-->
+            <div id="left" style="margin-top: -10px">
+
+
+
+
+
+
+
+
+
+                <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+                       Remove this if you use the .htaccess -->
+                <script type="text/javascript" src="md5.js"></script>
+                <script type="text/javascript" src="jcap.js"></script>
+                <script type="text/javascript" src="js/sha1.js"></script>
+
+                <script type="text/javascript" src="mycaptch.js"></script>
+                <script type="text/javascript" src="jquery.js"></script>
+                <script type="text/javascript" src="jscroll_jquery_jscroll.js"></script>
+
+
+
+                <script type="text/javascript">
+
+                    function validfield() {
+                        var email_id = document.frm.dept_id.value;
+                        var password = document.frm.password.value;
+                        if (email_id == "") {
+                            alert("Enter Your Department Id");
+                            document.frm.dept_id.focus();
+                            return false;
+                        }
+                        if (email_id.match("['<>=]")) {
+                            alert("' < > = symbol not allowed");
+                            document.frm.dept_id.focus();
+                            return false;
+                        }
+                        if (password == "") {
+                            alert("Enter password");
+                            document.frm.password.focus();
+                            return false;
+                        }
+
+                        var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+
+                        var str2 = document.getElementById('txtInput').value;
+
+                        if (str1 == str2) {
+
+
+
+                        }
+                        else {
+                            alert("Invalid Captcha!");
+                            DrawCaptcha();
+                            return false;
+                        }
+
+                        try {
+                            var enc = SHA1(document.frm.password.value);
+                            //alert(enc);
+                            document.frm.password.value = enc;
+                        } catch (error) {
+                            //	return false;
+                            //alert("Hi2::: "+error);
+                            //document.test.password.value = document.test.encryptedPassword.value;
+                        }
+
+
+                        document.frm.method = "POST";
+                        document.frm.action = "login.do";
+                        document.frm.submit();
+
+                    }
+                </script>
+
+
+
+
+
+                <div id="popUpDiv" style="width: 927px">
+
+                    <form name="frm">
+
+
+                        <p><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="58911bfd-ebd3-413b-81ec-fd2ecb93e3c2"></p>
+                        <p>
+                            <label>User-Id:</label> <input style="color: #000000"
+                                                           autocomplete="off" name="dept_id" id="dept_id" type="text"
+                                                           size="25">
+                            <!--  <a href="#" style="letter-spacing: 1px;">Forget Your Username?</a> -->
+                        </p>
+                        <p>
+                            <label>Password:</label> <input type="password" autocomplete="off"
+                                                            name="password" id="password" style="color: #000000" size="25">
+                            <a href="forgetpassword.do"
+                               style="letter-spacing: 1px; margin-top: 5px;">
+                                Forget Your
+                                Password?
+                            </a>
+                        </p>
+                        <!--	<p>
+                                        <label>Login as </label>
+                                        <select name = 'loginas' id = 'loginas'>
+                                        <option selected="selected" value = 'User'>Department</option>
+                                            <option  value = 'Admin'>Admin</option>
+                                        </select>
+
+                                    </p>
+                        -->
+
+                        <p>
+                            <input type="hidden" id="txtCaptcha">
+                        </p><div>
+                            <p id="disCaptcha" style="float: left;" onselectstart="return false;"></p>  <img alt="refresh" style="margin-left: 2px; margin-top: 20px;" src="captcha_refresh.jpg" onclick="DrawCaptcha();" id="btnrefresh">
+                            <input type="text" id="txtInput" size="25" style="margin-left: 20px;">
+
+                        </div>
+                        <div class="buttonholder">
+                            <p>
+                                <input type="submit" name="select" value="LOGIN"
+                                       onclick="javascript:return validfield()">
+                            </p>
+                        </div>
+                        <div class="new-account">
+                            <p>
+                                Don't have an account ?<a href="registrationForm.jsp">Create New Account</a>
+                            </p>
+
+                        </div>
+                        <h4 style="margin-right: 200px;text-align: right;">
+                            <a title="http://india.gov.in, The National Portal of India : External website that opens in a new window" href="http://india.gov.in/" target="_blank"><img alt="http://india.gov.in, The National Portal of India : External website that opens in a new window" src="images/banner5.jpg" width="116" height="40" /></a>
+                        </h4>
+                        <h4 style="margin-top: -105px;text-align: right;">
+
+                            <img src="images/helpline_icon.jpg" alt="helpline" width="115" height="55" class="phone_image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            <strong>022-67870166</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                            <strong>022-26201606 (Ext 323 / 325)</strong>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </h4>
+                    </form>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <!-- Defining the footer section of the page -->
+        <div id="m-footer">
+            <!--<div style="float:right;padding: 10px 20px 0 0;">
+                                                                      <a
+                                                                      title="CQW : External website that opens in a new window"
+                                                                      href="document/3=- Website Quality Certificate .pdf" target="_blank"><img
+                                                                       alt="CQW: External website that opens in a new window"
+                                                                      src="images/cqw_logo (1).gif" width="60" height="40"></a>
+
+                                      </div>-->
+
+
+            <div id="m-footernav">
+                <ul id="breadcrumb-nav">
+                    <li><a href="login.jsp">Home</a></li>
+                    <li><a href="msdp_help.jsp">Help</a></li>
+                    <li><a href="termsofuse.jsp">Terms of Use</a></li>
+                    <li><a href="msdp_websitepolicies.jsp">Website Policies</a></li>
+
+                    <li><a href="disclaimer.jsp">Disclaimer</a></li>
+                    <li><a href="msdp_accessibility_statement.jsp">Accessibility Statement</a></li>
+                    <li><a href="msdp_screenreader.jsp">Screen Reader</a></li>
+                    <li><a href="http://deity.gov.in/content/right-information" target="_blank">Right to Information</a></li>
+
+                </ul>
+                <div id="footer-copyright">
+                    Copyright � 2013 <a href="http://www.cdacmumbai.in" target="_blank">C-DAC, Mumbai</a> All Rights Reserved. Last Updated Date: <b>17/04/2013</b>
+                </div>
+                <div id="footer-site-viewd">
+                    This site is best viewed with IE 7+, Firefox 17.0+, &nbsp; Google Chrome 25.0 @ screen resolution of 1024x768 Size.
+                </div>
+
+
+
+
+                <div style="background: -moz-linear-gradient(#457CB2, #346BA1); /* FF 3.6+ */
+	background: -ms-linear-gradient(#457CB2, #346BA1); /* IE10 */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #457CB2),color-stop(100%, #346BA1) ); /* Safari 4+, Chrome 2+ */
+	background: -webkit-linear-gradient(#457CB2, #346BA1); /* Safari 5.1+, Chrome 10+ */
+	background: -o-linear-gradient(#457CB2, #346BA1); /* Opera 11.10 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#457CB2',endColorstr='#346BA1' ); /* IE6 & IE7 */
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#457CB2', endColorstr='#346BA1'); /* IE8+ */
+	background: linear-gradient(#f457CB2, #346BA1); /* the standard */
+	text-align: right;">
+
+                    <span style="color: #FFFFFF"> Visitor Count :	663851</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

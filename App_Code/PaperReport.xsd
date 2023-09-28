@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PaperReport" targetNamespace="http://tempuri.org/PaperReport.xsd" xmlns:mstns="http://tempuri.org/PaperReport.xsd" xmlns="http://tempuri.org/PaperReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PaperReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="PaperReport" msprop:Generator_UserDSName="PaperReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PaperVendorName_V" msprop:Generator_ColumnVarNameInTable="columnPaperVendorName_V" msprop:Generator_ColumnPropNameInRow="PaperVendorName_V" msprop:Generator_ColumnPropNameInTable="PaperVendorName_VColumn" msprop:Generator_UserColumnName="PaperVendorName_V" type="xs:string" minOccurs="0" />
+              <xs:element name="TndrCondition" msprop:Generator_ColumnVarNameInTable="columnTndrCondition" msprop:Generator_ColumnPropNameInRow="TndrCondition" msprop:Generator_ColumnPropNameInTable="TndrConditionColumn" msprop:Generator_UserColumnName="TndrCondition" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckStatus" msprop:Generator_ColumnVarNameInTable="columnCheckStatus" msprop:Generator_ColumnPropNameInRow="CheckStatus" msprop:Generator_ColumnPropNameInTable="CheckStatusColumn" msprop:Generator_UserColumnName="CheckStatus" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowClassName="DataTable2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BidRate_N" msprop:Generator_ColumnVarNameInTable="columnBidRate_N" msprop:Generator_ColumnPropNameInRow="BidRate_N" msprop:Generator_ColumnPropNameInTable="BidRate_NColumn" msprop:Generator_UserColumnName="BidRate_N" type="xs:string" minOccurs="0" />
+              <xs:element name="BasicRate" msprop:Generator_ColumnVarNameInTable="columnBasicRate" msprop:Generator_ColumnPropNameInRow="BasicRate" msprop:Generator_ColumnPropNameInTable="BasicRateColumn" msprop:Generator_UserColumnName="BasicRate" type="xs:string" minOccurs="0" />
+              <xs:element name="ExciseDuty" msprop:Generator_ColumnVarNameInTable="columnExciseDuty" msprop:Generator_ColumnPropNameInRow="ExciseDuty" msprop:Generator_ColumnPropNameInTable="ExciseDutyColumn" msprop:Generator_UserColumnName="ExciseDuty" type="xs:string" minOccurs="0" />
+              <xs:element name="Cess" msprop:Generator_ColumnVarNameInTable="columnCess" msprop:Generator_ColumnPropNameInRow="Cess" msprop:Generator_ColumnPropNameInTable="CessColumn" msprop:Generator_UserColumnName="Cess" type="xs:string" minOccurs="0" />
+              <xs:element name="EduCess" msprop:Generator_ColumnVarNameInTable="columnEduCess" msprop:Generator_ColumnPropNameInRow="EduCess" msprop:Generator_ColumnPropNameInTable="EduCessColumn" msprop:Generator_UserColumnName="EduCess" type="xs:string" minOccurs="0" />
+              <xs:element name="STCSTVAT" msprop:Generator_ColumnVarNameInTable="columnSTCSTVAT" msprop:Generator_ColumnPropNameInRow="STCSTVAT" msprop:Generator_ColumnPropNameInTable="STCSTVATColumn" msprop:Generator_UserColumnName="STCSTVAT" type="xs:string" minOccurs="0" />
+              <xs:element name="Surcharge" msprop:Generator_ColumnVarNameInTable="columnSurcharge" msprop:Generator_ColumnPropNameInRow="Surcharge" msprop:Generator_ColumnPropNameInTable="SurchargeColumn" msprop:Generator_UserColumnName="Surcharge" type="xs:string" minOccurs="0" />
+              <xs:element name="Insurance" msprop:Generator_ColumnVarNameInTable="columnInsurance" msprop:Generator_ColumnPropNameInRow="Insurance" msprop:Generator_ColumnPropNameInTable="InsuranceColumn" msprop:Generator_UserColumnName="Insurance" type="xs:string" minOccurs="0" />
+              <xs:element name="FreightUnloading" msprop:Generator_ColumnVarNameInTable="columnFreightUnloading" msprop:Generator_ColumnPropNameInRow="FreightUnloading" msprop:Generator_ColumnPropNameInTable="FreightUnloadingColumn" msprop:Generator_UserColumnName="FreightUnloading" type="xs:string" minOccurs="0" />
+              <xs:element name="DisKmAmt" msprop:Generator_ColumnVarNameInTable="columnDisKmAmt" msprop:Generator_ColumnPropNameInRow="DisKmAmt" msprop:Generator_ColumnPropNameInTable="DisKmAmtColumn" msprop:Generator_UserColumnName="DisKmAmt" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalAmt" msprop:Generator_ColumnVarNameInTable="columnTotalAmt" msprop:Generator_ColumnPropNameInRow="TotalAmt" msprop:Generator_ColumnPropNameInTable="TotalAmtColumn" msprop:Generator_UserColumnName="TotalAmt" type="xs:string" minOccurs="0" />
+              <xs:element name="DisKm" msprop:Generator_ColumnVarNameInTable="columnDisKm" msprop:Generator_ColumnPropNameInRow="DisKm" msprop:Generator_ColumnPropNameInTable="DisKmColumn" msprop:Generator_UserColumnName="DisKm" type="xs:string" minOccurs="0" />
+              <xs:element name="PaperVendorName_V" msprop:Generator_ColumnVarNameInTable="columnPaperVendorName_V" msprop:Generator_ColumnPropNameInRow="PaperVendorName_V" msprop:Generator_ColumnPropNameInTable="PaperVendorName_VColumn" msprop:Generator_UserColumnName="PaperVendorName_V" type="xs:string" minOccurs="0" />
+              <xs:element name="L_I" msprop:Generator_ColumnVarNameInTable="columnL_I" msprop:Generator_ColumnPropNameInRow="L_I" msprop:Generator_ColumnPropNameInTable="L_IColumn" msprop:Generator_UserColumnName="L_I" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

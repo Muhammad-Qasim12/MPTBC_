@@ -1,0 +1,304 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+public partial class ADY_ADY013_ProjectAmountRelese : System.Web.UI.Page
+{
+    GnUserLogin objuser = new GnUserLogin();
+    GnEmployee objemp = new GnEmployee();
+    ADY002 objprj = new ADY002();
+    ADY006 obj = new ADY006();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+
+            //objuser.userAuthontication(Convert.ToDouble(Session["UserTrno"]), panMain, "ADY006");
+
+            if (Session["intOfficeTrno"].ToString() == "13")
+            { 
+                txtUlb.Visible = true; 
+                lblULBName.Visible = true; 
+                btnFillProject.Visible = true; 
+            }
+            else
+            { 
+                txtUlb.Visible = false; 
+                lblULBName.Visible = false; 
+                btnFillProject.Visible = false; }
+
+            if (Request.QueryString["Cid"] != null)
+            {
+
+                loadAmtReleased();
+            }
+            if (Session["isApprove"].ToString() == "1")
+            {
+                chkApproval.Visible = true;
+                lblApprove.Visible = true;
+            }
+
+            loadProject();
+        }
+
+    }
+    
+    private void loadProject()
+    {
+        classAmountRelease objprjload = new classAmountRelease();
+
+        objprjload.openConnection();
+        objprjload.intisApproved = 1;
+        objprjload.OfficeName = txtUlb.Text;
+        objprjload.DecOfficeTrno = Convert.ToInt32(Session["intOfficeTrno"]);
+        ddlProject.DataTextField = "ProjectName_V";
+        ddlProject.DataValueField = "ADY_ProjectMaster_Trno_N";
+        ddlProject.DataSource = objprjload.LoadProject();
+        ddlProject.DataBind();
+        ddlProject.Items.Insert(0, new ListItem("Select", "0"));
+        objprjload.closeConnection();
+       
+        
+    }
+
+
+    protected void btnFillProject_Click(object sender, EventArgs e) 
+    {
+        if (txtUlb.Text != "")
+        {
+            loadProject();
+        }
+
+        else { ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script>alert('Enter The ULB name.');</script>"); }
+    }
+
+
+
+
+    private void insertAmtReleased()
+    {
+        try
+        {
+            obj.openConnection();
+            obj.beginTransaction();
+            obj.intADY_ProjectMaster_Trno_N = Convert.ToInt32(objemp.numericConversion(ddlProject.SelectedValue));
+            //obj.dtGoIReleaseDate_D = objemp.dateConversion(txtGoIdate.Text);
+            obj.intInstallmentNo_I = Convert.ToInt32(objemp.numericConversion(ddlInstallment.SelectedValue));
+            obj.mnyBeniContriAmt_M = Convert.ToDouble(objemp.numericConversion(txtBeniAmt.Text));
+            //obj.mnyGoIReleaseAmt_M = Convert.ToDouble(objemp.numericConversion(txtGoiAmt.Text));
+            obj.mnyStateReleaseAmt_M = Convert.ToDouble(objemp.numericConversion(txtStateAmt.Text));
+            obj.mnyULBReleaseAmt_M = Convert.ToDouble(objemp.numericConversion(txtULBAmt.Text));
+            obj.chvBankActNo_N = txtBankActNo.Text;
+            obj.chvRemark_V = txtRemark.Text;
+            obj.dtStateReleaseDate_D = objemp.dateConversion(txtStatedate.Text);
+            obj.dtULBReleaseDate_D = objemp.dateConversion(txtULBdate.Text);
+            obj.dtBeniContriDate_D = objemp.dateConversion(txtBeniDate.Text);
+            obj.intisApproved = 0;
+            obj.dtrnApproveDate_D = objemp.dateConversion("");
+            obj.dblUserTrno = Convert.ToDouble(Session["UserTrno"]);
+            obj.DecOfficeTrno = Convert.ToDouble(Session["intOfficeTrno"]);
+            obj.intDelStatus = 1;
+            obj.ReleasType = 1;
+            obj.OfficeName = txtUlb.Text.Trim();
+            obj.insertAmtReleased();
+
+        }
+        catch (Exception feException)
+        {
+            obj.rollBackTransaction();
+            throw new Exception(feException.Message);
+        }
+        finally
+        {
+            obj.commitTransaction();
+            obj.closeConnection();
+        }
+    }
+
+    private void UpdateAmtReleased()
+    {
+
+        try
+        {
+            obj.openConnection();
+            obj.beginTransaction();
+            obj.decAmtReleasedTrno_N = Convert.ToDouble(Request.QueryString["Cid"]);
+            obj.intADY_ProjectMaster_Trno_N = Convert.ToInt32(objemp.numericConversion(ddlProject.SelectedValue));
+
+            obj.intInstallmentNo_I = Convert.ToInt32(objemp.numericConversion(ddlInstallment.SelectedValue));
+            obj.mnyBeniContriAmt_M = Convert.ToDouble(objemp.numericConversion(txtBeniAmt.Text));
+
+            obj.mnyStateReleaseAmt_M = Convert.ToDouble(objemp.numericConversion(txtStateAmt.Text));
+            obj.mnyULBReleaseAmt_M = Convert.ToDouble(objemp.numericConversion(txtULBAmt.Text));
+            obj.chvBankActNo_N = txtBankActNo.Text;
+            obj.chvRemark_V = txtRemark.Text;
+            obj.dtStateReleaseDate_D = objemp.dateConversion(txtStatedate.Text);
+            obj.dtULBReleaseDate_D = objemp.dateConversion(txtULBdate.Text);
+            obj.dtBeniContriDate_D = objemp.dateConversion(txtBeniDate.Text);
+            obj.DecOfficeTrno = Convert.ToDouble(Session["intOfficeTrno"]);
+            obj.dblUserTrno = Convert.ToDouble(Session["UserTrno"]);
+
+            if (chkApproval.Checked == true)
+            {
+
+                obj.intisApproved = 1;
+                obj.dtrnApproveDate_D = DateTime.Now;
+            }
+            else
+            {
+                obj.intisApproved = 0;
+                obj.dtrnApproveDate_D = Convert.ToDateTime("01/01/1900");
+
+            }
+            obj.ReleasType = 1;
+            obj.intDelStatus = 1;
+
+            obj.OfficeName = txtUlb.Text.Trim();
+            obj.UpdateAmtReleased();
+        }
+        catch (Exception feException)
+        {
+            obj.rollBackTransaction();
+            throw new Exception(feException.Message);
+        }
+        finally
+        {
+            obj.commitTransaction();
+            obj.closeConnection();
+        }
+
+    }
+    private void loadAmtReleased()
+    {
+
+        try
+        {
+
+            obj.openConnection();
+            obj.decAmtReleasedTrno_N = Convert.ToDouble(Request.QueryString["Cid"]);
+            obj.DecOfficeTrno = Convert.ToDouble(Session["intOfficeTrno"]);
+            obj.intisApproved = 0;
+            obj.ReleasType = 1;
+            obj.viewAmtReleased();
+
+            txtStateAmt.Text = obj.mnyStateReleaseAmt_M.ToString();
+            txtULBAmt.Text = obj.mnyULBReleaseAmt_M.ToString();
+            txtBeniAmt.Text = obj.mnyBeniContriAmt_M.ToString();
+            txtBankActNo.Text = obj.chvBankActNo_N.ToString();
+            txtRemark.Text = obj.chvRemark_V.ToString();
+
+            txtStatedate.Text = objemp.isEmptyDate(obj.dtStateReleaseDate_D);
+            txtULBdate.Text = objemp.isEmptyDate(obj.dtULBReleaseDate_D);
+            txtBeniDate.Text = objemp.isEmptyDate(obj.dtBeniContriDate_D);
+            ddlInstallment.SelectedValue = obj.intInstallmentNo_I.ToString();
+           
+            txtUlb.Text = obj.OfficeName.ToString().Trim();
+
+            //ProjectDetails();
+            loadProject();
+
+            ddlProject.SelectedValue = obj.intADY_ProjectMaster_Trno_N.ToString();
+            if (obj.intisApproved == 1)
+            {
+                chkApproval.Checked = true;
+                panMain.Enabled = false;
+            }
+            else
+            {
+                chkApproval.Checked = false;
+            }
+            obj.closeConnection();
+
+
+        }
+        catch (Exception feException)
+        {
+            throw new Exception(feException.Message);
+        }
+        finally
+        {
+            obj = null;
+        }
+
+    }
+    protected void btnSave_Click(object sender, EventArgs e)
+    {
+        int count = 0;
+        if (ddlProject.SelectedValue == "0")
+        {
+            count++;
+            Response.Write("<script>alert('Select Project');</script>");
+        }
+        if (count == 0)
+        {
+            if (Request.QueryString["Cid"] != null)
+            {
+                UpdateAmtReleased();
+            }
+            else
+            {
+                insertAmtReleased();
+            }
+            Response.Redirect("VIEW_ADY014.aspx");
+        }
+
+    }
+    protected void btnClear_Click(object sender, EventArgs e)
+    {
+        objemp.EmptyTextBoxes(this);
+
+    }
+    protected void ddlProject_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        ProjectDetails();
+    }
+    private void ProjectDetails()
+    {
+        objprj.openConnection();
+        objprj.intADY_ProjectMaster_Trno_N = Convert.ToInt32(ddlProject.SelectedValue);
+        objprj.DecOfficeTrno = Convert.ToDouble(Session["intOfficeTrno"]);
+        objprj.ViewProjectM();
+        objprj.closeConnection();
+        lblStateShare.Text = objprj.mnyStateShareAMT_M.ToString();
+        lblULBshare.Text = objprj.mnyULBShareAMT_M.ToString();
+        lblBeniShare.Text = objprj.mnyBeneficiariesShareAMT_M.ToString();
+    }
+
+
+
+    public class classAmountRelease : DBaccess
+    {
+        int _intisApproved;
+        double _intADY_ProjectMaster_Trno_N, _DecOfficeTrno;
+        string _OfficeName;
+
+        public int intisApproved { get { return _intisApproved; } set { _intisApproved = value; } }
+        public double intADY_ProjectMaster_Trno_N { get { return _intADY_ProjectMaster_Trno_N; } set { _intADY_ProjectMaster_Trno_N = value; } }
+        public double DecOfficeTrno { get { return _DecOfficeTrno; } set { _DecOfficeTrno = value; } }
+        public string OfficeName { get { return _OfficeName; } set { _OfficeName = value; } }
+
+
+        public DataSet LoadProject()
+        {
+            DataSet ds = new DataSet();
+            execute("ADY0014_ProjectLoad", SQLType.IS_PROC);
+            addParam("@intADY_ProjectMaster_Trno_N", SqlDbType.Float, intADY_ProjectMaster_Trno_N, SqlDirection.IN);
+            addParam("@DecOfficeTrno", SqlDbType.Float, DecOfficeTrno, SqlDirection.IN);
+            addParam("@intisApproved", SqlDbType.Int, intisApproved, SqlDirection.IN);
+            addParam("@OfficeName", SqlDbType.NVarChar, OfficeName, SqlDirection.IN);
+            ds = records();
+
+            return ds;
+        }
+
+
+    }
+
+}

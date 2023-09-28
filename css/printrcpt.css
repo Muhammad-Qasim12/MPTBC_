@@ -1,0 +1,70 @@
+	/* Tables */
+
+.hastable table {
+	background:#fff;
+	width:100%;
+	border:1px solid black;
+	/*border-bottom:1px solid black;*/
+    border-top:1px solid black;
+}
+
+.hastable thead td, .hastable thead th {
+   /* border-top:1px solid black;
+    border-left:1px solid black;
+	background-color:black;*/
+   background-color:#fff;
+  
+}
+
+.hastable tr td, .hastable thead th {
+	border-left:1px solid black;
+	text-align:left;
+	padding:8px;
+	color:black;
+	vertical-align:middle;
+}
+
+.hastable tr th {
+	font-weight:bold;
+}
+
+.hastable thead td, .hastable thead th {
+	font-weight:bold;
+	padding:13px 340px;
+	text-align:center;
+}
+
+.hastable th, .hastable td {
+	border-bottom:1px solid black;
+    border-left:1px solid black;
+}
+.hastable tbody th {
+	padding:8px 8px;
+	text-align:left;
+}
+
+.hastable tbody tr.alt td, .hastable tbody tr.odd td {
+	color:black;
+}
+
+.hastable tbody tr.alt td, .hastable tbody tr.alt th, .hastable tbody tr.odd {
+	background-color:black;
+}
+.hastable tbody tr:hover td, .hastable tbody tr:hover th {
+	background-color:#FFFFCF;
+}
+
+
+
+
+.hastable tr .center {
+	padding:15px;
+	width:5px;
+}
+
+.hastable table a.btn span.ui-icon {
+	left:0.1em;
+}
+
+	/* Tables Pagination */
+

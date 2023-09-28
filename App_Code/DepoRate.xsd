@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DepoRate" targetNamespace="http://tempuri.org/DepoRate.xsd" xmlns:mstns="http://tempuri.org/DepoRate.xsd" xmlns="http://tempuri.org/DepoRate.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DepoRate" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DepoRate" msprop:Generator_UserDSName="DepoRate">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ChallanDate_D" msprop:Generator_ColumnVarNameInTable="columnChallanDate_D" msprop:Generator_ColumnPropNameInRow="ChallanDate_D" msprop:Generator_ColumnPropNameInTable="ChallanDate_DColumn" msprop:Generator_UserColumnName="ChallanDate_D" type="xs:string" minOccurs="0" />
+              <xs:element name="ChallanNo_V" msprop:Generator_ColumnVarNameInTable="columnChallanNo_V" msprop:Generator_ColumnPropNameInRow="ChallanNo_V" msprop:Generator_ColumnPropNameInTable="ChallanNo_VColumn" msprop:Generator_UserColumnName="ChallanNo_V" type="xs:string" minOccurs="0" />
+              <xs:element name="BlockNameHindi_V" msprop:Generator_ColumnVarNameInTable="columnBlockNameHindi_V" msprop:Generator_ColumnPropNameInRow="BlockNameHindi_V" msprop:Generator_ColumnPropNameInTable="BlockNameHindi_VColumn" msprop:Generator_UserColumnName="BlockNameHindi_V" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalTan" msprop:Generator_ColumnVarNameInTable="columnTotalTan" msprop:Generator_ColumnPropNameInRow="TotalTan" msprop:Generator_ColumnPropNameInTable="TotalTanColumn" msprop:Generator_UserColumnName="TotalTan" type="xs:string" minOccurs="0" />
+              <xs:element name="Fulltruk" msprop:Generator_ColumnVarNameInTable="columnFulltruk" msprop:Generator_ColumnPropNameInRow="Fulltruk" msprop:Generator_ColumnPropNameInTable="FulltrukColumn" msprop:Generator_UserColumnName="Fulltruk" type="xs:string" minOccurs="0" />
+              <xs:element name="Halftruk" msprop:Generator_ColumnVarNameInTable="columnHalftruk" msprop:Generator_ColumnPropNameInRow="Halftruk" msprop:Generator_ColumnPropNameInTable="HalftrukColumn" msprop:Generator_UserColumnName="Halftruk" type="xs:string" minOccurs="0" />
+              <xs:element name="perbundaltruk" msprop:Generator_ColumnVarNameInTable="columnperbundaltruk" msprop:Generator_ColumnPropNameInRow="perbundaltruk" msprop:Generator_ColumnPropNameInTable="perbundaltrukColumn" msprop:Generator_UserColumnName="perbundaltruk" type="xs:string" minOccurs="0" />
+              <xs:element name="FullTruckRate_N" msprop:Generator_ColumnVarNameInTable="columnFullTruckRate_N" msprop:Generator_ColumnPropNameInRow="FullTruckRate_N" msprop:Generator_ColumnPropNameInTable="FullTruckRate_NColumn" msprop:Generator_UserColumnName="FullTruckRate_N" type="xs:string" minOccurs="0" />
+              <xs:element name="HalfTruckRate_N" msprop:Generator_ColumnVarNameInTable="columnHalfTruckRate_N" msprop:Generator_ColumnPropNameInRow="HalfTruckRate_N" msprop:Generator_ColumnPropNameInTable="HalfTruckRate_NColumn" msprop:Generator_UserColumnName="HalfTruckRate_N" type="xs:string" minOccurs="0" />
+              <xs:element name="RatePerBundle_N" msprop:Generator_ColumnVarNameInTable="columnRatePerBundle_N" msprop:Generator_ColumnPropNameInRow="RatePerBundle_N" msprop:Generator_ColumnPropNameInTable="RatePerBundle_NColumn" msprop:Generator_UserColumnName="RatePerBundle_N" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

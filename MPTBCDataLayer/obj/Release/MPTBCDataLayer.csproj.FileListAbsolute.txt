@@ -1,0 +1,17 @@
+E:\Project\WebSite\MPTBC\MPTBCDataLayer\bin\Release\MPTBCDataLayer.dll
+E:\Project\WebSite\MPTBC\MPTBCDataLayer\bin\Release\MPTBCDataLayer.pdb
+E:\Project\WebSite\MPTBC\MPTBCDataLayer\obj\Release\MPTBCDataLayer.csprojResolveAssemblyReference.cache
+E:\Project\WebSite\MPTBC\MPTBCDataLayer\obj\Release\MPTBCDataLayer.dll
+E:\Project\WebSite\MPTBC\MPTBCDataLayer\obj\Release\MPTBCDataLayer.pdb
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCDataLayer\bin\Release\MPTBCDataLayer.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCDataLayer\bin\Release\MPTBCDataLayer.pdb
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCDataLayer\bin\Release\MySql.Data.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCDataLayer\obj\Release\MPTBCDataLayer.csprojResolveAssemblyReference.cache
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCDataLayer\obj\Release\MPTBCDataLayer.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCDataLayer\obj\Release\MPTBCDataLayer.pdb
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCDataLayer\bin\Release\MPTBCDataLayer.dll
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCDataLayer\bin\Release\MPTBCDataLayer.pdb
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCDataLayer\bin\Release\MySql.Data.dll
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCDataLayer\obj\Release\MPTBCDataLayer.dll
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCDataLayer\obj\Release\MPTBCDataLayer.pdb
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCDataLayer\obj\Release\MPTBCDataLayer.csprojResolveAssemblyReference.cache

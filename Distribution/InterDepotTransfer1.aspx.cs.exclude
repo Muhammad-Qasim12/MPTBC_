@@ -1,0 +1,175 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using MPTBCBussinessLayer;
+
+public partial class Distribution_dreport4 : System.Web.UI.Page
+{
+    DataSet ds;
+    InterDepoTransfer ObjInterDepoTransfer = null;
+    Random rdm = new Random();
+    string ChallanNo;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!Page.IsPostBack)
+        {
+            GridFillLoad();
+        }
+    }
+    public void GridFillLoad()
+    {
+        try
+        {
+            if (ddlReqDepo.SelectedItem.Text != "Select")
+            {
+                ObjInterDepoTransfer = new InterDepoTransfer();
+                ObjInterDepoTransfer.DemandingDepotID = int.Parse(ddlReqDepo.SelectedValue.ToString());
+                GrdDepoQtyMaster.DataSource = ObjInterDepoTransfer.DemandFill();
+                GrdDepoQtyMaster.DataBind();
+            }
+            else
+            {
+                GrdDepoQtyMaster.DataSource = string.Empty;
+                GrdDepoQtyMaster.DataBind();
+            }
+        }
+        catch { }
+
+    }
+
+    protected void lnkBookDetails_Click(object sender, EventArgs e)
+    {
+        Messages.Style.Add("display", "block");
+        fadeDiv.Style.Add("display", "block");
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Messages.Style.Add("display", "none");
+        fadeDiv.Style.Add("display", "none");
+    }
+    protected void GrdDepoQtyMaster_RowDataBound(object sender, GridViewRowEventArgs e)
+    {
+        if (e.Row.RowType == DataControlRowType.DataRow)
+        {
+            DropDownList ddlDepoSupp = (DropDownList)(e.Row.FindControl("ddlDepoSupp"));
+            ObjInterDepoTransfer = new InterDepoTransfer();
+            ddlDepoSupp.DataSource = ObjInterDepoTransfer.DepoFill();
+            ddlDepoSupp.DataTextField = "DepoName_V";
+            ddlDepoSupp.DataValueField = "DepoTrno_I";
+            ddlDepoSupp.DataBind();
+          
+        }
+    }
+    protected void ddlDepoSupp_Init(object sender, EventArgs e)
+    {
+        //DropDownList ddlDepoSupp = (DropDownList)sender;
+        //ObjInterDepoTransfer = new InterDepoTransfer();
+        //ddlDepoSupp.DataSource = ObjInterDepoTransfer.DepoFill();
+        //ddlDepoSupp.DataTextField = "DepoName_V";
+        //ddlDepoSupp.DataValueField = "DepoTrno_I";
+        //ddlDepoSupp.DataBind();
+
+    }
+
+    protected void ddlReqDepo_Init(object sender, EventArgs e)
+    {
+
+        ObjInterDepoTransfer = new InterDepoTransfer();
+        ds = ObjInterDepoTransfer.RequestedDepoFill();
+        if (ds.Tables[0].Rows.Count > 0)
+        {
+            ddlReqDepo.DataSource = ds.Tables[0];
+            ddlReqDepo.DataTextField = "DepoName_V";
+            ddlReqDepo.DataValueField = "DemandingDepotID";
+            ddlReqDepo.DataBind();
+        }
+        else
+        {
+            ddlReqDepo.DataSource = string.Empty;
+            ddlReqDepo.DataBind();
+            ddlReqDepo.Items.Insert(0, "Select");
+
+        }
+    }
+    protected void ddlReqDepo_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        GridFillLoad();
+    }
+    private string RandomNumber()
+    {
+        return (rdm.Next(2, 1000)).ToString();
+    }
+    protected void btnSave_Click(object sender, EventArgs e)
+    {
+        string SaveSts = "No";
+        ObjInterDepoTransfer = new InterDepoTransfer();
+
+        ChallanNo = System.DateTime.Now.ToString("ddMMyyyyssmm") + RandomNumber();
+        foreach (GridViewRow gv in GrdDepoQtyMaster.Rows)
+        {
+            Label lblDemandTrNo = (Label)gv.FindControl("lblDemandTrNo");
+            Label lblDemandingDepotID = (Label)gv.FindControl("lblDemandingDepotID");
+            Label lblNetDemand = (Label)gv.FindControl("lblNetDemand");
+            CheckBox chkSelect = (CheckBox)gv.FindControl("chkSelect");
+            Label lblTitleID_I = (Label)gv.FindControl("lblTitleID_I");
+            Label lblReqNo = (Label)gv.FindControl("lblReqNo");
+            DropDownList ddlDepoSupp = (DropDownList)gv.FindControl("ddlDepoSupp");
+            TextBox txtQtySupp = (TextBox)gv.FindControl("txtQtySupp");
+            Label lblDmdStk = (Label)gv.FindControl("lblDmdStk");
+            Label lblIsScheme = (Label)gv.FindControl("lblIsScheme");
+
+
+            if ((chkSelect.Checked == true) && (txtQtySupp.Text != "" || txtQtySupp.Text != "0") && ddlDepoSupp.SelectedItem.Text != "Select")
+            {
+                ObjInterDepoTransfer.ChallanNo = ddlDepoSupp.SelectedItem.Value.ToString() + ChallanNo;
+                ObjInterDepoTransfer.ReqNo = lblReqNo.Text;
+                ObjInterDepoTransfer.DemandingDepotID = int.Parse(lblDemandingDepotID.Text);
+                ObjInterDepoTransfer.NetDemand = int.Parse(lblNetDemand.Text.ToString());
+                ObjInterDepoTransfer.SupplierDepoID = int.Parse(ddlDepoSupp.SelectedItem.Value.ToString());
+                ObjInterDepoTransfer.NoOfBookTransferd = int.Parse(txtQtySupp.Text);
+                ObjInterDepoTransfer.TitleID_I = int.Parse(lblTitleID_I.Text);
+                ObjInterDepoTransfer.IsScheme = int.Parse(lblIsScheme.Text);
+                ObjInterDepoTransfer.DemandTrNo = int.Parse(lblDemandTrNo.Text);
+
+                if (Request.QueryString["ID"] != null)
+                {
+                    ObjInterDepoTransfer.DemandChildTrNo = int.Parse(Request.QueryString["ID"].ToString());
+                }
+                else
+                {
+                    ObjInterDepoTransfer.DemandChildTrNo = 0;
+                }
+                int i = ObjInterDepoTransfer.InsertUpdate();
+                if (i > 0)
+                {
+
+                }
+                SaveSts = "Yes";
+            }
+        }
+        if (SaveSts == "Yes")
+        {
+            if (Request.QueryString["ID"] != null)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script>alert('Record updated successfully.');</script>");
+                //Response.Redirect("ViewLabMaster.aspx");
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script>alert('Record saved successfully.');</script>");
+                GridFillLoad();
+            }
+        }
+        else
+        {
+            ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script>alert('Please Check at least one check box.');</script>");
+        }
+    }
+}

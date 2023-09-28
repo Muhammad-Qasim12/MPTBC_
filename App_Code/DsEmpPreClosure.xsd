@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsEmpPreClosure" targetNamespace="http://tempuri.org/DsEmpPreClosure.xsd" xmlns:mstns="http://tempuri.org/DsEmpPreClosure.xsd" xmlns="http://tempuri.org/DsEmpPreClosure.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsEmpPreClosure" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DsEmpPreClosure" msprop:Generator_UserDSName="DsEmpPreClosure">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DtEmpPreClosure" msprop:Generator_TableClassName="DtEmpPreClosureDataTable" msprop:Generator_TableVarName="tableDtEmpPreClosure" msprop:Generator_TablePropName="DtEmpPreClosure" msprop:Generator_RowDeletingName="DtEmpPreClosureRowDeleting" msprop:Generator_RowChangingName="DtEmpPreClosureRowChanging" msprop:Generator_RowEvHandlerName="DtEmpPreClosureRowChangeEventHandler" msprop:Generator_RowDeletedName="DtEmpPreClosureRowDeleted" msprop:Generator_UserTableName="DtEmpPreClosure" msprop:Generator_RowChangedName="DtEmpPreClosureRowChanged" msprop:Generator_RowEvArgName="DtEmpPreClosureRowChangeEvent" msprop:Generator_RowClassName="DtEmpPreClosureRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmployeeName" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" type="xs:string" minOccurs="0" />
+              <xs:element name="GPFNo" msprop:Generator_ColumnVarNameInTable="columnGPFNo" msprop:Generator_ColumnPropNameInRow="GPFNo" msprop:Generator_ColumnPropNameInTable="GPFNoColumn" msprop:Generator_UserColumnName="GPFNo" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalLoanAmt" msprop:Generator_ColumnVarNameInTable="columnTotalLoanAmt" msprop:Generator_ColumnPropNameInRow="TotalLoanAmt" msprop:Generator_ColumnPropNameInTable="TotalLoanAmtColumn" msprop:Generator_UserColumnName="TotalLoanAmt" type="xs:string" minOccurs="0" />
+              <xs:element name="LoanSanctionNo" msprop:Generator_ColumnVarNameInTable="columnLoanSanctionNo" msprop:Generator_ColumnPropNameInRow="LoanSanctionNo" msprop:Generator_ColumnPropNameInTable="LoanSanctionNoColumn" msprop:Generator_UserColumnName="LoanSanctionNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PaidAmt" msprop:Generator_ColumnVarNameInTable="columnPaidAmt" msprop:Generator_ColumnPropNameInRow="PaidAmt" msprop:Generator_ColumnPropNameInTable="PaidAmtColumn" msprop:Generator_UserColumnName="PaidAmt" type="xs:string" minOccurs="0" />
+              <xs:element name="PreclosureAmt" msprop:Generator_ColumnVarNameInTable="columnPreclosureAmt" msprop:Generator_ColumnPropNameInRow="PreclosureAmt" msprop:Generator_ColumnPropNameInTable="PreclosureAmtColumn" msprop:Generator_UserColumnName="PreclosureAmt" type="xs:string" minOccurs="0" />
+              <xs:element name="PayMode" msprop:Generator_ColumnVarNameInTable="columnPayMode" msprop:Generator_ColumnPropNameInRow="PayMode" msprop:Generator_ColumnPropNameInTable="PayModeColumn" msprop:Generator_UserColumnName="PayMode" type="xs:string" minOccurs="0" />
+              <xs:element name="ChequeBank" msprop:Generator_ColumnVarNameInTable="columnChequeBank" msprop:Generator_ColumnPropNameInRow="ChequeBank" msprop:Generator_ColumnPropNameInTable="ChequeBankColumn" msprop:Generator_UserColumnName="ChequeBank" type="xs:string" minOccurs="0" />
+              <xs:element name="ChequeNumber" msprop:Generator_ColumnVarNameInTable="columnChequeNumber" msprop:Generator_ColumnPropNameInRow="ChequeNumber" msprop:Generator_ColumnPropNameInTable="ChequeNumberColumn" msprop:Generator_UserColumnName="ChequeNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="PreclosureDate" msprop:Generator_ColumnVarNameInTable="columnPreclosureDate" msprop:Generator_ColumnPropNameInRow="PreclosureDate" msprop:Generator_ColumnPropNameInTable="PreclosureDateColumn" msprop:Generator_UserColumnName="PreclosureDate" type="xs:string" minOccurs="0" />
+              <xs:element name="ChequeDate" msprop:Generator_ColumnVarNameInTable="columnChequeDate" msprop:Generator_ColumnPropNameInRow="ChequeDate" msprop:Generator_ColumnPropNameInTable="ChequeDateColumn" msprop:Generator_UserColumnName="ChequeDate" type="xs:string" minOccurs="0" />
+              <xs:element name="DesignationName" msprop:Generator_ColumnVarNameInTable="columnDesignationName" msprop:Generator_ColumnPropNameInRow="DesignationName" msprop:Generator_ColumnPropNameInTable="DesignationNameColumn" msprop:Generator_UserColumnName="DesignationName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

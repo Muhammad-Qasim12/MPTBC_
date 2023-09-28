@@ -1,0 +1,78 @@
+﻿<%@ Page Title="टेंडर के ग्रुप आवंटन की जानकारी" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="RPT003_GroupAllotment.aspx.cs" Inherits="Printing_Reports_RPT003_GroupAllotment" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+        <div class="portlet-header ui-widget-header">
+      टेंडर के ग्रुप आवंटन की जानकारी 
+        </div>
+        <div class="portlet-content">
+
+        <table width="100%">
+
+        <tr>
+
+        <td>
+        शेक्षणिक सत्र
+        </td>
+        
+        <td>
+        <asp:DropDownList ID="ddlAcYearId" runat="server" AutoPostBack="true"  OnSelectedIndexChanged ="ddlPrinter_SelectedIndexChanged" >
+        
+        </asp:DropDownList>
+        </td>
+
+
+        <td>
+        प्रिंटर का नाम
+        </td>
+        
+        <td>
+        <asp:DropDownList ID="ddlPrinter" runat="server" AutoPostBack="true"  OnSelectedIndexChanged ="ddlPrinter_SelectedIndexChanged" >
+        
+        </asp:DropDownList>
+        </td>
+        </tr>
+            
+
+        <tr>
+        <td colspan="4">
+        <asp:GridView ID="GrdGroupDetails" runat="server" AutoGenerateColumns="False" CssClass="tab">
+                        <Columns>
+                            <asp:TemplateField HeaderText="क्रमांक">
+                                <ItemTemplate>
+                                    <%# Container.DataItemIndex+1 %>
+                                    <asp:HiddenField ID="HiddenField2" runat="server" Value='<%# Eval("GrpID_I") %>' />
+                                </ItemTemplate>
+                            </asp:TemplateField>
+
+                            <asp:BoundField HeaderText="प्रिंटर का नाम"      DataField="NameofPress_V" />
+                            <asp:TemplateField HeaderText="ग्रुप क्रमांक">
+                                <ItemTemplate>
+                                <asp:Label ID="lblGroupNO_V" runat="server" Text='<%#Eval("GroupNO_V") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:BoundField HeaderText="पुस्तक का शीर्षक" DataField="TitleHindi_V" />
+                            <asp:BoundField HeaderText="पेजों की संख्या"   DataField="Noofpages" />
+                            <asp:BoundField HeaderText="पुस्तको की संख्या" DataField="TotNoOfBooks" />
+                            <asp:BoundField HeaderText="मुद्रण मात्रा (टन मे)" DataField="Qty_PriPaper" />
+                            
+                            <asp:BoundField HeaderText="राशि (रुपये मे)"    DataField="rate" />
+                        </Columns>
+                    </asp:GridView>
+        </td>
+        </tr>
+
+       <tr>
+        <td colspan="4">
+         <asp:Button ID="btnExport" runat="server" Text="Export to Excel" CssClass="btn_gry" />
+                     
+        </td>
+        </tr>
+        </table>
+
+        </div> 
+
+
+</asp:Content>
+

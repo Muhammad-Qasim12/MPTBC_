@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsP19" targetNamespace="http://tempuri.org/dsP19.xsd" xmlns:mstns="http://tempuri.org/dsP19.xsd" xmlns="http://tempuri.org/dsP19.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsP19" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsP19" msprop:Generator_UserDSName="dsP19">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PrinterName" msprop:Generator_ColumnVarNameInTable="columnPrinterName" msprop:Generator_ColumnPropNameInRow="PrinterName" msprop:Generator_ColumnPropNameInTable="PrinterNameColumn" msprop:Generator_UserColumnName="PrinterName" type="xs:string" minOccurs="0" />
+              <xs:element name="TitleId" msprop:Generator_ColumnVarNameInTable="columnTitleId" msprop:Generator_ColumnPropNameInRow="TitleId" msprop:Generator_ColumnPropNameInTable="TitleIdColumn" msprop:Generator_UserColumnName="TitleId" type="xs:string" minOccurs="0" />
+              <xs:element name="TtlBooksAllot" msprop:Generator_ColumnVarNameInTable="columnTtlBooksAllot" msprop:Generator_ColumnPropNameInRow="TtlBooksAllot" msprop:Generator_ColumnPropNameInTable="TtlBooksAllotColumn" msprop:Generator_UserColumnName="TtlBooksAllot" type="xs:string" minOccurs="0" />
+              <xs:element name="TtlBooksRcvd" msprop:Generator_ColumnVarNameInTable="columnTtlBooksRcvd" msprop:Generator_ColumnPropNameInRow="TtlBooksRcvd" msprop:Generator_ColumnPropNameInTable="TtlBooksRcvdColumn" msprop:Generator_UserColumnName="TtlBooksRcvd" type="xs:string" minOccurs="0" />
+              <xs:element name="TtlBooksBalance" msprop:Generator_ColumnVarNameInTable="columnTtlBooksBalance" msprop:Generator_ColumnPropNameInRow="TtlBooksBalance" msprop:Generator_ColumnPropNameInTable="TtlBooksBalanceColumn" msprop:Generator_UserColumnName="TtlBooksBalance" type="xs:string" minOccurs="0" />
+              <xs:element name="Praapt" msprop:Generator_ColumnVarNameInTable="columnPraapt" msprop:Generator_ColumnPropNameInRow="Praapt" msprop:Generator_ColumnPropNameInTable="PraaptColumn" msprop:Generator_UserColumnName="Praapt" type="xs:string" minOccurs="0" />
+              <xs:element name="TLWK_70GSM" msprop:Generator_ColumnVarNameInTable="columnTLWK_70GSM" msprop:Generator_ColumnPropNameInRow="TLWK_70GSM" msprop:Generator_ColumnPropNameInTable="TLWK_70GSMColumn" msprop:Generator_UserColumnName="TLWK_70GSM" type="xs:string" minOccurs="0" />
+              <xs:element name="TLWK_80GSM" msprop:Generator_ColumnVarNameInTable="columnTLWK_80GSM" msprop:Generator_ColumnPropNameInRow="TLWK_80GSM" msprop:Generator_ColumnPropNameInTable="TLWK_80GSMColumn" msprop:Generator_UserColumnName="TLWK_80GSM" type="xs:string" minOccurs="0" />
+              <xs:element name="TLWK_230GSM" msprop:Generator_ColumnVarNameInTable="columnTLWK_230GSM" msprop:Generator_ColumnPropNameInRow="TLWK_230GSM" msprop:Generator_ColumnPropNameInTable="TLWK_230GSMColumn" msprop:Generator_UserColumnName="TLWK_230GSM" type="xs:string" minOccurs="0" />
+              <xs:element name="TLWK_250GSM" msprop:Generator_ColumnVarNameInTable="columnTLWK_250GSM" msprop:Generator_ColumnPropNameInRow="TLWK_250GSM" msprop:Generator_ColumnPropNameInTable="TLWK_250GSMColumn" msprop:Generator_UserColumnName="TLWK_250GSM" type="xs:string" minOccurs="0" />
+              <xs:element name="AK_70GSM" msprop:Generator_ColumnVarNameInTable="columnAK_70GSM" msprop:Generator_ColumnPropNameInRow="AK_70GSM" msprop:Generator_ColumnPropNameInTable="AK_70GSMColumn" msprop:Generator_UserColumnName="AK_70GSM" type="xs:string" minOccurs="0" />
+              <xs:element name="AK_80GSM" msprop:Generator_ColumnVarNameInTable="columnAK_80GSM" msprop:Generator_ColumnPropNameInRow="AK_80GSM" msprop:Generator_ColumnPropNameInTable="AK_80GSMColumn" msprop:Generator_UserColumnName="AK_80GSM" type="xs:string" minOccurs="0" />
+              <xs:element name="AK_230GSM" msprop:Generator_ColumnVarNameInTable="columnAK_230GSM" msprop:Generator_ColumnPropNameInRow="AK_230GSM" msprop:Generator_ColumnPropNameInTable="AK_230GSMColumn" msprop:Generator_UserColumnName="AK_230GSM" type="xs:string" minOccurs="0" />
+              <xs:element name="AK_250GSM" msprop:Generator_ColumnVarNameInTable="columnAK_250GSM" msprop:Generator_ColumnPropNameInRow="AK_250GSM" msprop:Generator_ColumnPropNameInTable="AK_250GSMColumn" msprop:Generator_UserColumnName="AK_250GSM" type="xs:string" minOccurs="0" />
+              <xs:element name="Percentage" msprop:Generator_ColumnVarNameInTable="columnPercentage" msprop:Generator_ColumnPropNameInRow="Percentage" msprop:Generator_ColumnPropNameInTable="PercentageColumn" msprop:Generator_UserColumnName="Percentage" type="xs:string" minOccurs="0" />
+              <xs:element name="PHK_70GSM" msprop:Generator_ColumnVarNameInTable="columnPHK_70GSM" msprop:Generator_ColumnPropNameInRow="PHK_70GSM" msprop:Generator_ColumnPropNameInTable="PHK_70GSMColumn" msprop:Generator_UserColumnName="PHK_70GSM" type="xs:string" minOccurs="0" />
+              <xs:element name="PHK_80GSM" msprop:Generator_ColumnVarNameInTable="columnPHK_80GSM" msprop:Generator_ColumnPropNameInRow="PHK_80GSM" msprop:Generator_ColumnPropNameInTable="PHK_80GSMColumn" msprop:Generator_UserColumnName="PHK_80GSM" type="xs:string" minOccurs="0" />
+              <xs:element name="PHK_230GSM" msprop:Generator_ColumnVarNameInTable="columnPHK_230GSM" msprop:Generator_ColumnPropNameInRow="PHK_230GSM" msprop:Generator_ColumnPropNameInTable="PHK_230GSMColumn" msprop:Generator_UserColumnName="PHK_230GSM" type="xs:string" minOccurs="0" />
+              <xs:element name="PHK_250GSM" msprop:Generator_ColumnVarNameInTable="columnPHK_250GSM" msprop:Generator_ColumnPropNameInRow="PHK_250GSM" msprop:Generator_ColumnPropNameInTable="PHK_250GSMColumn" msprop:Generator_UserColumnName="PHK_250GSM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

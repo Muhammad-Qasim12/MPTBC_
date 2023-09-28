@@ -1,0 +1,87 @@
+E:\mptbc_Development_Inte\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csprojResolveAssemblyReference.cache
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.pdb
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Debug\MySql.Data.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.pdb
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csprojResolveAssemblyReference.cache
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.pdb
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.dll
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.pdb
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.dll
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Debug\MySql.Data.dll
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.pdb
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csprojResolveAssemblyReference.cache
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.dll
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.pdb
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.dll
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.pdb
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.dll
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCBussinessLayer\bin\Debug\MySql.Data.dll
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.AssemblyReference.cache
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CoreCompileInputs.cache
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CopyComplete
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.dll
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.pdb
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.dll
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.pdb
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.dll
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCBussinessLayer\bin\Debug\MySql.Data.dll
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.pdb
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.AssemblyReference.cache
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CoreCompileInputs.cache
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CopyComplete
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.dll
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCBussinessLayer\bin\Debug\MySql.Data.dll
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.AssemblyReference.cache
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CoreCompileInputs.cache
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CopyComplete
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCBussinessLayer\bin\Debug\MySql.Data.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.AssemblyReference.cache
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CoreCompileInputs.cache
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CopyComplete
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCBussinessLayer\bin\Debug\MySql.Data.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.AssemblyReference.cache
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CoreCompileInputs.cache
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CopyComplete
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCBussinessLayer\bin\Debug\MySql.Data.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.AssemblyReference.cache
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CoreCompileInputs.cache
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CopyComplete
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.pdb
+D:\MPTBC_Final_22082023\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.dll
+D:\MPTBC_Final_22082023\MPTBCBussinessLayer\bin\Debug\MPTBCBussinessLayer.pdb
+D:\MPTBC_Final_22082023\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.dll
+D:\MPTBC_Final_22082023\MPTBCBussinessLayer\bin\Debug\MySql.Data.dll
+D:\MPTBC_Final_22082023\MPTBCBussinessLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\MPTBC_Final_22082023\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.AssemblyReference.cache
+D:\MPTBC_Final_22082023\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CoreCompileInputs.cache
+D:\MPTBC_Final_22082023\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.csproj.CopyComplete
+D:\MPTBC_Final_22082023\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.dll
+D:\MPTBC_Final_22082023\MPTBCBussinessLayer\obj\Debug\MPTBCBussinessLayer.pdb

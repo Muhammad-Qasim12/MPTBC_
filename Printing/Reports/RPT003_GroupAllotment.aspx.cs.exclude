@@ -1,0 +1,91 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using MPTBCBussinessLayer;
+using MPTBCBussinessLayer.DistributionB;
+
+public partial class Printing_Reports_RPT003_GroupAllotment : System.Web.UI.Page
+{
+    PRI003_RPTGroupAllotment obGroupAllotment = null;
+    PRI_PrinterRegistration obPriReg = null;
+    DemandfromOthers obDemandfromOthers = new DemandfromOthers();
+    CommonFuction obCommon = null;
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!Page.IsPostBack) { LoadAcYear(); FillData(); }
+    }
+
+
+    public void LoadAcYear() 
+    {
+        obDemandfromOthers.QueryType = -1;
+        ddlAcYearId.DataSource = obDemandfromOthers.Select();
+        ddlAcYearId.DataTextField = "AcYear";
+        ddlAcYearId.DataValueField = "AcYear";
+        ddlAcYearId.DataBind();
+    
+    }
+
+
+    public void FillData()
+    {
+        try
+        {
+            obPriReg = new PRI_PrinterRegistration();
+
+            ddlPrinter.DataTextField = "NameofPress_V";
+            ddlPrinter.DataValueField = "Printer_RedID_I";
+
+            obPriReg.Printer_RedID_I = 0;
+            ddlPrinter.DataSource = obPriReg.PrinterRegistrationLoad();
+            ddlPrinter.DataBind();
+
+
+            ddlPrinter.Items.Insert(0, new ListItem("All", "0"));
+
+        }
+        catch (Exception ex)
+        {
+        }
+        finally
+        {
+            obPriReg = null;
+        }
+    }
+
+
+
+    public void LoadGroup()
+    {
+        obGroupAllotment = new PRI003_RPTGroupAllotment();
+
+        try
+        {
+
+            obGroupAllotment.Printer_RedID_I = Convert.ToInt32(ddlPrinter.SelectedValue);
+            obGroupAllotment.AcYearId = Convert.ToString(ddlAcYearId.SelectedValue);
+
+            GrdGroupDetails.DataSource = obGroupAllotment.LoadGroupAllotment();
+            GrdGroupDetails.DataBind();
+
+        }
+
+        catch (Exception ex)
+        {
+        }
+        finally
+        {
+            obGroupAllotment = null;
+        }
+    }
+
+    protected void ddlPrinter_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        LoadGroup();
+    }
+
+}

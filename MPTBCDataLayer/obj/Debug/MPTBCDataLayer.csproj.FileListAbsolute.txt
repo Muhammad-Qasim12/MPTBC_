@@ -1,0 +1,94 @@
+D:\Project\WebSite\MPTBC\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+D:\Project\WebSite\MPTBC\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\Project\WebSite\MPTBC\MPTBCDataLayer\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\WebSite\MPTBC\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+D:\Project\WebSite\MPTBC\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+E:\Project\WebSite\MPTBC\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+E:\Project\WebSite\MPTBC\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+E:\Project\WebSite\MPTBC\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+E:\Project\WebSite\MPTBC\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+E:\Project\WebSite\MPTBC\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csprojResolveAssemblyReference.cache
+D:\MPTBC-jayndra-data-svn-10feb16\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+D:\MPTBC-jayndra-data-svn-10feb16\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\MPTBC-jayndra-data-svn-10feb16\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+D:\MPTBC-jayndra-data-svn-10feb16\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+E:\mptbc_Development_Inte\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+E:\mptbc_Development_Inte\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+E:\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+E:\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+E:\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csprojResolveAssemblyReference.cache
+D:\mptbc work 30 july 2016\mptbc_Development_Inte\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+D:\mptbc work 30 july 2016\mptbc_Development_Inte\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\mptbc work 30 july 2016\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+D:\mptbc work 30 july 2016\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+D:\mptbc work 30 july 2016\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csprojResolveAssemblyReference.cache
+D:\mptbc_Development_Inte\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+D:\mptbc_Development_Inte\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csprojResolveAssemblyReference.cache
+D:\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+D:\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csprojResolveAssemblyReference.cache
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+F:\mptbc_Development_Inte\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csprojResolveAssemblyReference.cache
+D:\Santosh Daily Work\Santosh\MPTBC\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CoreCompileInputs.cache
+D:\Santosh Daily Work\Santosh\MPTBC\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+D:\Santosh Daily Work\Santosh\MPTBC\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+D:\Santosh Daily Work\Santosh\MPTBC\mptbc_Development_Inte\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+D:\Santosh Daily Work\Santosh\MPTBC\mptbc_Development_Inte\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\Santosh Daily Work\Santosh\MPTBC\mptbc_Development_Inte\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CopyComplete
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CoreCompileInputs.cache
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CopyComplete
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.AssemblyReference.cache
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CoreCompileInputs.cache
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CopyComplete
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+E:\Santosh\KYC\Web\MPTBC_Final\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.AssemblyReference.cache
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CoreCompileInputs.cache
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CopyComplete
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.AssemblyReference.cache
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CoreCompileInputs.cache
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CopyComplete
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.AssemblyReference.cache
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CoreCompileInputs.cache
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CopyComplete
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.AssemblyReference.cache
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CoreCompileInputs.cache
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CopyComplete
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+D:\Working Home 05-05-2019\nigam\Code_F_30072023_1_back for rpt\Code_F_30072023_1\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb
+D:\Santosh Daily Work\Santosh\MPTBC\MPTBC_Final\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.AssemblyReference.cache
+D:\MPTBC_Final_22082023\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.dll
+D:\MPTBC_Final_22082023\MPTBCDataLayer\bin\Debug\MPTBCDataLayer.pdb
+D:\MPTBC_Final_22082023\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.AssemblyReference.cache
+D:\MPTBC_Final_22082023\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CoreCompileInputs.cache
+D:\MPTBC_Final_22082023\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.csproj.CopyComplete
+D:\MPTBC_Final_22082023\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.dll
+D:\MPTBC_Final_22082023\MPTBCDataLayer\obj\Debug\MPTBCDataLayer.pdb

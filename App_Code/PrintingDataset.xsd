@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrintingDataset" targetNamespace="http://tempuri.org/PrintingDataset.xsd" xmlns:mstns="http://tempuri.org/PrintingDataset.xsd" xmlns="http://tempuri.org/PrintingDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PrintingDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="PrintingDataset" msprop:Generator_UserDSName="PrintingDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblMachineDetails" msprop:Generator_TableClassName="tblMachineDetailsDataTable" msprop:Generator_TableVarName="tabletblMachineDetails" msprop:Generator_TablePropName="tblMachineDetails" msprop:Generator_RowDeletingName="tblMachineDetailsRowDeleting" msprop:Generator_UserTableName="tblMachineDetails" msprop:Generator_RowChangingName="tblMachineDetailsRowChanging" msprop:Generator_RowEvHandlerName="tblMachineDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblMachineDetailsRowDeleted" msprop:Generator_RowEvArgName="tblMachineDetailsRowChangeEvent" msprop:Generator_RowChangedName="tblMachineDetailsRowChanged" msprop:Generator_RowClassName="tblMachineDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MachineDtl" msprop:Generator_ColumnVarNameInTable="columnMachineDtl" msprop:Generator_ColumnPropNameInRow="MachineDtl" msprop:Generator_ColumnPropNameInTable="MachineDtlColumn" msprop:Generator_UserColumnName="MachineDtl" type="xs:string" minOccurs="0" />
+              <xs:element name="MachineSize_V" msprop:Generator_ColumnVarNameInTable="columnMachineSize_V" msprop:Generator_ColumnPropNameInRow="MachineSize_V" msprop:Generator_ColumnPropNameInTable="MachineSize_VColumn" msprop:Generator_UserColumnName="MachineSize_V" type="xs:string" minOccurs="0" />
+              <xs:element name="MacPrintCapOneColor_V" msprop:Generator_ColumnVarNameInTable="columnMacPrintCapOneColor_V" msprop:Generator_ColumnPropNameInRow="MacPrintCapOneColor_V" msprop:Generator_ColumnPropNameInTable="MacPrintCapOneColor_VColumn" msprop:Generator_UserColumnName="MacPrintCapOneColor_V" type="xs:string" minOccurs="0" />
+              <xs:element name="MacPrintCapTwoColor_V" msprop:Generator_ColumnVarNameInTable="columnMacPrintCapTwoColor_V" msprop:Generator_ColumnPropNameInRow="MacPrintCapTwoColor_V" msprop:Generator_ColumnPropNameInTable="MacPrintCapTwoColor_VColumn" msprop:Generator_UserColumnName="MacPrintCapTwoColor_V" type="xs:string" minOccurs="0" />
+              <xs:element name="MacPrintCapFourColor_V" msprop:Generator_ColumnVarNameInTable="columnMacPrintCapFourColor_V" msprop:Generator_ColumnPropNameInRow="MacPrintCapFourColor_V" msprop:Generator_ColumnPropNameInTable="MacPrintCapFourColor_VColumn" msprop:Generator_UserColumnName="MacPrintCapFourColor_V" type="xs:string" minOccurs="0" />
+              <xs:element name="nOOFmACHINE" msprop:Generator_ColumnVarNameInTable="columnnOOFmACHINE" msprop:Generator_ColumnPropNameInRow="nOOFmACHINE" msprop:Generator_ColumnPropNameInTable="nOOFmACHINEColumn" msprop:Generator_UserColumnName="nOOFmACHINE" type="xs:string" minOccurs="0" />
+              <xs:element name="MachineID_I" msprop:Generator_ColumnVarNameInTable="columnMachineID_I" msprop:Generator_ColumnPropNameInRow="MachineID_I" msprop:Generator_ColumnPropNameInTable="MachineID_IColumn" msprop:Generator_UserColumnName="MachineID_I" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,261 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DistributionMaster.master.cs" Inherits="DistributionMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>M.P. Text Book Corporation</title>
+	<link href="css/style.css" rel="stylesheet" media="all" />
+	<link href="" rel="stylesheet" title="style" media="all" />
+	<script type="text/javascript" src="../js/jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="../js/superfish.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui-1.7.2.js"></script>
+	<script type="text/javascript" src="../js/tooltip.js"></script>
+	<script type="text/javascript" src="../js/tablesorter.js"></script>
+	<script type="text/javascript" src="../js/tablesorter-pager.js"></script>
+	<script type="text/javascript" src="../js/custom.js"></script>
+	<!--[if IE 6]>
+	<link href="css/ie6.css" rel="stylesheet" media="all" />
+	
+	<script src="js/pngfix.js"></script>
+	<script>
+	  /* EXAMPLE */
+	  DD_belatedPNG.fix('.logo, .other ul#dashboard-buttons li a');
+
+	</script>
+	<![endif]-->
+	<!--[if IE 7]>
+	<link href="css/ie7.css" rel="stylesheet" media="all" />
+	<![endif]-->
+</head>
+<body>
+    <form id="form1" runat="server">
+     
+   
+       <asp:scriptmanager ID="Scriptmanager1" runat="server">
+       
+       <Services>
+       <asp:ServiceReference Path="~/Distrubution/DistributionService.asmx" />
+       </Services>
+       </asp:scriptmanager>
+            
+           <div id="header">
+		<div id="top-menu">
+			<a href="#" title="My account">My account</a> |
+			<a href="#" title="Settings">Settings</a> |
+			<a href="#" title="Contact us">Contact us</a>
+			
+			<span>Logged in as <a href="#" title="Logged in as admin">distribution section</a></span>
+			| <a href="#" title="Edit profile">Edit profile</a>
+			| <a href="../login.aspx"  title="Logout">Logout</a>
+		</div>
+		<div id="sitename">
+			<div class="right-bg">
+				<a href="#" class="logo float-left" title="Admintasia">M.P. Text Book Corporation</a>			
+			</div>
+		</div>
+		<ul id="navigation" class="sf-navbar">
+			<li>
+				<a href="#">वितरण A विभाग </a>
+				<ul class="submenu">
+					  <li><a id="A72" href="Distrubution/TestBookInitialDemand.aspx" >डिमांड फॉर्म (RSK / DPI )</a></li>
+                        <li><a id="A73" href="../Distribution/OpemMarketDemand.aspx">डिमांड फॉर्म (खुले बाज़ार से )</a></li>
+                        <li><a id="A74" href="../Distribution/InterDepotTransfer.aspx">अंतर डिपो ट्रान्सफर</a></li>
+                                          
+                        <li><a id="A1" href="../Distribution/TentetiveDemand.aspx">अनुमानित डिमांड</a></li>
+                         <li><a id="A9" href="../Distribution/DepowiseBooksDistribution.aspx">पुस्तकों का डिपोवार आवंटन </a></li>
+                        
+                        
+				</ul>
+			</li>
+			
+			 <li><a href="#">मास्टर्स </a>
+              <ul class="submenu">
+					   <li><a id="A77" href="../Distribution/DepoMaster.aspx">डिपो मास्टर </a></li>
+                        <li><a id="A6" href="../Distribution/CreateGroupForDistribution.aspx">ग्रुप  मास्टर </a></li>
+				</ul>
+			</li>
+			
+          <li><a href="#">रिपोर्ट्स </a>
+              <ul class="submenu">
+					   <li><a id="A2" href="../Distribution/DepotWiseContactList.aspx">डिपो में कार्यरत कर्मचारियो के दूरभाष</a></li>
+                        
+                        <li><a id="A75" href="../Distribution/DepotWiseBooks.aspx">डिपोवार पुस्तक स्टॉक रिपोर्ट </a></li>
+                        <li><a id="A76" href="../Distribution/DepotWiseStock.aspx">डिपोवार स्टॉक रिपोर्ट </a></li>
+                        <li><a id="A3" href="../Distribution/DemandReport.aspx">पुस्कतवार मांग रिपोर्ट </a></li>
+                        <li><a id="A4" href="../Distribution/DistrictWiseDemandReport.aspx">जिलावार मांग रिपोर्ट </a></li>
+                        <li><a id="A5" href="../Distribution/DemandVsSupplyReport.aspx">जिलावार मांग v/s वितरण रिपोर्ट </a></li>
+                        <li><a id="A7" href="../Distribution/ReportInterdepo.aspx">अन्तडिपो हस्तांतरण रिपोर्ट </a></li>
+                        <li><a id="A8" href="../Distribution/ReportBookSeller.aspx">पुस्तक विक्रेताओं की सूची </a></li>
+				</ul>
+			</li>
+			
+	</div>
+                       
+                         
+                                  
+       
+            
+           <div id="page-wrapper">
+		<div id="main-wrapper">
+			<div id="main-content">
+				
+				<div class="title title-spacing">
+					
+				</div>
+			    
+			    <div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all form-container">
+			        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+			        <%--   <div class="portlet-header ui-widget-header">
+                        
+                        Form elements in box
+                    </div>
+                     <div class="portlet-content">
+                   <div class="hastable">
+									<table cellspacing="0">
+										<thead>
+											<tr>												
+												<td width="5%">S.No.</td>
+												<td width="20%">Name</td>
+												<td width="30%">Email</td>
+												<td width="30%">Contact Number</td>
+												<td width="15%">Confirm/Delete</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>  	  	
+												<td>
+													1
+												</td>
+												<td>
+
+													Mohan 
+												Sharma</td>
+												<td>mohan@gmail.com.												</td>
+												<td>
+													+91 9893098930
+												</td>
+												<td><ul id="icons" class="ui-widget ui-helper-clearfix">
+									<li class="ui-state-default ui-corner-all" title="Confirm"><span class="ui-icon ui-icon-check"></span></li>
+									<li class="ui-state-default ui-corner-all" title="Delete"><span class="ui-icon ui-icon-trash"></span></li>
+
+								</ul></td>
+											</tr>
+											<tr class="alt">  	  	
+												<td>2</td>
+												<td>
+													Govind Singh
+												</td>
+												<td>govindsingh@gmail.com</td>
+												<td>+91 9893098930</td>
+												<td><ul id="Ul1" class="ui-widget ui-helper-clearfix">
+									<li class="ui-state-default ui-corner-all" title="Confirm"><span class="ui-icon ui-icon-check"></span></li>
+									<li class="ui-state-default ui-corner-all" title="Delete"><span class="ui-icon ui-icon-trash"></span></li>
+
+								</ul></td>
+
+											</tr>
+											<tr>  	  	
+												<td>3</td>
+												<td>
+													Surendra 
+												</td>
+												<td>surendra@gmail.com</td>
+
+												<td>+91 9893098930</td>
+												<td><ul id="Ul2" class="ui-widget ui-helper-clearfix">
+									<li class="ui-state-default ui-corner-all" title="Confirm"><span class="ui-icon ui-icon-check"></span></li>
+									<li class="ui-state-default ui-corner-all" title="Delete"><span class="ui-icon ui-icon-trash"></span></li>
+
+								</ul></td>
+											</tr>
+											<tr>  	  	
+												<td>4</td>
+												<td>
+													Mahendra Singh 
+												</td>
+												<td>mahendra@gmail.com</td>
+
+												<td>+91 9893098930</td>
+												<td><ul id="Ul3" class="ui-widget ui-helper-clearfix">
+									<li class="ui-state-default ui-corner-all" title="Confirm"><span class="ui-icon ui-icon-check"></span></li>
+									<li class="ui-state-default ui-corner-all" title="Delete"><span class="ui-icon ui-icon-trash"></span></li>
+
+								</ul></td>
+											</tr>
+											<tr>  	  	
+												<td>5</td>
+												<td>
+													Gourav Sharma
+												</td>
+												<td>gourav.sharma@gmail.com</td>
+
+												<td>+91 9893098930</td>
+												<td><ul id="Ul4" class="ui-widget ui-helper-clearfix">
+									<li class="ui-state-default ui-corner-all" title="Confirm"><span class="ui-icon ui-icon-check"></span></li>
+									<li class="ui-state-default ui-corner-all" title="Delete"><span class="ui-icon ui-icon-trash"></span></li>
+
+								</ul></td>
+											</tr>
+										</tbody>
+									</table>
+									
+										
+									
+								</div>
+						<ul class="pagination">
+							<li class="previous"><a href="#">&laquo;Previous</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li class="active">3</li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li class="next"><a href="#">Next &raquo;</a></li>
+						</ul></div>--%>
+			    </div>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+				
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+	</div>
+	<div class="clearfix"></div>
+	<div id="footer">
+		<div id="menu">
+			<a href="#" title="Home">Home</a>
+			<a href="#" title="Administration">Administration</a>
+			<a href="#" title="Settings">Settings</a>
+			<a href="#" title="Contact">Contact</a>
+		</div>
+		Copyright &copy; 2015 - C-Net Infotech Pvt. Ltd.
+	</div> 
+            <!-- /#sidebar -->
+            <!-- #footer -->
+          
+            <div id="fadeDiv" class="modalBackground" style="display: none;">
+            </div>
+            <div id="Messages" style="display: none;" class="popupnew">
+                <h2>
+                    Notifications
+                </h2>
+                <div class="msg MT10">
+                    <p>
+                        You have 0 Notifications
+                    </p>
+                </div>
+                <a id="fancybox-close" style="display: inline;" onclick="javascript:closeMessagesDiv();">
+                </a>
+            </div>
+       
+
+    
+    </form>
+</body>
+</html>

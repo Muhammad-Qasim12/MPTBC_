@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrinterMillwiseSummaryReport_123" targetNamespace="http://tempuri.org/PrinterMillwiseSummaryReport_123.xsd" xmlns:mstns="http://tempuri.org/PrinterMillwiseSummaryReport_123.xsd" xmlns="http://tempuri.org/PrinterMillwiseSummaryReport_123.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PrinterMillwiseSummaryReport_123" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="PrinterMillwiseSummaryReport_123" msprop:Generator_UserDSName="PrinterMillwiseSummaryReport_123">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NameofPress_V" msprop:Generator_ColumnVarNameInTable="columnNameofPress_V" msprop:Generator_ColumnPropNameInRow="NameofPress_V" msprop:Generator_ColumnPropNameInTable="NameofPress_VColumn" msprop:Generator_UserColumnName="NameofPress_V" type="xs:string" minOccurs="0" />
+              <xs:element name="AcYear" msprop:Generator_ColumnVarNameInTable="columnAcYear" msprop:Generator_ColumnPropNameInRow="AcYear" msprop:Generator_ColumnPropNameInTable="AcYearColumn" msprop:Generator_UserColumnName="AcYear" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceivedQty" msprop:Generator_ColumnVarNameInTable="columnReceivedQty" msprop:Generator_ColumnPropNameInRow="ReceivedQty" msprop:Generator_ColumnPropNameInTable="ReceivedQtyColumn" msprop:Generator_UserColumnName="ReceivedQty" type="xs:string" minOccurs="0" />
+              <xs:element name="sendqty" msprop:Generator_ColumnVarNameInTable="columnsendqty" msprop:Generator_ColumnPropNameInRow="sendqty" msprop:Generator_ColumnPropNameInTable="sendqtyColumn" msprop:Generator_UserColumnName="sendqty" type="xs:string" minOccurs="0" />
+              <xs:element name="Mill" msprop:Generator_ColumnVarNameInTable="columnMill" msprop:Generator_ColumnPropNameInRow="Mill" msprop:Generator_ColumnPropNameInTable="MillColumn" msprop:Generator_UserColumnName="Mill" type="xs:string" minOccurs="0" />
+              <xs:element name="Rmonth" msprop:Generator_ColumnVarNameInTable="columnRmonth" msprop:Generator_ColumnPropNameInRow="Rmonth" msprop:Generator_ColumnPropNameInTable="RmonthColumn" msprop:Generator_UserColumnName="Rmonth" type="xs:string" minOccurs="0" />
+              <xs:element name="Ryear" msprop:Generator_ColumnVarNameInTable="columnRyear" msprop:Generator_ColumnPropNameInRow="Ryear" msprop:Generator_ColumnPropNameInTable="RyearColumn" msprop:Generator_UserColumnName="Ryear" type="xs:string" minOccurs="0" />
+              <xs:element name="transtype" msprop:Generator_ColumnVarNameInTable="columntranstype" msprop:Generator_ColumnPropNameInRow="transtype" msprop:Generator_ColumnPropNameInTable="transtypeColumn" msprop:Generator_UserColumnName="transtype" type="xs:string" minOccurs="0" />
+              <xs:element name="NoOfReelsA" msprop:Generator_ColumnVarNameInTable="columnNoOfReelsA" msprop:Generator_ColumnPropNameInRow="NoOfReelsA" msprop:Generator_ColumnPropNameInTable="NoOfReelsAColumn" msprop:Generator_UserColumnName="NoOfReelsA" type="xs:string" minOccurs="0" />
+              <xs:element name="NoOfReelsP" msprop:Generator_ColumnVarNameInTable="columnNoOfReelsP" msprop:Generator_ColumnPropNameInRow="NoOfReelsP" msprop:Generator_ColumnPropNameInTable="NoOfReelsPColumn" msprop:Generator_UserColumnName="NoOfReelsP" type="xs:string" minOccurs="0" />
+              <xs:element name="TotSheetsA" msprop:Generator_ColumnVarNameInTable="columnTotSheetsA" msprop:Generator_ColumnPropNameInRow="TotSheetsA" msprop:Generator_ColumnPropNameInTable="TotSheetsAColumn" msprop:Generator_UserColumnName="TotSheetsA" type="xs:string" minOccurs="0" />
+              <xs:element name="TotSheetsP" msprop:Generator_ColumnVarNameInTable="columnTotSheetsP" msprop:Generator_ColumnPropNameInRow="TotSheetsP" msprop:Generator_ColumnPropNameInTable="TotSheetsPColumn" msprop:Generator_UserColumnName="TotSheetsP" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

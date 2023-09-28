@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{684FDEF1-308E-48D4-96A5-43B158624AC9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MPTBCBussinessLayer</RootNamespace>
+    <AssemblyName>MPTBCBussinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\Bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcademicB\ACB_PaperAllotmentDetails.cs" />
+    <Compile Include="AcademicB\ACB_PrinterPenalty.cs" />
+    <Compile Include="AcademicB\DemandCreation.cs" />
+    <Compile Include="AcademicB\GroupCreation.cs" />
+    <Compile Include="AcademicB\PrinterProof.cs" />
+    <Compile Include="AcademicB\PRIN_ChallanDetails.cs" />
+    <Compile Include="AcademicB\PRI_BillDetails.cs" />
+    <Compile Include="AcademicB\PRI_CategoryMaster.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AcademicB\SubTitle.cs" />
+    <Compile Include="AcademicB\TenderDetails.cs" />
+    <Compile Include="AcademicB\TitleMaster.cs" />
+    <Compile Include="AcademicB\WorkOrderDetails.cs" />
+    <Compile Include="Academic\CDProofVerification.cs" />
+    <Compile Include="Academic\DepartmentMaster.cs" />
+    <Compile Include="Academic\MapVerification.cs" />
+    <Compile Include="Academic\PrinterProof.cs" />
+    <Compile Include="Academic\PrintOrder.cs" />
+    <Compile Include="Academic\StatusMaster.cs" />
+    <Compile Include="Academic\TitleMaster.cs" />
+    <Compile Include="Academic\TitleWiseSchemeMapping.cs" />
+    <Compile Include="Admin\Blockmaster.cs" />
+    <Compile Include="Admin\ChangePassword.cs" />
+    <Compile Include="Admin\ClassMaster.cs" />
+    <Compile Include="Admin\DigitalSign.cs" />
+    <Compile Include="Admin\DistrictMaster.cs" />
+    <Compile Include="Admin\DivisionMaster.cs" />
+    <Compile Include="Admin\DPT_DepotMaster.cs" />
+    <Compile Include="Admin\FormMaster.cs" />
+    <Compile Include="Admin\Login.cs" />
+    <Compile Include="Admin\MediumMaster.cs" />
+    <Compile Include="Admin\ModuleMaster.cs" />
+    <Compile Include="Admin\RoleMaster.cs" />
+    <Compile Include="Admin\SubMenuForm.cs" />
+    <Compile Include="Admin\SubModuleMaster.cs" />
+    <Compile Include="Admin\UserMaster.cs" />
+    <Compile Include="AdvanceDetails.cs" />
+    <Compile Include="BookDitribute.cs" />
+    <Compile Include="BookReceivedDetails.cs" />
+    <Compile Include="BookReturn.cs" />
+    <Compile Include="BookSellerDemand.cs" />
+    <Compile Include="BooksellerMaster.cs" />
+    <Compile Include="Building\Building001_AvasSanchipt.cs" />
+    <Compile Include="Building\Building001_RPT001AvasMaster.cs" />
+    <Compile Include="Building\Building002_AvasVistrit.cs" />
+    <Compile Include="Building\Building004_GatividhiMaster.cs" />
+    <Compile Include="Building\Building005_AvantanAndRikt.cs" />
+    <Compile Include="Building\Building006_BillPayment.cs" />
+    <Compile Include="Building\Building008_Voucher.cs" />
+    <Compile Include="Building\Building009_WareHouseRenewal.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="CountingDetails.cs" />
+    <Compile Include="DemandTypeMaster.cs" />
+    <Compile Include="DepoBookDemand.cs" />
+    <Compile Include="DepoReport.cs" />
+    <Compile Include="DepoTenderEvaluation.cs" />
+    <Compile Include="DepoTenderInfo.cs" />
+    <Compile Include="Depo_MidSessionDND.cs" />
+    <Compile Include="Depo_VGINFO.cs" />
+    <Compile Include="DistributeStock.cs" />
+    <Compile Include="DistributionB\AdvancePayment.cs" />
+    <Compile Include="DistributionB\BillPayment.cs" />
+    <Compile Include="DistributionB\DepartmentMaster.cs" />
+    <Compile Include="DistributionB\InsuranceClaimSettlement.cs" />
+    <Compile Include="DistributionB\InsuranceCompany.cs" />
+    <Compile Include="DistributionB\DemandfromOthers.cs" />
+    <Compile Include="DistributionB\DistributionOrder.cs" />
+    <Compile Include="DistributionB\FreeBooksDistribution.cs" />
+    <Compile Include="DistributionB\InsuranceCompanyRegistration.cs" />
+    <Compile Include="DistributionB\InsuranceTenderInfo.cs" />
+    <Compile Include="DistributionB\InsuranceTechnicalBid.cs" />
+    <Compile Include="DistributionB\InsuranceTenderEvaluation.cs" />
+    <Compile Include="DistributionB\RDLC_Data.cs" />
+    <Compile Include="DistributionB\TechnicalBidCondition.cs" />
+    <Compile Include="DistributionB\ProcessBill.cs" />
+    <Compile Include="DistributionB\SpecialBookDemand.cs" />
+    <Compile Include="Distribution\DIS001_GroupCreation.cs" />
+    <Compile Include="Distribution\DIS_DemandEstimation.cs" />
+    <Compile Include="Dis_OpenMarketDemand.cs" />
+    <Compile Include="Dis_TentativeDemandHistory.cs" />
+    <Compile Include="DIS_VitranNirdesh.cs" />
+    <Compile Include="DPT_AgreementDtl.cs" />
+    <Compile Include="DPT__LOIDetails.cs" />
+    <Compile Include="InterDepoTransfer.cs" />
+    <Compile Include="LegCourtCase.cs" />
+    <Compile Include="Library\BillProcess.cs" />
+    <Compile Include="Library\DistributeBooks.cs" />
+    <Compile Include="Library\ReceivedBooksFromPrinter.cs" />
+    <Compile Include="MDDashboard.cs" />
+    <Compile Include="Paper\PPR_agreementDtl.cs" />
+    <Compile Include="Paper\PPR_BillGenerate.cs" />
+    <Compile Include="Paper\PPR_BillProcess.cs" />
+    <Compile Include="Paper\ppr_DeliveryChallan.cs" />
+    <Compile Include="Paper\PPR_InspectionByTBc.cs" />
+    <Compile Include="Paper\PPR_LabInspection.cs" />
+    <Compile Include="Paper\PPR_LabInspevaluation.cs" />
+    <Compile Include="Paper\ppr_LabMaster.cs" />
+    <Compile Include="Paper\PPR_LOIDetails.cs" />
+    <Compile Include="Paper\PPR_PaperDispatchDetails.cs" />
+    <Compile Include="Paper\PPR_PaperMaster.cs" />
+    <Compile Include="Paper\PPR_PaperOpeningBal.cs" />
+    <Compile Include="Paper\PPR_PaperRequirement.cs" />
+    <Compile Include="Paper\PPR_PaperRequirementDispatch.cs" />
+    <Compile Include="Paper\PPR_PaperTypeMaster.cs" />
+    <Compile Include="Paper\PPR_PBGInfo.cs" />
+    <Compile Include="Paper\PPR_RDLCData.cs" />
+    <Compile Include="Paper\PPR_StockAuditAndVerification.cs" />
+    <Compile Include="Paper\PPR_TechnicalBid.cs" />
+    <Compile Include="Paper\PPR_TechnicalBitCondition.cs" />
+    <Compile Include="Paper\PPR_TenderEvaluation.cs" />
+    <Compile Include="Paper\PPR_TenderInfo.cs" />
+    <Compile Include="Paper\PPR_VendorMaster.cs" />
+    <Compile Include="Paper\ppr_VoucharDetails.cs" />
+    <Compile Include="Paper\PPR_WorkPlan.cs" />
+    <Compile Include="PRI002.cs" />
+    <Compile Include="HeadMaster.cs" />
+    <Compile Include="ICommon.cs" />
+    <Compile Include="OtherBookDetails.cs" />
+    <Compile Include="otherStockOpeningDetails.cs" />
+    <Compile Include="PRI009.cs" />
+    <Compile Include="Printing\PRI003_RPTGroupAllotment.cs" />
+    <Compile Include="Printing\PRIN_GroupCreation.cs" />
+    <Compile Include="Printing\PRIN_PrinterBooksPrintingDetails.cs" />
+    <Compile Include="Printing\PRI_BillDetails.cs" />
+    <Compile Include="Printing\PRI_CategoryMaster.cs" />
+    <Compile Include="Printing\PRI_GroupCreation.cs" />
+    <Compile Include="Printing\PRI_Inspection.cs" />
+    <Compile Include="Printing\PRI_MachineCapacity.cs" />
+    <Compile Include="Printing\PRI_MachineMaster.cs" />
+    <Compile Include="Printing\PRI_PrinterPenalty.cs" />
+    <Compile Include="Printing\PRI_PrinterRegistration.cs" />
+    <Compile Include="Printing\PRI_ProjectManagement.cs" />
+    <Compile Include="Printing\PRI_TenderEvaluation.cs" />
+    <Compile Include="PRIN_ChallanDetails.cs" />
+    <Compile Include="PRI_PaperAllotment.cs" />
+    <Compile Include="PRI_PaperBillInterestonPaper.cs" />
+    <Compile Include="PRI_PrinterRenewal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockMaster.cs" />
+    <Compile Include="Store\STR_CategoryMaster.cs" />
+    <Compile Include="Store\STR_DamageReturn.cs" />
+    <Compile Include="Store\STR_IndentGeneration.cs" />
+    <Compile Include="Store\STR_ItemMaster.cs" />
+    <Compile Include="Store\STR_OpeningStock.cs" />
+    <Compile Include="Store\STR_PurchaseOrder.cs" />
+    <Compile Include="Store\STR_RptStockAvailability.cs" />
+    <Compile Include="Store\STR_SpecificationMaster.cs" />
+    <Compile Include="Store\STR_VendorMaster.cs" />
+    <Compile Include="TenderDetails.cs" />
+    <Compile Include="TextbookDemand.cs" />
+    <Compile Include="TransportDetails.cs" />
+    <Compile Include="TransportMaster.cs" />
+    <Compile Include="Vehicle\Vehicle001_RPT001Vehicle.cs" />
+    <Compile Include="Vehicle\Vehicle001_VehicleMaster.cs" />
+    <Compile Include="Vehicle\Vehicle002_FuleAndMantinance.cs" />
+    <Compile Include="Vehicle\Vehicle003_Tender.cs" />
+    <Compile Include="Vehicle\Vehicle005_BillProcess.cs" />
+    <Compile Include="Vehicle\Vehicle006_Anudan.cs" />
+    <Compile Include="Vehicle\Vehicle007_Insurance.cs" />
+    <Compile Include="WareHouseMaster.cs" />
+    <Compile Include="WorkOrderDetails.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MPTBCDataLayer\MPTBCDataLayer.csproj">
+      <Project>{720074AB-CF40-401E-9EC8-3AFA3173ECFF}</Project>
+      <Name>MPTBCDataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PRI009.cs.exclude" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

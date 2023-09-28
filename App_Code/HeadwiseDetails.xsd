@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HeadwiseDetails" targetNamespace="http://tempuri.org/HeadwiseDetails.xsd" xmlns:mstns="http://tempuri.org/HeadwiseDetails.xsd" xmlns="http://tempuri.org/HeadwiseDetails.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HeadwiseDetails" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="HeadwiseDetails" msprop:Generator_UserDSName="HeadwiseDetails">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransDate" msprop:Generator_ColumnVarNameInTable="columnTransDate" msprop:Generator_ColumnPropNameInRow="TransDate" msprop:Generator_ColumnPropNameInTable="TransDateColumn" msprop:Generator_UserColumnName="TransDate" type="xs:string" minOccurs="0" />
+              <xs:element name="TransType" msprop:Generator_ColumnVarNameInTable="columnTransType" msprop:Generator_ColumnPropNameInRow="TransType" msprop:Generator_ColumnPropNameInTable="TransTypeColumn" msprop:Generator_UserColumnName="TransType" type="xs:string" minOccurs="0" />
+              <xs:element name="Wages_210201" msprop:Generator_ColumnVarNameInTable="columnWages_210201" msprop:Generator_ColumnPropNameInRow="Wages_210201" msprop:Generator_ColumnPropNameInTable="Wages_210201Column" msprop:Generator_UserColumnName="Wages_210201" type="xs:string" minOccurs="0" />
+              <xs:element name="Trav_220202" msprop:Generator_ColumnVarNameInTable="columnTrav_220202" msprop:Generator_ColumnPropNameInRow="Trav_220202" msprop:Generator_ColumnPropNameInTable="Trav_220202Column" msprop:Generator_UserColumnName="Trav_220202" type="xs:string" minOccurs="0" />
+              <xs:element name="Tele_220302" msprop:Generator_ColumnVarNameInTable="columnTele_220302" msprop:Generator_ColumnPropNameInRow="Tele_220302" msprop:Generator_ColumnPropNameInTable="Tele_220302Column" msprop:Generator_UserColumnName="Tele_220302" type="xs:string" minOccurs="0" />
+              <xs:element name="Post_220402" msprop:Generator_ColumnVarNameInTable="columnPost_220402" msprop:Generator_ColumnPropNameInRow="Post_220402" msprop:Generator_ColumnPropNameInTable="Post_220402Column" msprop:Generator_UserColumnName="Post_220402" type="xs:string" minOccurs="0" />
+              <xs:element name="Advertise_220502" msprop:Generator_ColumnVarNameInTable="columnAdvertise_220502" msprop:Generator_ColumnPropNameInRow="Advertise_220502" msprop:Generator_ColumnPropNameInTable="Advertise_220502Column" msprop:Generator_UserColumnName="Advertise_220502" type="xs:string" minOccurs="0" />
+              <xs:element name="Rent_250104" msprop:Generator_ColumnVarNameInTable="columnRent_250104" msprop:Generator_ColumnPropNameInRow="Rent_250104" msprop:Generator_ColumnPropNameInTable="Rent_250104Column" msprop:Generator_UserColumnName="Rent_250104" type="xs:string" minOccurs="0" />
+              <xs:element name="Water_220702" msprop:Generator_ColumnVarNameInTable="columnWater_220702" msprop:Generator_ColumnPropNameInRow="Water_220702" msprop:Generator_ColumnPropNameInTable="Water_220702Column" msprop:Generator_UserColumnName="Water_220702" type="xs:string" minOccurs="0" />
+              <xs:element name="Sta_220802" msprop:Generator_ColumnVarNameInTable="columnSta_220802" msprop:Generator_ColumnPropNameInRow="Sta_220802" msprop:Generator_ColumnPropNameInTable="Sta_220802Column" msprop:Generator_UserColumnName="Sta_220802" type="xs:string" minOccurs="0" />
+              <xs:element name="Computer_221502" msprop:Generator_ColumnVarNameInTable="columnComputer_221502" msprop:Generator_ColumnPropNameInRow="Computer_221502" msprop:Generator_ColumnPropNameInTable="Computer_221502Column" msprop:Generator_UserColumnName="Computer_221502" type="xs:string" minOccurs="0" />
+              <xs:element name="Maint_221702" msprop:Generator_ColumnVarNameInTable="columnMaint_221702" msprop:Generator_ColumnPropNameInRow="Maint_221702" msprop:Generator_ColumnPropNameInTable="Maint_221702Column" msprop:Generator_UserColumnName="Maint_221702" type="xs:string" minOccurs="0" />
+              <xs:element name="Refresh_221802" msprop:Generator_ColumnVarNameInTable="columnRefresh_221802" msprop:Generator_ColumnPropNameInRow="Refresh_221802" msprop:Generator_ColumnPropNameInTable="Refresh_221802Column" msprop:Generator_UserColumnName="Refresh_221802" type="xs:string" minOccurs="0" />
+              <xs:element name="Fax_220304" msprop:Generator_ColumnVarNameInTable="columnFax_220304" msprop:Generator_ColumnPropNameInRow="Fax_220304" msprop:Generator_ColumnPropNameInTable="Fax_220304Column" msprop:Generator_UserColumnName="Fax_220304" type="xs:string" minOccurs="0" />
+              <xs:element name="Newpap_220602" msprop:Generator_ColumnVarNameInTable="columnNewpap_220602" msprop:Generator_ColumnPropNameInRow="Newpap_220602" msprop:Generator_ColumnPropNameInTable="Newpap_220602Column" msprop:Generator_UserColumnName="Newpap_220602" type="xs:string" minOccurs="0" />
+              <xs:element name="Other_221902" msprop:Generator_ColumnVarNameInTable="columnOther_221902" msprop:Generator_ColumnPropNameInRow="Other_221902" msprop:Generator_ColumnPropNameInTable="Other_221902Column" msprop:Generator_UserColumnName="Other_221902" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalExp" msprop:Generator_ColumnVarNameInTable="columnTotalExp" msprop:Generator_ColumnPropNameInRow="TotalExp" msprop:Generator_ColumnPropNameInTable="TotalExpColumn" msprop:Generator_UserColumnName="TotalExp" type="xs:string" minOccurs="0" />
+              <xs:element name="Transport_221502" msprop:Generator_ColumnVarNameInTable="columnTransport_221502" msprop:Generator_ColumnPropNameInRow="Transport_221502" msprop:Generator_ColumnPropNameInTable="Transport_221502Column" msprop:Generator_UserColumnName="Transport_221502" type="xs:string" minOccurs="0" />
+              <xs:element name="Unload_250103" msprop:Generator_ColumnVarNameInTable="columnUnload_250103" msprop:Generator_ColumnPropNameInRow="Unload_250103" msprop:Generator_ColumnPropNameInTable="Unload_250103Column" msprop:Generator_UserColumnName="Unload_250103" type="xs:string" minOccurs="0" />
+              <xs:element name="VoucherNo" msprop:Generator_ColumnVarNameInTable="columnVoucherNo" msprop:Generator_ColumnPropNameInRow="VoucherNo" msprop:Generator_ColumnPropNameInTable="VoucherNoColumn" msprop:Generator_UserColumnName="VoucherNo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

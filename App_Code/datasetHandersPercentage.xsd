@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="datasetHandersPercentage" targetNamespace="http://tempuri.org/datasetHandersPercentage.xsd" xmlns:mstns="http://tempuri.org/datasetHandersPercentage.xsd" xmlns="http://tempuri.org/datasetHandersPercentage.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="datasetHandersPercentage" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="datasetHandersPercentage" msprop:Generator_UserDSName="datasetHandersPercentage">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BookType" msprop:Generator_ColumnVarNameInTable="columnBookType" msprop:Generator_ColumnPropNameInRow="BookType" msprop:Generator_ColumnPropNameInTable="BookTypeColumn" msprop:Generator_UserColumnName="BookType" type="xs:string" minOccurs="0" />
+              <xs:element name="Hund_ReDate" msprop:Generator_ColumnVarNameInTable="columnHund_ReDate" msprop:Generator_ColumnPropNameInRow="Hund_ReDate" msprop:Generator_ColumnPropNameInTable="Hund_ReDateColumn" msprop:Generator_UserColumnName="Hund_ReDate" type="xs:string" minOccurs="0" />
+              <xs:element name="GRNo_V" msprop:Generator_ColumnVarNameInTable="columnGRNo_V" msprop:Generator_ColumnPropNameInRow="GRNo_V" msprop:Generator_ColumnPropNameInTable="GRNo_VColumn" msprop:Generator_UserColumnName="GRNo_V" type="xs:string" minOccurs="0" />
+              <xs:element name="GRDate_D" msprop:Generator_ColumnVarNameInTable="columnGRDate_D" msprop:Generator_ColumnPropNameInRow="GRDate_D" msprop:Generator_ColumnPropNameInTable="GRDate_DColumn" msprop:Generator_UserColumnName="GRDate_D" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="TitleHindi_V" msprop:Generator_ColumnVarNameInTable="columnTitleHindi_V" msprop:Generator_ColumnPropNameInRow="TitleHindi_V" msprop:Generator_ColumnPropNameInTable="TitleHindi_VColumn" msprop:Generator_UserColumnName="TitleHindi_V" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalBook" msprop:Generator_ColumnVarNameInTable="columnTotalBook" msprop:Generator_ColumnPropNameInRow="TotalBook" msprop:Generator_ColumnPropNameInTable="TotalBookColumn" msprop:Generator_UserColumnName="TotalBook" type="xs:string" minOccurs="0" />
+              <xs:element name="NoOfBookCounted_I" msprop:Generator_ColumnVarNameInTable="columnNoOfBookCounted_I" msprop:Generator_ColumnPropNameInRow="NoOfBookCounted_I" msprop:Generator_ColumnPropNameInTable="NoOfBookCounted_IColumn" msprop:Generator_UserColumnName="NoOfBookCounted_I" type="xs:string" minOccurs="0" />
+              <xs:element name="NameofPress_V" msprop:Generator_ColumnVarNameInTable="columnNameofPress_V" msprop:Generator_ColumnPropNameInRow="NameofPress_V" msprop:Generator_ColumnPropNameInTable="NameofPress_VColumn" msprop:Generator_UserColumnName="NameofPress_V" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalNoOfReceiveBundle_I" msprop:Generator_ColumnVarNameInTable="columnTotalNoOfReceiveBundle_I" msprop:Generator_ColumnPropNameInRow="TotalNoOfReceiveBundle_I" msprop:Generator_ColumnPropNameInTable="TotalNoOfReceiveBundle_IColumn" msprop:Generator_UserColumnName="TotalNoOfReceiveBundle_I" type="xs:string" minOccurs="0" />
+              <xs:element name="Receiveddate_D" msprop:Generator_ColumnVarNameInTable="columnReceiveddate_D" msprop:Generator_ColumnPropNameInRow="Receiveddate_D" msprop:Generator_ColumnPropNameInTable="Receiveddate_DColumn" msprop:Generator_UserColumnName="Receiveddate_D" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalNotuseful_N" msprop:Generator_ColumnVarNameInTable="columnTotalNotuseful_N" msprop:Generator_ColumnPropNameInRow="TotalNotuseful_N" msprop:Generator_ColumnPropNameInTable="TotalNotuseful_NColumn" msprop:Generator_UserColumnName="TotalNotuseful_N" type="xs:string" minOccurs="0" />
+              <xs:element name="ChallanNo_V" msprop:Generator_ColumnVarNameInTable="columnChallanNo_V" msprop:Generator_ColumnPropNameInRow="ChallanNo_V" msprop:Generator_ColumnPropNameInTable="ChallanNo_VColumn" msprop:Generator_UserColumnName="ChallanNo_V" type="xs:string" minOccurs="0" />
+              <xs:element name="ChallanDate" msprop:Generator_ColumnVarNameInTable="columnChallanDate" msprop:Generator_ColumnPropNameInRow="ChallanDate" msprop:Generator_ColumnPropNameInTable="ChallanDateColumn" msprop:Generator_UserColumnName="ChallanDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Date_D" msprop:Generator_ColumnVarNameInTable="columnDate_D" msprop:Generator_ColumnPropNameInRow="Date_D" msprop:Generator_ColumnPropNameInTable="Date_DColumn" msprop:Generator_UserColumnName="Date_D" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks_V" msprop:Generator_ColumnVarNameInTable="columnRemarks_V" msprop:Generator_ColumnPropNameInRow="Remarks_V" msprop:Generator_ColumnPropNameInTable="Remarks_VColumn" msprop:Generator_UserColumnName="Remarks_V" type="xs:string" minOccurs="0" />
+              <xs:element name="TitleID_I" msprop:Generator_ColumnVarNameInTable="columnTitleID_I" msprop:Generator_ColumnPropNameInRow="TitleID_I" msprop:Generator_ColumnPropNameInTable="TitleID_IColumn" msprop:Generator_UserColumnName="TitleID_I" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceivedBookNo_I" msprop:Generator_ColumnVarNameInTable="columnReceivedBookNo_I" msprop:Generator_ColumnPropNameInRow="ReceivedBookNo_I" msprop:Generator_ColumnPropNameInTable="ReceivedBookNo_IColumn" msprop:Generator_UserColumnName="ReceivedBookNo_I" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalNotuseful_N1" msprop:Generator_ColumnVarNameInTable="columnTotalNotuseful_N1" msprop:Generator_ColumnPropNameInRow="TotalNotuseful_N1" msprop:Generator_ColumnPropNameInTable="TotalNotuseful_N1Column" msprop:Generator_UserColumnName="TotalNotuseful_N1" type="xs:string" minOccurs="0" />
+              <xs:element name="DepoName_V" msprop:Generator_ColumnVarNameInTable="columnDepoName_V" msprop:Generator_ColumnPropNameInRow="DepoName_V" msprop:Generator_ColumnPropNameInTable="DepoName_VColumn" msprop:Generator_UserColumnName="DepoName_V" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

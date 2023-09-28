@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtawatan" targetNamespace="http://tempuri.org/dtawatan.xsd" xmlns:mstns="http://tempuri.org/dtawatan.xsd" xmlns="http://tempuri.org/dtawatan.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtawatan" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dtawatan" msprop:Generator_UserDSName="dtawatan">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NamePrinters" msprop:Generator_ColumnVarNameInTable="columnNamePrinters" msprop:Generator_ColumnPropNameInRow="NamePrinters" msprop:Generator_ColumnPropNameInTable="NamePrintersColumn" msprop:Generator_UserColumnName="NamePrinters" type="xs:string" minOccurs="0" />
+              <xs:element name="SUBJECT" msprop:Generator_ColumnVarNameInTable="columnSUBJECT" msprop:Generator_ColumnPropNameInRow="SUBJECT" msprop:Generator_ColumnPropNameInTable="SUBJECTColumn" msprop:Generator_UserColumnName="SUBJECT" type="xs:string" minOccurs="0" />
+              <xs:element name="bankguarent" msprop:Generator_ColumnVarNameInTable="columnbankguarent" msprop:Generator_ColumnPropNameInRow="bankguarent" msprop:Generator_ColumnPropNameInTable="bankguarentColumn" msprop:Generator_UserColumnName="bankguarent" type="xs:string" minOccurs="0" />
+              <xs:element name="TENDERTOTAL" msprop:Generator_ColumnVarNameInTable="columnTENDERTOTAL" msprop:Generator_ColumnPropNameInRow="TENDERTOTAL" msprop:Generator_ColumnPropNameInTable="TENDERTOTALColumn" msprop:Generator_UserColumnName="TENDERTOTAL" type="xs:string" minOccurs="0" />
+              <xs:element name="VITRANTOT" msprop:Generator_ColumnVarNameInTable="columnVITRANTOT" msprop:Generator_ColumnPropNameInRow="VITRANTOT" msprop:Generator_ColumnPropNameInTable="VITRANTOTColumn" msprop:Generator_UserColumnName="VITRANTOT" type="xs:string" minOccurs="0" />
+              <xs:element name="QtyAsPerTender" msprop:Generator_ColumnVarNameInTable="columnQtyAsPerTender" msprop:Generator_ColumnPropNameInRow="QtyAsPerTender" msprop:Generator_ColumnPropNameInTable="QtyAsPerTenderColumn" msprop:Generator_UserColumnName="QtyAsPerTender" type="xs:string" minOccurs="0" />
+              <xs:element name="AGRIMENTdt" msprop:Generator_ColumnVarNameInTable="columnAGRIMENTdt" msprop:Generator_ColumnPropNameInRow="AGRIMENTdt" msprop:Generator_ColumnPropNameInTable="AGRIMENTdtColumn" msprop:Generator_UserColumnName="AGRIMENTdt" type="xs:string" minOccurs="0" />
+              <xs:element name="Pandudt" msprop:Generator_ColumnVarNameInTable="columnPandudt" msprop:Generator_ColumnPropNameInRow="Pandudt" msprop:Generator_ColumnPropNameInTable="PandudtColumn" msprop:Generator_UserColumnName="Pandudt" type="xs:string" minOccurs="0" />
+              <xs:element name="PROOFRECEdt" msprop:Generator_ColumnVarNameInTable="columnPROOFRECEdt" msprop:Generator_ColumnPropNameInRow="PROOFRECEdt" msprop:Generator_ColumnPropNameInTable="PROOFRECEdtColumn" msprop:Generator_UserColumnName="PROOFRECEdt" type="xs:string" minOccurs="0" />
+              <xs:element name="Printorderdt" msprop:Generator_ColumnVarNameInTable="columnPrintorderdt" msprop:Generator_ColumnPropNameInRow="Printorderdt" msprop:Generator_ColumnPropNameInTable="PrintorderdtColumn" msprop:Generator_UserColumnName="Printorderdt" type="xs:string" minOccurs="0" />
+              <xs:element name="PaperIssue" msprop:Generator_ColumnVarNameInTable="columnPaperIssue" msprop:Generator_ColumnPropNameInRow="PaperIssue" msprop:Generator_ColumnPropNameInTable="PaperIssueColumn" msprop:Generator_UserColumnName="PaperIssue" type="xs:string" minOccurs="0" />
+              <xs:element name="CPDIssue" msprop:Generator_ColumnVarNameInTable="columnCPDIssue" msprop:Generator_ColumnPropNameInRow="CPDIssue" msprop:Generator_ColumnPropNameInTable="CPDIssueColumn" msprop:Generator_UserColumnName="CPDIssue" type="xs:string" minOccurs="0" />
+              <xs:element name="RemainPaper" msprop:Generator_ColumnVarNameInTable="columnRemainPaper" msprop:Generator_ColumnPropNameInRow="RemainPaper" msprop:Generator_ColumnPropNameInTable="RemainPaperColumn" msprop:Generator_UserColumnName="RemainPaper" type="xs:string" minOccurs="0" />
+              <xs:element name="bankguarentaddition" msprop:Generator_ColumnVarNameInTable="columnbankguarentaddition" msprop:Generator_ColumnPropNameInRow="bankguarentaddition" msprop:Generator_ColumnPropNameInTable="bankguarentadditionColumn" msprop:Generator_UserColumnName="bankguarentaddition" type="xs:string" minOccurs="0" />
+              <xs:element name="total_rec" msprop:Generator_ColumnVarNameInTable="columntotal_rec" msprop:Generator_ColumnPropNameInRow="total_rec" msprop:Generator_ColumnPropNameInTable="total_recColumn" msprop:Generator_UserColumnName="total_rec" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

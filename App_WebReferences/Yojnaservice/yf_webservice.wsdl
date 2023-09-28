@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScheme">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsOnline" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdby" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSchemeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSchemeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetcheckBook_Details">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsOnline" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="BranchId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParentBranchId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetcheckBook_DetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetcheckBook_DetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_VoucherTemplate_Details">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsOnline" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Schemeid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="WithLedgers" type="s:unsignedByte" />
+            <s:element minOccurs="0" maxOccurs="1" name="branchid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_VoucherTemplate_DetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_VoucherTemplate_DetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillLedger_Bank">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsOnline" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Schemeid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vty" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="branchid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillLedger_BankResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillLedger_BankResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAll_ChequeNO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsOnline" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="BranchId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SchemeId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAll_ChequeNOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAll_ChequeNOResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillMainGrid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsOnline" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="schemeid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vouchertemplate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="branchid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParentBranchId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillMainGridResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillMainGridResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllAgencies">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsOnline" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyTypeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyFilterType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyTypeIdNotRequired" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProcedureFor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllAgenciesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllAgenciesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveNewAgency">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyTypeId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ColumnValXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveNewAgencyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveNewAgencyResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Emp_Details">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_Emp_DetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Emp_DetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SavePrintingBillPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Newid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BillRefNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PrinterId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BillDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BillXML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="employeeId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdon" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ForwardEmpId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ForwardDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BankDXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PrintingXML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PaperXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PayType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SavePrintingBillPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SavePrintingBillPaymentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ApplicationSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Financial_StartDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Financial_EndDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ApplicationSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ApplicationSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllBranches">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyTypeId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllBranchesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllBranchesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRoles">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetRolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRolesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FrmRoleId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveUserResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserValidation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FrmRoleId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserValidationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckUserValidationResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Printers_Registration_Or_Renewal_Fees">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agencyid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PaymentType" type="s:unsignedByte" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDetailxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Instrumentxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="receiptamount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdbyempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deduction_detailsxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Printers_Registration_Or_Renewal_FeesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Printers_Registration_Or_Renewal_FeesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SAVE_Printers_EMD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agencyid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PaymentType" type="s:unsignedByte" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDetailxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Instrumentxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="receiptamount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdbyempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deduction_detailsxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SAVE_Printers_EMDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SAVE_Printers_EMDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SAVE_Printer_Paper_Security">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agencyid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PaymentType" type="s:unsignedByte" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDetailxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Instrumentxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="receiptamount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdbyempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deduction_detailsxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SAVE_Printer_Paper_SecurityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SAVE_Printer_Paper_SecurityResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Building_Rent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreatedEmpId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SupplierId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uploadBill" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Vat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceTax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GrossAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TDS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Deduction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WithHeldAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApprovalAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Payeeid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdjustAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BillXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actiondate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdvanceVoucherXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Building_RentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Save_Building_RentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_general_Bill_Advance_VoucherDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PayeeId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_general_Bill_Advance_VoucherDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_general_Bill_Advance_VoucherDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Vehicle_Section_And_Fuel_Voucher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreatedEmpId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SupplierId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uploadBill" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Vat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceTax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GrossAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TDS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Deduction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WithHeldAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApprovalAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Payeeid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdjustAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BillXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actiondate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdvanceVoucherXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Vehicle_Section_And_Fuel_VoucherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Save_Vehicle_Section_And_Fuel_VoucherResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Vehicle_Insurance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreatedEmpId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SupplierId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uploadBill" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Vat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceTax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GrossAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TDS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Deduction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WithHeldAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApprovalAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Payeeid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdjustAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BillXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actiondate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdvanceVoucherXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Vehicle_InsuranceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Save_Vehicle_InsuranceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Store_Info">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreatedEmpId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SupplierId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uploadBill" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Vat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceTax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GrossAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TDS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Deduction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WithHeldAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApprovalAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Payeeid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdjustAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BillXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actiondate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdvanceVoucherXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Store_InfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Save_Store_InfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Vehicle_Maintenance_Information">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreatedEmpId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SupplierId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uploadBill" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Vat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceTax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GrossAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TDS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Deduction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WithHeldAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApprovalAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Payeeid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdjustAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BillXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actiondate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdvanceVoucherXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Vehicle_Maintenance_InformationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Save_Vehicle_Maintenance_InformationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SAVE_Bill_Process_And_Received_Payment_information">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agencyid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PaymentType" type="s:unsignedByte" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDetailxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Instrumentxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="receiptamount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdbyempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deduction_detailsxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SAVE_Bill_Process_And_Received_Payment_informationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SAVE_Bill_Process_And_Received_Payment_informationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Free_Book_Demand_From_RSK">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agencyid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PaymentType" type="s:unsignedByte" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDetailxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Instrumentxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="receiptamount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdbyempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deduction_detailsxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Free_Book_Demand_From_RSKResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Save_Free_Book_Demand_From_RSKResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Insurance_Claim_Info">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agencyid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PaymentType" type="s:unsignedByte" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDetailxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Instrumentxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="receiptamount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdbyempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deduction_detailsxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Insurance_Claim_InfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Save_Insurance_Claim_InfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Information_From_Map_Verification_Agency">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreatedEmpId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SupplierId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uploadBill" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Vat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceTax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GrossAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TDS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Deduction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WithHeldAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApprovalAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Payeeid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdjustAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BillXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actiondate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdvanceVoucherXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Information_From_Map_Verification_AgencyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Save_Information_From_Map_Verification_AgencyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SAVE_Security_Deposit_others">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agencyid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PaymentType" type="s:unsignedByte" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiptDetailxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Instrumentxml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="receiptamount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdbyempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deduction_detailsxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SAVE_Security_Deposit_othersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SAVE_Security_Deposit_othersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Security_Deposit_Return">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreatedEmpId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SupplierId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uploadBill" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Vat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceTax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GrossAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TDS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Deduction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WithHeldAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApprovalAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Payeeid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdjustAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BillXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="forwardedempid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actiondate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Branchid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Createdby" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdvanceVoucherXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Save_Security_Deposit_ReturnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Save_Security_Deposit_ReturnResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSchemeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetScheme" />
+  </wsdl:message>
+  <wsdl:message name="GetSchemeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetcheckBook_DetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetcheckBook_Details" />
+  </wsdl:message>
+  <wsdl:message name="GetcheckBook_DetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetcheckBook_DetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_VoucherTemplate_DetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_VoucherTemplate_Details" />
+  </wsdl:message>
+  <wsdl:message name="Get_VoucherTemplate_DetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_VoucherTemplate_DetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillLedger_BankSoapIn">
+    <wsdl:part name="parameters" element="tns:FillLedger_Bank" />
+  </wsdl:message>
+  <wsdl:message name="FillLedger_BankSoapOut">
+    <wsdl:part name="parameters" element="tns:FillLedger_BankResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAll_ChequeNOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAll_ChequeNO" />
+  </wsdl:message>
+  <wsdl:message name="GetAll_ChequeNOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAll_ChequeNOResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillMainGridSoapIn">
+    <wsdl:part name="parameters" element="tns:FillMainGrid" />
+  </wsdl:message>
+  <wsdl:message name="FillMainGridSoapOut">
+    <wsdl:part name="parameters" element="tns:FillMainGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllAgenciesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllAgencies" />
+  </wsdl:message>
+  <wsdl:message name="GetAllAgenciesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllAgenciesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveNewAgencySoapIn">
+    <wsdl:part name="parameters" element="tns:SaveNewAgency" />
+  </wsdl:message>
+  <wsdl:message name="SaveNewAgencySoapOut">
+    <wsdl:part name="parameters" element="tns:SaveNewAgencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Emp_DetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Emp_Details" />
+  </wsdl:message>
+  <wsdl:message name="Get_Emp_DetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Emp_DetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SavePrintingBillPaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:SavePrintingBillPayment" />
+  </wsdl:message>
+  <wsdl:message name="SavePrintingBillPaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:SavePrintingBillPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ApplicationSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ApplicationSession" />
+  </wsdl:message>
+  <wsdl:message name="Get_ApplicationSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ApplicationSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllBranchesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllBranches" />
+  </wsdl:message>
+  <wsdl:message name="GetAllBranchesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllBranchesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRolesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRoles" />
+  </wsdl:message>
+  <wsdl:message name="GetRolesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveUserSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveUser" />
+  </wsdl:message>
+  <wsdl:message name="SaveUserSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserValidationSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckUserValidation" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserValidationSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckUserValidationResponse" />
+  </wsdl:message>
+  <wsdl:message name="Printers_Registration_Or_Renewal_FeesSoapIn">
+    <wsdl:part name="parameters" element="tns:Printers_Registration_Or_Renewal_Fees" />
+  </wsdl:message>
+  <wsdl:message name="Printers_Registration_Or_Renewal_FeesSoapOut">
+    <wsdl:part name="parameters" element="tns:Printers_Registration_Or_Renewal_FeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SAVE_Printers_EMDSoapIn">
+    <wsdl:part name="parameters" element="tns:SAVE_Printers_EMD" />
+  </wsdl:message>
+  <wsdl:message name="SAVE_Printers_EMDSoapOut">
+    <wsdl:part name="parameters" element="tns:SAVE_Printers_EMDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SAVE_Printer_Paper_SecuritySoapIn">
+    <wsdl:part name="parameters" element="tns:SAVE_Printer_Paper_Security" />
+  </wsdl:message>
+  <wsdl:message name="SAVE_Printer_Paper_SecuritySoapOut">
+    <wsdl:part name="parameters" element="tns:SAVE_Printer_Paper_SecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="Save_Building_RentSoapIn">
+    <wsdl:part name="parameters" element="tns:Save_Building_Rent" />
+  </wsdl:message>
+  <wsdl:message name="Save_Building_RentSoapOut">
+    <wsdl:part name="parameters" element="tns:Save_Building_RentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_general_Bill_Advance_VoucherDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_general_Bill_Advance_VoucherDetails" />
+  </wsdl:message>
+  <wsdl:message name="Get_general_Bill_Advance_VoucherDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_general_Bill_Advance_VoucherDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Save_Vehicle_Section_And_Fuel_VoucherSoapIn">
+    <wsdl:part name="parameters" element="tns:Save_Vehicle_Section_And_Fuel_Voucher" />
+  </wsdl:message>
+  <wsdl:message name="Save_Vehicle_Section_And_Fuel_VoucherSoapOut">
+    <wsdl:part name="parameters" element="tns:Save_Vehicle_Section_And_Fuel_VoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="Save_Vehicle_InsuranceSoapIn">
+    <wsdl:part name="parameters" element="tns:Save_Vehicle_Insurance" />
+  </wsdl:message>
+  <wsdl:message name="Save_Vehicle_InsuranceSoapOut">
+    <wsdl:part name="parameters" element="tns:Save_Vehicle_InsuranceResponse" />
+  </wsdl:message>
+  <wsdl:message name="Save_Store_InfoSoapIn">
+    <wsdl:part name="parameters" element="tns:Save_Store_Info" />
+  </wsdl:message>
+  <wsdl:message name="Save_Store_InfoSoapOut">
+    <wsdl:part name="parameters" element="tns:Save_Store_InfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Save_Vehicle_Maintenance_InformationSoapIn">
+    <wsdl:part name="parameters" element="tns:Save_Vehicle_Maintenance_Information" />
+  </wsdl:message>
+  <wsdl:message name="Save_Vehicle_Maintenance_InformationSoapOut">
+    <wsdl:part name="parameters" element="tns:Save_Vehicle_Maintenance_InformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="SAVE_Bill_Process_And_Received_Payment_informationSoapIn">
+    <wsdl:part name="parameters" element="tns:SAVE_Bill_Process_And_Received_Payment_information" />
+  </wsdl:message>
+  <wsdl:message name="SAVE_Bill_Process_And_Received_Payment_informationSoapOut">
+    <wsdl:part name="parameters" element="tns:SAVE_Bill_Process_And_Received_Payment_informationResponse" />
+  </wsdl:message>
+  <wsdl:message name="Save_Free_Book_Demand_From_RSKSoapIn">
+    <wsdl:part name="parameters" element="tns:Save_Free_Book_Demand_From_RSK" />
+  </wsdl:message>
+  <wsdl:message name="Save_Free_Book_Demand_From_RSKSoapOut">
+    <wsdl:part name="parameters" element="tns:Save_Free_Book_Demand_From_RSKResponse" />
+  </wsdl:message>
+  <wsdl:message name="Save_Insurance_Claim_InfoSoapIn">
+    <wsdl:part name="parameters" element="tns:Save_Insurance_Claim_Info" />
+  </wsdl:message>
+  <wsdl:message name="Save_Insurance_Claim_InfoSoapOut">
+    <wsdl:part name="parameters" element="tns:Save_Insurance_Claim_InfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Save_Information_From_Map_Verification_AgencySoapIn">
+    <wsdl:part name="parameters" element="tns:Save_Information_From_Map_Verification_Agency" />
+  </wsdl:message>
+  <wsdl:message name="Save_Information_From_Map_Verification_AgencySoapOut">
+    <wsdl:part name="parameters" element="tns:Save_Information_From_Map_Verification_AgencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SAVE_Security_Deposit_othersSoapIn">
+    <wsdl:part name="parameters" element="tns:SAVE_Security_Deposit_others" />
+  </wsdl:message>
+  <wsdl:message name="SAVE_Security_Deposit_othersSoapOut">
+    <wsdl:part name="parameters" element="tns:SAVE_Security_Deposit_othersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Save_Security_Deposit_ReturnSoapIn">
+    <wsdl:part name="parameters" element="tns:Save_Security_Deposit_Return" />
+  </wsdl:message>
+  <wsdl:message name="Save_Security_Deposit_ReturnSoapOut">
+    <wsdl:part name="parameters" element="tns:Save_Security_Deposit_ReturnResponse" />
+  </wsdl:message>
+  <wsdl:portType name="YF_WebServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScheme">
+      <wsdl:input message="tns:GetSchemeSoapIn" />
+      <wsdl:output message="tns:GetSchemeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetcheckBook_Details">
+      <wsdl:input message="tns:GetcheckBook_DetailsSoapIn" />
+      <wsdl:output message="tns:GetcheckBook_DetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_VoucherTemplate_Details">
+      <wsdl:input message="tns:Get_VoucherTemplate_DetailsSoapIn" />
+      <wsdl:output message="tns:Get_VoucherTemplate_DetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillLedger_Bank">
+      <wsdl:input message="tns:FillLedger_BankSoapIn" />
+      <wsdl:output message="tns:FillLedger_BankSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAll_ChequeNO">
+      <wsdl:input message="tns:GetAll_ChequeNOSoapIn" />
+      <wsdl:output message="tns:GetAll_ChequeNOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillMainGrid">
+      <wsdl:input message="tns:FillMainGridSoapIn" />
+      <wsdl:output message="tns:FillMainGridSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAgencies">
+      <wsdl:input message="tns:GetAllAgenciesSoapIn" />
+      <wsdl:output message="tns:GetAllAgenciesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveNewAgency">
+      <wsdl:input message="tns:SaveNewAgencySoapIn" />
+      <wsdl:output message="tns:SaveNewAgencySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Emp_Details">
+      <wsdl:input message="tns:Get_Emp_DetailsSoapIn" />
+      <wsdl:output message="tns:Get_Emp_DetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePrintingBillPayment">
+      <wsdl:input message="tns:SavePrintingBillPaymentSoapIn" />
+      <wsdl:output message="tns:SavePrintingBillPaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ApplicationSession">
+      <wsdl:input message="tns:Get_ApplicationSessionSoapIn" />
+      <wsdl:output message="tns:Get_ApplicationSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBranches">
+      <wsdl:input message="tns:GetAllBranchesSoapIn" />
+      <wsdl:output message="tns:GetAllBranchesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoles">
+      <wsdl:input message="tns:GetRolesSoapIn" />
+      <wsdl:output message="tns:GetRolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveUser">
+      <wsdl:input message="tns:SaveUserSoapIn" />
+      <wsdl:output message="tns:SaveUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserValidation">
+      <wsdl:input message="tns:CheckUserValidationSoapIn" />
+      <wsdl:output message="tns:CheckUserValidationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Printers_Registration_Or_Renewal_Fees">
+      <wsdl:input message="tns:Printers_Registration_Or_Renewal_FeesSoapIn" />
+      <wsdl:output message="tns:Printers_Registration_Or_Renewal_FeesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SAVE_Printers_EMD">
+      <wsdl:input message="tns:SAVE_Printers_EMDSoapIn" />
+      <wsdl:output message="tns:SAVE_Printers_EMDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SAVE_Printer_Paper_Security">
+      <wsdl:input message="tns:SAVE_Printer_Paper_SecuritySoapIn" />
+      <wsdl:output message="tns:SAVE_Printer_Paper_SecuritySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Building_Rent">
+      <wsdl:input message="tns:Save_Building_RentSoapIn" />
+      <wsdl:output message="tns:Save_Building_RentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_general_Bill_Advance_VoucherDetails">
+      <wsdl:input message="tns:Get_general_Bill_Advance_VoucherDetailsSoapIn" />
+      <wsdl:output message="tns:Get_general_Bill_Advance_VoucherDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Vehicle_Section_And_Fuel_Voucher">
+      <wsdl:input message="tns:Save_Vehicle_Section_And_Fuel_VoucherSoapIn" />
+      <wsdl:output message="tns:Save_Vehicle_Section_And_Fuel_VoucherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Vehicle_Insurance">
+      <wsdl:input message="tns:Save_Vehicle_InsuranceSoapIn" />
+      <wsdl:output message="tns:Save_Vehicle_InsuranceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Store_Info">
+      <wsdl:input message="tns:Save_Store_InfoSoapIn" />
+      <wsdl:output message="tns:Save_Store_InfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Vehicle_Maintenance_Information">
+      <wsdl:input message="tns:Save_Vehicle_Maintenance_InformationSoapIn" />
+      <wsdl:output message="tns:Save_Vehicle_Maintenance_InformationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SAVE_Bill_Process_And_Received_Payment_information">
+      <wsdl:input message="tns:SAVE_Bill_Process_And_Received_Payment_informationSoapIn" />
+      <wsdl:output message="tns:SAVE_Bill_Process_And_Received_Payment_informationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Free_Book_Demand_From_RSK">
+      <wsdl:input message="tns:Save_Free_Book_Demand_From_RSKSoapIn" />
+      <wsdl:output message="tns:Save_Free_Book_Demand_From_RSKSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Insurance_Claim_Info">
+      <wsdl:input message="tns:Save_Insurance_Claim_InfoSoapIn" />
+      <wsdl:output message="tns:Save_Insurance_Claim_InfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Information_From_Map_Verification_Agency">
+      <wsdl:input message="tns:Save_Information_From_Map_Verification_AgencySoapIn" />
+      <wsdl:output message="tns:Save_Information_From_Map_Verification_AgencySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SAVE_Security_Deposit_others">
+      <wsdl:input message="tns:SAVE_Security_Deposit_othersSoapIn" />
+      <wsdl:output message="tns:SAVE_Security_Deposit_othersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Security_Deposit_Return">
+      <wsdl:input message="tns:Save_Security_Deposit_ReturnSoapIn" />
+      <wsdl:output message="tns:Save_Security_Deposit_ReturnSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="YF_WebServiceSoap" type="tns:YF_WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScheme">
+      <soap:operation soapAction="http://tempuri.org/GetScheme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetcheckBook_Details">
+      <soap:operation soapAction="http://tempuri.org/GetcheckBook_Details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_VoucherTemplate_Details">
+      <soap:operation soapAction="http://tempuri.org/Get_VoucherTemplate_Details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillLedger_Bank">
+      <soap:operation soapAction="http://tempuri.org/FillLedger_Bank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAll_ChequeNO">
+      <soap:operation soapAction="http://tempuri.org/GetAll_ChequeNO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillMainGrid">
+      <soap:operation soapAction="http://tempuri.org/FillMainGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAgencies">
+      <soap:operation soapAction="http://tempuri.org/GetAllAgencies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveNewAgency">
+      <soap:operation soapAction="http://tempuri.org/SaveNewAgency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Emp_Details">
+      <soap:operation soapAction="http://tempuri.org/Get_Emp_Details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePrintingBillPayment">
+      <soap:operation soapAction="http://tempuri.org/SavePrintingBillPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ApplicationSession">
+      <soap:operation soapAction="http://tempuri.org/Get_ApplicationSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBranches">
+      <soap:operation soapAction="http://tempuri.org/GetAllBranches" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoles">
+      <soap:operation soapAction="http://tempuri.org/GetRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveUser">
+      <soap:operation soapAction="http://tempuri.org/SaveUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserValidation">
+      <soap:operation soapAction="http://tempuri.org/CheckUserValidation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Printers_Registration_Or_Renewal_Fees">
+      <soap:operation soapAction="http://tempuri.org/Printers_Registration_Or_Renewal_Fees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SAVE_Printers_EMD">
+      <soap:operation soapAction="http://tempuri.org/SAVE_Printers_EMD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SAVE_Printer_Paper_Security">
+      <soap:operation soapAction="http://tempuri.org/SAVE_Printer_Paper_Security" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Building_Rent">
+      <soap:operation soapAction="http://tempuri.org/Save_Building_Rent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_general_Bill_Advance_VoucherDetails">
+      <soap:operation soapAction="http://tempuri.org/Get_general_Bill_Advance_VoucherDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Vehicle_Section_And_Fuel_Voucher">
+      <soap:operation soapAction="http://tempuri.org/Save_Vehicle_Section_And_Fuel_Voucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Vehicle_Insurance">
+      <soap:operation soapAction="http://tempuri.org/Save_Vehicle_Insurance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Store_Info">
+      <soap:operation soapAction="http://tempuri.org/Save_Store_Info" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Vehicle_Maintenance_Information">
+      <soap:operation soapAction="http://tempuri.org/Save_Vehicle_Maintenance_Information" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SAVE_Bill_Process_And_Received_Payment_information">
+      <soap:operation soapAction="http://tempuri.org/SAVE_Bill_Process_And_Received_Payment_information" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Free_Book_Demand_From_RSK">
+      <soap:operation soapAction="http://tempuri.org/Save_Free_Book_Demand_From_RSK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Insurance_Claim_Info">
+      <soap:operation soapAction="http://tempuri.org/Save_Insurance_Claim_Info" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Information_From_Map_Verification_Agency">
+      <soap:operation soapAction="http://tempuri.org/Save_Information_From_Map_Verification_Agency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SAVE_Security_Deposit_others">
+      <soap:operation soapAction="http://tempuri.org/SAVE_Security_Deposit_others" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Security_Deposit_Return">
+      <soap:operation soapAction="http://tempuri.org/Save_Security_Deposit_Return" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="YF_WebServiceSoap12" type="tns:YF_WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScheme">
+      <soap12:operation soapAction="http://tempuri.org/GetScheme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetcheckBook_Details">
+      <soap12:operation soapAction="http://tempuri.org/GetcheckBook_Details" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_VoucherTemplate_Details">
+      <soap12:operation soapAction="http://tempuri.org/Get_VoucherTemplate_Details" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillLedger_Bank">
+      <soap12:operation soapAction="http://tempuri.org/FillLedger_Bank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAll_ChequeNO">
+      <soap12:operation soapAction="http://tempuri.org/GetAll_ChequeNO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillMainGrid">
+      <soap12:operation soapAction="http://tempuri.org/FillMainGrid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAgencies">
+      <soap12:operation soapAction="http://tempuri.org/GetAllAgencies" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveNewAgency">
+      <soap12:operation soapAction="http://tempuri.org/SaveNewAgency" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Emp_Details">
+      <soap12:operation soapAction="http://tempuri.org/Get_Emp_Details" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePrintingBillPayment">
+      <soap12:operation soapAction="http://tempuri.org/SavePrintingBillPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ApplicationSession">
+      <soap12:operation soapAction="http://tempuri.org/Get_ApplicationSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBranches">
+      <soap12:operation soapAction="http://tempuri.org/GetAllBranches" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoles">
+      <soap12:operation soapAction="http://tempuri.org/GetRoles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveUser">
+      <soap12:operation soapAction="http://tempuri.org/SaveUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserValidation">
+      <soap12:operation soapAction="http://tempuri.org/CheckUserValidation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Printers_Registration_Or_Renewal_Fees">
+      <soap12:operation soapAction="http://tempuri.org/Printers_Registration_Or_Renewal_Fees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SAVE_Printers_EMD">
+      <soap12:operation soapAction="http://tempuri.org/SAVE_Printers_EMD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SAVE_Printer_Paper_Security">
+      <soap12:operation soapAction="http://tempuri.org/SAVE_Printer_Paper_Security" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Building_Rent">
+      <soap12:operation soapAction="http://tempuri.org/Save_Building_Rent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_general_Bill_Advance_VoucherDetails">
+      <soap12:operation soapAction="http://tempuri.org/Get_general_Bill_Advance_VoucherDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Vehicle_Section_And_Fuel_Voucher">
+      <soap12:operation soapAction="http://tempuri.org/Save_Vehicle_Section_And_Fuel_Voucher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Vehicle_Insurance">
+      <soap12:operation soapAction="http://tempuri.org/Save_Vehicle_Insurance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Store_Info">
+      <soap12:operation soapAction="http://tempuri.org/Save_Store_Info" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Vehicle_Maintenance_Information">
+      <soap12:operation soapAction="http://tempuri.org/Save_Vehicle_Maintenance_Information" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SAVE_Bill_Process_And_Received_Payment_information">
+      <soap12:operation soapAction="http://tempuri.org/SAVE_Bill_Process_And_Received_Payment_information" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Free_Book_Demand_From_RSK">
+      <soap12:operation soapAction="http://tempuri.org/Save_Free_Book_Demand_From_RSK" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Insurance_Claim_Info">
+      <soap12:operation soapAction="http://tempuri.org/Save_Insurance_Claim_Info" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Information_From_Map_Verification_Agency">
+      <soap12:operation soapAction="http://tempuri.org/Save_Information_From_Map_Verification_Agency" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SAVE_Security_Deposit_others">
+      <soap12:operation soapAction="http://tempuri.org/SAVE_Security_Deposit_others" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Security_Deposit_Return">
+      <soap12:operation soapAction="http://tempuri.org/Save_Security_Deposit_Return" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="YF_WebService">
+    <wsdl:port name="YF_WebServiceSoap" binding="tns:YF_WebServiceSoap">
+      <soap:address location="http://mptbc.mp.gov.in/yf_webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="YF_WebServiceSoap12" binding="tns:YF_WebServiceSoap12">
+      <soap12:address location="http://mptbc.mp.gov.in/yf_webservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,31 @@
+E:\Project\WebSite\MPTBC\MPTBCBussinessLayer\bin\Release\MPTBCBussinessLayer.dll
+E:\Project\WebSite\MPTBC\MPTBCBussinessLayer\bin\Release\MPTBCBussinessLayer.pdb
+E:\Project\WebSite\MPTBC\MPTBCBussinessLayer\bin\Release\MPTBCDataLayer.dll
+E:\Project\WebSite\MPTBC\MPTBCBussinessLayer\bin\Release\MPTBCDataLayer.pdb
+E:\Project\WebSite\MPTBC\MPTBCBussinessLayer\obj\Release\MPTBCBussinessLayer.csprojResolveAssemblyReference.cache
+E:\Project\WebSite\MPTBC\MPTBCBussinessLayer\obj\Release\MPTBCBussinessLayer.dll
+E:\Project\WebSite\MPTBC\MPTBCBussinessLayer\obj\Release\MPTBCBussinessLayer.pdb
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Release\MPTBCBussinessLayer.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Release\MPTBCBussinessLayer.pdb
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Release\MPTBCDataLayer.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Release\MySql.Data.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\bin\Release\MPTBCDataLayer.pdb
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\obj\Release\MPTBCBussinessLayer.csprojResolveAssemblyReference.cache
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\obj\Release\MPTBCBussinessLayer.dll
+E:\mptnew\ms_Inte\mptbc_Development_Inte\MPTBCBussinessLayer\obj\Release\MPTBCBussinessLayer.pdb
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCBussinessLayer\bin\Release\MPTBCBussinessLayer.dll
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCBussinessLayer\bin\Release\MPTBCBussinessLayer.pdb
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCBussinessLayer\bin\Release\MPTBCDataLayer.dll
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCBussinessLayer\bin\Release\MySql.Data.dll
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCBussinessLayer\bin\Release\MPTBCDataLayer.pdb
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCBussinessLayer\obj\Release\MPTBCBussinessLayer.dll
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCBussinessLayer\obj\Release\MPTBCBussinessLayer.pdb
+D:\Tanweer\Final Devlopment Process Update\First Time Update MS-CODE\Code_18092023\MPTBCBussinessLayer\obj\Release\MPTBCBussinessLayer.csprojResolveAssemblyReference.cache
+D:\Code_18092023\MPTBCBussinessLayer\bin\Release\MPTBCBussinessLayer.dll
+D:\Code_18092023\MPTBCBussinessLayer\bin\Release\MPTBCBussinessLayer.pdb
+D:\Code_18092023\MPTBCBussinessLayer\bin\Release\MPTBCDataLayer.dll
+D:\Code_18092023\MPTBCBussinessLayer\bin\Release\MySql.Data.dll
+D:\Code_18092023\MPTBCBussinessLayer\bin\Release\MPTBCDataLayer.pdb
+D:\Code_18092023\MPTBCBussinessLayer\obj\Release\MPTBCBussinessLayer.csprojResolveAssemblyReference.cache
+D:\Code_18092023\MPTBCBussinessLayer\obj\Release\MPTBCBussinessLayer.dll
+D:\Code_18092023\MPTBCBussinessLayer\obj\Release\MPTBCBussinessLayer.pdb

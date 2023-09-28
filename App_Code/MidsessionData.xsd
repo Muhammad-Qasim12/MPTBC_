@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MidsessionData" targetNamespace="http://tempuri.org/MidsessionData.xsd" xmlns:mstns="http://tempuri.org/MidsessionData.xsd" xmlns="http://tempuri.org/MidsessionData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MidsessionData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="MidsessionData" msprop:Generator_UserDSName="MidsessionData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="classID" msprop:Generator_ColumnVarNameInTable="columnclassID" msprop:Generator_ColumnPropNameInRow="classID" msprop:Generator_ColumnPropNameInTable="classIDColumn" msprop:Generator_UserColumnName="classID" type="xs:string" minOccurs="0" />
+              <xs:element name="DemandDate_D" msprop:Generator_ColumnVarNameInTable="columnDemandDate_D" msprop:Generator_ColumnPropNameInRow="DemandDate_D" msprop:Generator_ColumnPropNameInTable="DemandDate_DColumn" msprop:Generator_UserColumnName="DemandDate_D" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderNo" msprop:Generator_ColumnVarNameInTable="columnOrderNo" msprop:Generator_ColumnPropNameInRow="OrderNo" msprop:Generator_ColumnPropNameInTable="OrderNoColumn" msprop:Generator_UserColumnName="OrderNo" type="xs:string" minOccurs="0" />
+              <xs:element name="BookType_I" msprop:Generator_ColumnVarNameInTable="columnBookType_I" msprop:Generator_ColumnPropNameInRow="BookType_I" msprop:Generator_ColumnPropNameInTable="BookType_IColumn" msprop:Generator_UserColumnName="BookType_I" type="xs:string" minOccurs="0" />
+              <xs:element name="TitleHindi_V" msprop:Generator_ColumnVarNameInTable="columnTitleHindi_V" msprop:Generator_ColumnPropNameInRow="TitleHindi_V" msprop:Generator_ColumnPropNameInTable="TitleHindi_VColumn" msprop:Generator_UserColumnName="TitleHindi_V" type="xs:string" minOccurs="0" />
+              <xs:element name="RequesrdQt_I" msprop:Generator_ColumnVarNameInTable="columnRequesrdQt_I" msprop:Generator_ColumnPropNameInRow="RequesrdQt_I" msprop:Generator_ColumnPropNameInTable="RequesrdQt_IColumn" msprop:Generator_UserColumnName="RequesrdQt_I" type="xs:string" minOccurs="0" />
+              <xs:element name="Demand_I" msprop:Generator_ColumnVarNameInTable="columnDemand_I" msprop:Generator_ColumnPropNameInRow="Demand_I" msprop:Generator_ColumnPropNameInTable="Demand_IColumn" msprop:Generator_UserColumnName="Demand_I" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://mptbc.mp.gov.in/yf_webservice.asmx?disco" filename="yf_webservice.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://mptbc.mp.gov.in/yf_webservice.asmx?wsdl" filename="yf_webservice.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

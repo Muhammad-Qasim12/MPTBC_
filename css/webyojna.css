@@ -1,0 +1,3799 @@
+body
+{
+	margin: 0px; /*background-color: #9c9c9c;*/
+	background-color: #FFF;
+	font-family: 'Arial Unicode MS';
+}
+
+#bgDiv
+{
+	position: absolute;
+	height: 600px;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	background-color: Transparent;
+	z-index: 500;
+}
+#Progress
+{
+	position: absolute;
+	background-color: Transparent;
+	z-index: 600;
+}
+
+.TableWidth_1280
+{
+	width: 1250px;
+}
+.TableWidth_1024
+{
+	width: 1000px;
+}
+.TableWidth_800
+{
+	width: 100%;
+}
+div, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, Label, hr
+{
+	margin: 0;
+	padding: 0;
+}
+/*#container{ width:700px; height:50px; margin:auto auto;}*/
+/*.main_shadow_bg { background-image:url(../webyojnaimgYellow/bg_shadow.jpg); background-repeat:repeat-y; width:974px; }*/
+.select_grid_1_bg
+{
+	background-image: url(../img/select-grid-1-bg.jpg);
+	background-repeat: repeat-x;
+}
+.select_grid_2_bg
+{
+	background-image: url(../img/select-grid-2-bg.jpg);
+	background-repeat: repeat-x;
+}
+/*=========================== All Domain Banners Class ========================*/
+.ssa_banner
+{
+	background-image: url(../webyojnaimgYellow/PS_banner.jpg);
+	background-repeat: repeat-x;
+	height: 150px;
+}
+.Yojna_Panchayat_banner
+{
+	background-image: url(../webyojnaimgYellow/PS_banner.jpg);
+	background-repeat: repeat-x;
+	height: 150px;
+}
+.Cedmap_banner
+{
+	background-image: url(../webyojnaimgYellow/PS_banner.jpg);
+	background-repeat: repeat-x;
+	height: 150px;
+}
+.Jansampark_banner
+{
+	background-image: url(../webyojnaimgYellow/PS_banner.jpg);
+	background-repeat: repeat-x;
+	height: 150px;
+}
+.sagar_banner
+{
+	background-image: url(../webyojnaimgYellow/PS_banner.jpg);
+	background-repeat: repeat-x;
+	height: 150px;
+}
+.ulb_banner
+{
+	background-image: url(../webyojnaimgYellow/PS_banner.jpg);
+	background-repeat: repeat-x;
+	height: 150px;
+}
+.PS_banner
+{
+	background-image: url(../webyojnaimgYellow/PS_banner.jpg);
+	background-repeat: repeat-x;
+	height: 45px;
+}
+.Sor_banner
+{
+	background-image: url(../webyojnaimgYellow/PS_banner.jpg);
+	background-repeat: repeat-x;
+	height: 150px;
+}
+
+.banner_right_bg
+{
+	background-image: url(../webyojnaimgYellow/panBannerRight_img.jpg);
+	background-repeat: no-repeat;
+	width: 6px;
+	height: 140px;
+}
+/*Commented by uttam (27/06/12)*/
+/*.banner_left_bg
+{
+background-image: url(../webyojnaimgYellow/banner_left_bg.jpg);
+background-repeat: no-repeat;
+width: 9px;
+height: 140px;
+}*/
+.Loginbtn
+{
+	background-image: url(../webyojnaimgYellow/login_btn.gif);
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+	width: 128px;
+	height: 37px;
+	border: 0px;
+	font-family: "Monotype Corsiva";
+	font-size: 22px;
+	padding-bottom: 25px;
+	padding-right: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.white_color
+{
+	background-color: #FFFFFF;
+}
+.black_color
+{
+	background-color: #494949;
+}
+.main_tab_color
+{
+	background-color: #FFFFFF;
+}
+.red_color
+{
+	background-color: #4d4d4d;
+}
+.yellow_color
+{
+	background-color: #fffacd;
+}
+.yojna_logo
+{
+	background-image: url(../webyojnaimgYellow/ulb_logo.gif);
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 140px;
+}
+.white_head
+{
+	font-family: "Monotype Corsiva";
+	font-size: 25px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.golden_head
+{
+	font-family: "Monotype Corsiva";
+	font-size: 25px;
+	font-weight: bold;
+	color: #803a02;
+	text-decoration: none;
+}
+.golden_line
+{
+	background-image: url(../webyojnaimgYellow/golden_line.jpg);
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 4px;
+}
+.gray_head
+{
+	font-family: "Monotype Corsiva";
+	font-size: 30px;
+	font-weight: bold;
+	color: #292929;
+	text-decoration: none;
+}
+.gray_line
+{
+	background-image: url(../webyojnaimgYellow/gray_line.jpg);
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 4px;
+}
+.red_head
+{
+	font-family: "Monotype Corsiva";
+	font-size: 20px;
+	font-weight: bold;
+	color: #4d4d4d;
+	text-decoration: none;
+}
+.red_line
+{
+	background-image: url(../webyojnaimgYellow/red_line.jpg);
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 4px;
+}
+.black_left_img
+{
+	background-image: url(../webyojnaimgYellow/black_left_img.gif);
+	background-repeat: no-repeat;
+	width: 7px;
+	height: 30px;
+}
+.black_middle_img
+{
+	background-image: url(../webyojnaimgYellow/black_middle_img.gif);
+	background-repeat: repeat-x;
+	height: 30px;
+}
+.black_right_img
+{
+	background-image: url(../webyojnaimgYellow/black_right_img.gif);
+	background-repeat: no-repeat;
+	width: 7px;
+	height: 30px;
+}
+.body_text
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	text-align: justify;
+}
+.red_text
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FF0000;
+	text-decoration: none;
+	text-align: justify;
+}
+.read_more a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FF0000;
+	text-decoration: none;
+}
+.read_more a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FF0000;
+	text-decoration: none;
+}
+.read_more a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+.hand_with_house_img
+{
+	background-image: url(../webyojnaimgYellow/hand_with_house.gif);
+	background-repeat: no-repeat;
+	width: 84px;
+	height: 127px;
+	background-position: right;
+}
+.house_img
+{
+	background-image: url(../webyojnaimgYellow/house.jpg);
+	background-repeat: no-repeat;
+	width: 128px;
+	height: 113px;
+}
+.copyright
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.footer_bg
+{
+	background-image: url(../webyojnaimgYellow/footer_bg.gif);
+	background-repeat: repeat-x;
+	height: 30px;
+}
+.btn
+{
+	background: #658f1f;
+	padding: 7px 20px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	border: 0px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: 'Arial Unicode MS';
+	font-size: 13px;
+}
+.btningrid
+{
+	background: #658f1f;
+	padding: 5px 4px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	border: 0px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: 'Arial Unicode MS';
+	font-size: 10px;
+}
+.txt
+{
+	border: 1px solid #b4b4b4;
+	padding: 5px 2px;
+	background: transparent;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+.ddl
+{
+	border: 1px solid #b4b4b4;
+	padding: 5px 5px;
+	background: transparent;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	
+}
+.login_red_bg
+{
+	background-image: url(../webyojnaimgYellow/login_red_bg.jpg);
+	background-repeat: repeat-x;
+	height: 54px;
+}
+.login_bg_color
+{
+	background: #f1f1f1;
+	border: none;
+	text-align: center;
+}
+.login_bg
+{
+	background-image: url(../webyojnaimgYellow/login_bg.jpg);
+	background-repeat: no-repeat;
+	height: 280px;
+	width: 653px;
+}
+.login_Report_bg
+{
+	background-image: url(../webyojnaimgYellow/Login_Report_bg.gif);
+	background-repeat: no-repeat;
+	height: 35px;
+	width: 327px;
+}
+.login_icon
+{
+	background-image: url(../webyojnaimgYellow/login_icon.jpg);
+	background-color: rgba(97, 143, 21, 1);
+	background-repeat: no-repeat;
+	height: 54px;
+	width: 154px;
+}
+.error
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #FF0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.login_tab_color
+{
+	background-color: #FFFFFF;
+}
+.login_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.language_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #FF0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.login_left_img
+{
+	background-image: url(../webyojnaimgYellow/login_left_img.gif);
+	background-repeat: no-repeat;
+	width: 7px;
+	height: 30px;
+}
+.login_middle_img
+{
+	background-image: url(../webyojnaimgYellow/login_middle_img.gif);
+	background-repeat: repeat-x;
+	height: 30px;
+}
+.login_right_img
+{
+	background-image: url(../webyojnaimgYellow/login_right_img.gif);
+	background-repeat: no-repeat;
+	width: 7px;
+	height: 30px;
+}
+.login_btn_text
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.login_btn a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.login_btn a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.login_btn a:hover
+{
+	color: #FFF000;
+	text-decoration: none;
+}
+/*=========================== FRM Bank Reconciliation Css Start ==========================*/
+.rb
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.Red_Txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FF0000;
+	text-decoration: none;
+}
+
+.Frm_top_menu_text
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFF;
+	text-decoration: none;
+}
+.Frm_top_menu a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+}
+.Frm_top_menu a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFF;
+	text-decoration: none;
+}
+.Frm_top_menu a:hover
+{
+	color: #fff000;
+	text-decoration: none;
+}
+.Frm_Head
+{
+	font-family: Arial Unicode MS;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	padding-left: 50px;
+	text-transform: uppercase;
+}
+.yellow_bg_left
+{
+	background-image: url(../webyojnaimgYellow/yellow_bg_middle.jpg);
+	background-repeat: repeat-x;
+	height: 43px;
+}
+.yellow_bg_middle
+{
+	background: #658f1f;
+	border: 1px solid #3f6106;
+	color: #fff;
+}
+.yellow_bg_right
+{
+	background-image: url(../webyojnaimgYellow/yellow_bg_middle.jpg);
+	background-repeat: repeat-x;
+	height: 43px;
+}
+.accordionContentNew
+{
+	border: groove;
+	text-align: center;
+	border-color: #fff;
+	background-color: White;
+}
+.show_btn_bg
+{
+	background: #658f1f;
+	border: 1px solid #3f6106;
+	color: #fff;
+	padding-left: 10px;
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.head_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 18px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+}
+/*================ Header Css Start =========================*/
+.jqueryslidemenu
+{
+	width: 100%;
+}
+.jqueryslidemenu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+/*Top level list items*/
+.jqueryslidemenu ul li
+{
+	position: relative;
+	display: inline;
+	float: left;
+}
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	padding: 8px 10px;
+	border-right: 1px solid black;
+	text-decoration: none;
+}
+* html .jqueryslidemenu ul li a
+{
+	/*IE6 hack to get sub menu links to behave correctly*/
+	display: inline-block;
+}
+.jqueryslidemenu ul li a:link, .jqueryslidemenu ul li a:visited
+{
+	color: #000000;
+}
+.jqueryslidemenu ul li a:hover
+{
+	/*background-color: #000000; tab link background during hover state*/
+	color: #ab0000;
+}
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul
+{
+	position: absolute;
+	left: 0;
+	display: block;
+	visibility: hidden;
+	color: #000000;
+}
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li
+{
+	display: list-item;
+	float: none;
+}
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul
+{
+	top: 0;
+}
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul li a
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	text-align: left;
+	width: 173px;
+	padding: 5px;
+	margin: 0;
+	border-top-width: 0;
+	border-bottom: 1px solid Gray;
+}
+.jqueryslidemenuz ul li ul li a:hover
+{
+	/*sub menus hover style background: #86654a;  */
+	color: #ab0000;
+}
+.downarrowclass
+{
+	position: absolute;
+	top: 15px;
+	right: 7px;
+}
+.rightarrowclass
+{
+	position: absolute;
+	top: 6px;
+	right: 5px;
+}
+.chbox
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FF0000;
+	text-decoration: none;
+	text-align: justify;
+}
+/*====================== Vertical Menu Css ============================*/
+.AccordionTitle, .AccordionContent, .AccordionContainer
+{
+	position: relative;
+	width: 250px;
+	margin: 0px;
+	padding: 0px;
+}
+.AccordionTitle
+{
+	border: solid 1px #FFFFFF;
+	overflow: hidden;
+	height: 25px;
+	cursor: pointer;
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: left;
+	background-color: #f7892c;
+	margin: 0px;
+}
+.AccordionTitle:hover
+{
+	overflow: hidden;
+	cursor: pointer;
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: left;
+	background-color: #515151;
+	margin: 0px;
+	padding: 0px;
+}
+.AccordionContent
+{
+	height: 0px;
+	overflow: auto;
+	display: none;
+	margin: 0px;
+	padding-left: 0px;
+}
+.AccordionContainer
+{
+	border: solid 0px #FFFFFF;
+	margin: 0px;
+}
+.single_menu a
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.single_menu :hover
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+.sub_menu a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	font-weight: bold;
+	color: #4d4d4d;
+	text-decoration: none;
+}
+.sub_menu a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	font-weight: bold;
+	color: #4d4d4d;
+	text-decoration: none;
+}
+.sub_menu a:hover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+/*================ Header Demo swf page Css Start =========================*/
+.jqueryslidemenudemo
+{
+	background: #f7892c; /*background of tabs (default state)*/
+	width: 100%;
+}
+.jqueryslidemenudemo ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+/*Top level list items*/
+.jqueryslidemenudemo ul li
+{
+	position: relative;
+	display: inline;
+	float: left;
+}
+/*Top level menu link items style*/
+.jqueryslidemenudemo ul li a
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	background: #f7892c; /*background of tabs (default state)*/
+	padding: 4px 5px;
+	border-right: 1px solid white;
+	text-decoration: none;
+}
+* html .jqueryslidemenudemo ul li a
+{
+	/*IE6 hack to get sub menu links to behave correctly*/
+	display: inline-block;
+}
+.jqueryslidemenudemo ul li a:link, .jqueryslidemenudemo ul li a:visited
+{
+	color: #FFFFFF;
+}
+.jqueryslidemenudemo ul li a:hover
+{
+	background-color: #515151; /*tab link background during hover state*/
+	color: #FFFFFF;
+}
+/* New Grid 1 Css */
+.NewGridHead1
+{
+	background: #658f1f;
+	border: 1px solid #3f6106;
+	color: #fff;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.Newrow1
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+.Newaltrow1
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #dfdfdf;
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+.Newselrow1
+{
+	margin: 0px;
+	padding-left: 0px;
+	background-color: #CCFF99;
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.Grid_link_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #0000FF;
+	text-decoration: none;
+}
+/* New Grid 2 Css */
+.Grid_Btn
+{
+	border: 1px solid #FFFF00;
+	background-image: url(../webyojnaimgYellow/hindienglish_bg_middle.jpg);
+	background-repeat: repeat-x;
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	height: 25px;
+	width: 80px;
+	cursor: pointer;
+}
+.GridHead
+{
+	background: #658f1f;
+	border: 1px solid #3f6106;
+	color: #fff;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.row
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+.altrow
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #dfdfdf;
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+.selrow
+{
+	margin: 0px;
+	padding-left: 0px;
+	background-color: #CCFF99;
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.ULB_pan_frm_top_menu a:link
+{
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-size: 14px;
+	color: #FFFFFF;
+    
+	text-decoration: none;
+    font-variant: normal;
+font-weight: normal;
+line-height: 1;
+font-size-adjust: none;
+font-stretch: normal;
+-moz-font-feature-settings: normal;
+-moz-font-language-override: normal;
+font-size: inherit;
+text-rendering: auto;
+transform: translate(0px, 0px);
+}
+.ULB_pan_frm_top_menu a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.ULB_pan_frm_top_menu a:hover
+{
+	color: #FFF000;
+	text-decoration: none;
+}
+.ULB_pan_frm_top_menu_text
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+   
+}
+/*==================== New All SubDomain Icons Css Here... =======================*/
+.IconULB
+{
+	background-image: url(../webyojnaimgYellow/IconULB.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+.IconSSA
+{
+	background-image: url(../webyojnaimgYellow/IconSSA.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+.IconYojnaPanchayat
+{
+	background-image: url(../webyojnaimgYellow/IconYojnaerp.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+.IconCedmap
+{
+	background-image: url(../webyojnaimgYellow/IconYojnaerp.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+.IconJansampark
+{
+	background-image: url(../webyojnaimgYellow/IconYojnaerp.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+.IconYojnaSagar
+{
+	background-image: url(../webyojnaimgYellow/IconYojnaSagar.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+.IconADV
+{
+	background-image: url(../webyojnaimgYellow/IconADV.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+.IconCicc
+{
+	background-image: url(../webyojnaimgYellow/IconCicc.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+.IconSOR
+{
+	background-image: url(../webyojnaimgYellow/IconSOR.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+.Icon_T_erp
+{
+	background-image: url(../webyojnaimgYellow/IconYojnaerp.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+.IconeCashBook
+{
+	background-image: url(../webyojnaimgYellow/IconYojnaerp.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+.IconPS
+{
+	background-image: url(../webyojnaimgYellow/IconPS.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+/*Added by manoj*/
+.hand_icon
+{
+	background-image: url(../webyojnaimgYellow/hand_icon.jpg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 43px;
+}
+/*==================== New All Sub Domain Logos Css Here... ==========================*/
+.ulb_logo
+{
+	background-image: url(../webyojnaimgYellow/ulb_logo.gif);
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 140px;
+}
+.sor_logo
+{
+	background-image: url(../webyojnaimgYellow/sor_logo.gif);
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 140px;
+}
+.sagar_logo
+{
+	background-image: url(../webyojnaimgYellow/sagar_logo.gif);
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 140px;
+}
+.ssa_logo
+{
+	background-image: url(../webyojnaimgYellow/ssa_logo.gif);
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 140px;
+}
+.erp_logo
+{
+	background-image: url(../webyojnaimgYellow/erp_logo.gif);
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 140px;
+}
+.PS_logo
+{
+	background-image: url(../webyojnaimgYellow/PS_logo.gif);
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 140px;
+}
+/*==================== New All Sub Domain Watermark Css Here...=======================*/
+.ulbwatermark_img
+{
+	background-image: url(../webyojnaimgYellow/watermark.gif);
+	width: 800px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.sorwatermark_img
+{
+	background-image: url(../webyojnaimgYellow/sorwatermark.gif);
+	width: 800px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.erpwatermark_img
+{
+	background-image: url(../webyojnaimgYellow/erpwatermark.gif);
+	width: 800px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.ssawatermark_img
+{
+	background-image: url(../webyojnaimgYellow/ssawatermark.gif);
+	width: 800px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.sagarwatermark_img
+{
+	background-image: url(../webyojnaimgYellow/sagarwatermark.gif);
+	width: 800px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.PSwatermark_img
+{
+	background-image: url(../webyojnaimgYellow/PSwatermark_img.gif);
+	width: 800px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.ADVwatermark_img
+{
+	/*background-image: url(../webyojnaimgYellow/ADVwatermark.gif);*/
+	width: 800px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* ======================= Sor Default Css =========================*/
+.corner_top_left
+{
+	background-image: url(../webyojnaimgYellow/corner1.jpg);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 11px;
+}
+.corner_top_right
+{
+	background-image: url(../webyojnaimgYellow/corner2.jpg);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 11px;
+}
+.corner_bottom_left
+{
+	background-image: url(../webyojnaimgYellow/corner3.jpg);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 11px;
+}
+.corner_bottom_right
+{
+	background-image: url(../webyojnaimgYellow/corner4.jpg);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 11px;
+}
+.corner_line_left
+{
+	background-image: url(../webyojnaimgYellow/corner_line_left.jpg);
+	background-repeat: repeat-y;
+	width: 10px;
+}
+.corner_line_top
+{
+	background-image: url(../webyojnaimgYellow/corner_line_top.jpg);
+	background-repeat: repeat-x;
+	height: 11px;
+}
+.corner_line_right
+{
+	background-image: url(../webyojnaimgYellow/corner_line_right.jpg);
+	background-repeat: repeat-y;
+	width: 10px;
+}
+.corner_line_bottom
+{
+	background-image: url(../webyojnaimgYellow/corner_line_bottom.jpg);
+	background-repeat: repeat-x;
+	height: 11px;
+}
+.corner_bg_color
+{
+	background-color: #FFF;
+}
+.lbl_head
+{
+	font-family: Arial Unicode MS;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.lbl_Subhead
+{
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	font-weight: bold;
+	color: Maroon;
+	text-decoration: underline;
+}
+.lbl_Head_img
+{
+	background-image: url(../webyojnaimgYellow/Head_bg_img.jpg);
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 25px;
+	font-family: "Arial Unicode MS";
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	padding-left: 10px;
+	text-decoration: none;
+}
+hr
+{
+	color: Blue;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.book_icon
+{
+	background-image: url(../webyojnaimgYellow/book.jpg);
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 93px;
+}
+.book_content_head
+{
+	background-color: #007cc2;
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+	padding-left: 15px;
+	height: 25px;
+}
+.big_box_top
+{
+	background-image: url(../webyojnaimgYellow/big_box_top_bg.jpg);
+	background-repeat: no-repeat;
+	width: 932px;
+	height: 10px;
+}
+.big_box_middle
+{
+	background-image: url(../webyojnaimgYellow/big_box_middle_bg.jpg);
+	background-repeat: repeat-y;
+	width: 932px;
+}
+.big_box_bottom
+{
+	background-image: url(../webyojnaimgYellow/big_box_bottom_bg.jpg);
+	background-repeat: no-repeat;
+	width: 932px;
+	height: 10px;
+}
+/*========================== Tab Menu Css Start ========================*/
+.TabbedPanels
+{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	clear: none;
+	width: 100%;
+}
+.TabbedPanelsTabGroup
+{
+	margin: 0px;
+	padding: 0px;
+}
+.TabbedPanelsTab
+{
+	position: relative;
+	top: 1px;
+	float: left;
+	padding: 4px 10px;
+	margin: 0px 1px 0px 0px;
+	list-style: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	background-color: #669900;
+	font-family: 'Arial Unicode MS';
+	border: 2px outset #FFF;
+	cursor: pointer;
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;
+}
+.TabbedPanelsTabHover
+{
+	background-color: #4d4d4d;
+	font-family: 'Arial Unicode MS';
+	border: 2px outset #FFF;
+	cursor: pointer;
+	font-size: 12px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+.TabbedPanelsTabSelected
+{
+	background-color: #FFF;
+	font-family: 'Arial Unicode MS';
+	border: 2px outset #FFF;
+	cursor: pointer;
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.TabbedPanelsTab a
+{
+	color: black;
+	text-decoration: none;
+}
+.TabbedPanelsContentGroup
+{
+	clear: both;
+	border: solid 1px #000;
+	background-color: Transparent;
+}
+.TabbedPanelsContent
+{
+	padding: 4px;
+	text-align: left;
+}
+/* Tab Menu Css End */
+/*======================== Sagar Default Css =======================*/
+/* Vertical menu css start */
+/* The outermost container of the Menu Bar, a fixed width box with no margin or padding */
+ul.MenuBarVertical
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: default;
+	width: 250px;
+}
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html */
+ul.MenuBarActive
+{
+	z-index: 1000;
+}
+/* Menu item containers, position children relative to this container and are same fixed width as parent */
+ul.MenuBarVertical li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+	width: 250px;
+}
+/* Submenus should appear slightly overlapping to the right (95%) and up (-5%) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+ul.MenuBarVertical ul
+{
+	margin: -5% 0 0 95%;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: absolute;
+	z-index: 1020;
+	cursor: default;
+	width: 250px;
+	left: -1000em;
+	top: 0;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to 0 so it comes onto the screen */
+ul.MenuBarVertical ul.MenuBarSubmenuVisible
+{
+	left: 0;
+	width: 250px;
+}
+/* Menu item containers are same fixed width as parent */
+ul.MenuBarVertical ul li
+{
+	width: 250px;
+}
+
+/* Outermost menu container has borders on all sides */
+ul.MenuBarVertical
+{
+	border: 1px solid #FFF;
+	width: 250px;
+}
+/* Submenu containers have borders on all sides */
+ul.MenuBarVertical ul
+{
+	border: 1px solid #FFF;
+}
+/* Menu items are a light gray block with padding and no text decoration */
+ul.MenuBarVertical a
+{
+	/*padding: 5px 12px;*/
+	padding: 0.5em 0.75em;
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	background: #f7892c; /*background of tabs (default state)*/
+	border-bottom: 1px solid #FFF;
+	text-decoration: none;
+}
+/* Menu items that have mouse over or focus have a blue background and white text */
+ul.MenuBarVertical a:hover, ul.MenuBarVertical a:focus
+{
+	background-color: #515151;
+	color: #FFF;
+}
+/* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text */
+ul.MenuBarVertical a.MenuBarItemHover, ul.MenuBarVertical a.MenuBarItemSubmenuHover, ul.MenuBarVertical a.MenuBarSubmenuVisible
+{
+	background-color: #515151;
+	color: #FFF;
+}
+
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarVertical a.MenuBarItemSubmenu
+{
+	background-image: url(../right.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarVertical a.MenuBarItemSubmenuHover
+{
+	background-image: url(../right.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+
+/* HACK FOR IE: to make sure the sub menus show above form controls, we underlay each submenu with an iframe */
+ul.MenuBarVertical iframe
+{
+	position: absolute;
+	z-index: 1010;
+}
+/* HACK FOR IE: to stabilize appearance of menu items; the slash in float is to keep IE 5.0 from parsing */
+@media screen, projection
+{
+	ul.MenuBarVertical li.MenuBarItemIE
+	{
+		display: inline;
+		float: left;
+		background: #FFF;
+	}
+}
+
+.red_btn_bg
+{
+	background-image: url(../webyojnaimgYellow/red_left_btn_bg.jpg);
+	background-repeat: no-repeat;
+	height: 27px;
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+	padding-left: 25px;
+}
+.leftmenulink
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*============================= Training Erp Css start ===================================== */
+
+.erpmid_boxyellowLeft_bg
+{
+	background-image: url(../webyojnaimgYellow/erpmidboxyellowleft.jpg);
+	background-repeat: no-repeat;
+	height: 259px;
+	width: 10px;
+}
+.erpmid_boxyellowmid_bg
+{
+	background-image: url(../webyojnaimgYellow/erpmidboxyellowmid.jpg);
+	background-repeat: repeat-x;
+	height: 259px;
+}
+.erpmid_boxgraymid_bg
+{
+	background-image: url(../webyojnaimgYellow/erpmidboxgraymid.jpg);
+	background-repeat: repeat-x;
+	height: 259px;
+}
+.erpmid_boxgrayright_bg
+{
+	background-image: url(../webyojnaimgYellow/erpmidboxgrayright.jpg);
+	background-repeat: no-repeat;
+	height: 259px;
+	width: 10px;
+}
+.banner_bg
+{
+	background-image: url(../webyojnaimgYellow/banner_bg.jpg);
+	background-repeat: repeat-x;
+	height: 119px;
+}
+.banner_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 18px;
+	color: #FFF;
+	text-decoration: none;
+}
+.menu_head
+{
+	font-family: "Monotype Corsiva";
+	font-size: 20px;
+	color: #000;
+	text-decoration: none;
+}
+.banner_txt_2
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 17px;
+	color: #FFF;
+	text-decoration: none;
+}
+.banner_about_txt
+{
+	font-family: "Monotype Corsiva";
+	font-size: 25px;
+	color: #CC6600;
+	text-decoration: none;
+}
+.terp_yojna_logo
+{
+	background-image: url(../webyojnaimgYellow/terp_yojna_logo.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 160px;
+	height: 106px;
+}
+.left_logo
+{
+	background-image: url(../webyojnaimgYellow/left_logo.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 106px;
+	width: 97px;
+}
+.right_logo
+{
+	background-image: url(../webyojnaimgYellow/right_logo.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	width: 102px;
+	height: 106px;
+}
+.add_bg
+{
+	background-image: url(../webyojnaimgYellow/add_bg.jpg);
+	background-repeat: no-repeat;
+	width: 351px;
+	height: 168px;
+}
+.middle_bg
+{
+	background-image: url(../webyojnaimgYellow/middle_bg.jpg);
+	background-repeat: no-repeat;
+	width: 696px;
+	height: 259px;
+}
+.calendar_icon
+{
+	background-image: url(../webyojnaimgYellow/calendar_icon.gif);
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 35px;
+}
+.line_img
+{
+	background-image: url(../webyojnaimgYellow/line.jpg);
+	background-repeat: no-repeat;
+	height: 8px;
+}
+.add_text
+{
+	font-family: "Monotype Corsiva";
+	font-size: 25px;
+	color: #000000;
+	text-decoration: none;
+}
+.left_top_bg
+{
+	background-image: url(../webyojnaimgYellow/left_top_bg.jpg);
+	background-repeat: no-repeat;
+	width: 216px;
+	height: 12px;
+}
+.left_middle_bg
+{
+	background-image: url(../webyojnaimgYellow/left_middle_bg.jpg);
+	background-repeat: repeat-y;
+	width: 216px;
+}
+.left_bottom_bg
+{
+	background-image: url(../webyojnaimgYellow/left_bottom_bg.jpg);
+	background-repeat: no-repeat;
+	width: 216px;
+	height: 12px;
+}
+.pnik_btn_bg
+{
+	background-image: url(../webyojnaimgYellow/pink_btn.jpg);
+	background-repeat: no-repeat;
+	width: 210px;
+	height: 25px;
+}
+.yellow_btn_bg
+{
+	background-image: url(../webyojnaimgYellow/yellow_btn.jpg);
+	background-repeat: no-repeat;
+	width: 210px;
+	height: 25px;
+}
+.pnik_link a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	font-weight: 600;
+	color: #FFF;
+	text-decoration: none;
+	padding-left: 10px;
+}
+.pnik_link a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	font-weight: 600;
+	color: #FFF;
+	text-decoration: none;
+	padding-left: 10px;
+}
+.pnik_link a:hover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-left: 10px;
+}
+.yellow_link a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	font-weight: 600;
+	color: #FFF;
+	text-decoration: none;
+	padding-left: 10px;
+}
+.yellow_link a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	font-weight: 600;
+	color: #FFF;
+	text-decoration: none;
+	padding-left: 10px;
+}
+.yellow_link a:hover
+{
+	color: #000;
+	text-decoration: none;
+	padding-left: 10px;
+}
+.calendar_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.calendar_txt_red
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #FF0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.calendar_black_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.calendar_red_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 12px;
+	color: #e83702;
+	text-decoration: none;
+}
+.about_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #57441b;
+	font-weight: bold;
+	text-decoration: none;
+	padding-bottom: 5px;
+}
+.middle_yellow_bg_left
+{
+	background-image: url(../webyojnaimgYellow/middle_bg_2_left.jpg);
+	background-repeat: no-repeat;
+	height: 339px;
+	width: 10px;
+}
+.middle_yellow_bg_middle
+{
+	background-image: url(../webyojnaimgYellow/middle_bg_2_middle.jpg);
+	background-repeat: repeat-x;
+	height: 339px;
+}
+.middle_yellow_bg_right
+{
+	background-image: url(../webyojnaimgYellow/middle_bg_2_right.jpg);
+	background-repeat: no-repeat;
+	height: 339px;
+	width: 10px;
+}
+.hindienglish_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.date
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.DV_POPUP_bg
+{
+	border-bottom: 5px solid #424242;
+	right: 30%;
+	height: auto;
+	left: 15%;
+	width: 672px;
+	color: #000000;
+	font-family: 'Arial Unicode MS';
+	position: absolute;
+	top: 200px;
+	background-image: url(../webyojnaimgYellow/DV_POPUP_bg.jpg);
+}
+.sublink a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: Blue;
+	text-decoration: underline;
+	padding-left: 15px;
+}
+.sublink a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: Blue;
+	text-decoration: underline;
+	padding-left: 15px;
+}
+.sublink a:hover
+{
+	color: black;
+	text-decoration: none;
+	padding-left: 15px;
+}
+.about_text
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 15px;
+	color: #000000;
+	text-decoration: none;
+	text-align: justify;
+}
+.about_red_text
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 15px;
+	color: #CC6600;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: justify;
+}
+.fooetr_link a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+.fooetr_link a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+.fooetr_link a:hover
+{
+	color: Blue;
+	text-decoration: none;
+}
+.adverties_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/*====================================== ADV Css Start ====================================*/
+.dark_gray_color
+{
+	background-color: #353535;
+	font-family: 'Arial Unicode MS';
+}
+.banner_left
+{
+	background-image: url(../webyojnaimgYellow/banner_left.gif);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 229px;
+}
+.banner_middle
+{
+	background-image: url(../webyojnaimgYellow/banner_middle.gif);
+	background-repeat: repeat-x;
+	height: 229px;
+}
+.banner_right
+{
+	background-image: url(../webyojnaimgYellow/banner_right.gif);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 229px;
+}
+.elips1
+{
+	background-image: url(../webyojnaimgYellow/elips1.gif);
+	background-repeat: no-repeat;
+	width: 539px;
+	height: 229px;
+}
+.elips2
+{
+	background-image: url(../webyojnaimgYellow/elips2.gif);
+	background-repeat: no-repeat;
+	width: 539px;
+	height: 232px;
+}
+.yellow_strip
+{
+	background-image: url(../webyojnaimgYellow/yellow_strip.gif);
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 37px;
+	font-family: 'Arial Unicode MS';
+	font-size: 20px;
+	color: #000000;
+	padding-left: 5px;
+	padding-top: 2px;
+}
+.ADV_login_btn
+{
+	background-image: url(../webyojnaimgYellow/advlogin_btn.gif);
+	background-repeat: no-repeat;
+	width: 174px;
+	height: 34px;
+	cursor: pointer;
+}
+.yellow_strip_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	text-align: justify;
+	padding-top: 5px;
+}
+.left_menu_link a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #000000;
+	text-decoration: none;
+	padding-left: 30px;
+}
+.left_menu_link a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #000000;
+	text-decoration: none;
+	padding-left: 30px;
+}
+.left_menu_link a:hover
+{
+	color: #FF0000;
+	text-decoration: none;
+	padding-left: 30px;
+}
+.footer_left
+{
+	background-image: url(../webyojnaimgYellow/footer_left.gif);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 89px;
+}
+.footer_middle
+{
+	background-image: url(../webyojnaimgYellow/footer_middle.gif);
+	background-repeat: repeat-x;
+	height: 89px;
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.footer_email
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #FFFF00;
+}
+.footer_right
+{
+	background-image: url(../webyojnaimgYellow/footer_right.gif);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 89px;
+}
+.footer_link a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.footer_link a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.footer_link a:hover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.ADV_Frm_top_menu_text
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+.ADV_Frm_top_menu a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+.ADV_Frm_top_menu a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+.ADV_Frm_top_menu a:hover
+{
+	color: #FF0000;
+	text-decoration: none;
+}
+.advlogo
+{
+	background-image: url(../webyojnaimgYellow/logo1.gif);
+	background-repeat: no-repeat;
+	width: 323px;
+	height: 184px;
+	background-position: center;
+}
+/*================================ Main Yojna Default page css Start =======================*/
+.Accordion
+{
+	border: solid 1px gray;
+	overflow: hidden;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+.AccordionPanel
+{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+.AccordionPanelTab
+{
+	background-image: url(../webyojnaimgYellow/acc_2.jpg);
+	background-repeat: repeat-x;
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0px;
+	padding-left: 40px;
+	padding-top: 3px;
+	cursor: pointer;
+	height: 25px;
+	width: 100%;
+}
+.AccordionPanelContent
+{
+	overflow: auto;
+	margin: 0px;
+	padding-left: 10px;
+	height: 200px;
+	width: 100%;
+}
+.AccordionPanelOpen .AccordionPanelTab
+{
+	background-image: url(../webyojnaimgYellow/acc_1.jpg);
+	background-repeat: repeat-x;
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	height: 25px;
+	width: 100%;
+}
+.AccordionPanelTabHover
+{
+	background-image: url(../webyojnaimgYellow/acc_2.jpg);
+	background-repeat: repeat-x;
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+	height: 25px;
+	width: 100%;
+}
+.AccordionPanelOpen .AccordionPanelTabHover
+{
+	background-image: url(../webyojnaimgYellow/acc_1.jpg);
+	background-repeat: repeat-x;
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	height: 25px;
+	width: 100%;
+}
+.AccordionFocused .AccordionPanelTab
+{
+	background-image: url(../webyojnaimgYellow/acc_2.jpg);
+	background-repeat: repeat-x;
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+	height: 25px;
+	width: 100%;
+}
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab
+{
+	background-image: url(../webyojnaimgYellow/acc_1.jpg);
+	background-repeat: repeat-x;
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	height: 25px;
+	width: 100%;
+}
+.mid_img
+{
+	background-color: #676767;
+}
+.footer_img
+{
+	background-image: url(../webyojnaimgYellow/footer.jpg);
+	background-repeat: repeat-x;
+	height: 53px;
+}
+.client_img
+{
+	background-image: url(../webyojnaimgYellow/client_img.jpg);
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 25px;
+	font-family: "Arial Unicode MS";
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	padding-left: 10px;
+	text-decoration: none;
+}
+.technology_img
+{
+	background-image: url(../webyojnaimgYellow/technology_img.jpg);
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 25px;
+	font-family: "Arial Unicode MS";
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	padding-left: 10px;
+	text-decoration: none;
+}
+.contact_img
+{
+	background-image: url(../webyojnaimgYellow/contact_img.jpg);
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 25px;
+	font-family: "Arial Unicode MS";
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	padding-left: 10px;
+	text-decoration: none;
+}
+.menu_link a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #CC9900;
+	text-decoration: none;
+	padding-left: 15px;
+	font-weight: bold;
+}
+.menu_link a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #CC9900;
+	text-decoration: none;
+	padding-left: 15px;
+	font-weight: bold;
+}
+.menu_link a:hover
+{
+	color: #000000;
+	text-decoration: none;
+	padding-left: 15px;
+	font-weight: bold;
+}
+.txtdefaultpage
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 14px;
+	color: #4d4d4d;
+	text-decoration: none;
+	padding-left: 10px;
+}
+.txtdefaultpage2
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 14px;
+	color: #a95da7;
+	text-decoration: none;
+	padding-left: 10px;
+}
+.con_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 14px;
+	color: #d87a00;
+	text-decoration: none;
+	padding-left: 10px;
+}
+.bodytxt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: justify;
+}
+p
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	text-align: justify;
+	padding: 10px;
+}
+.yojna_txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: justify;
+}
+/*=============================== CICC CSS START ==================================== */
+.CiccLogo
+{
+	background-image: url(../webyojnaimgYellow/cicclogo.jpg);
+	background-repeat: no-repeat;
+	height: 105px;
+	width: 369px;
+}
+.client_bg
+{
+	background-image: url(../webyojnaimgYellow/clients_bg.jpg);
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 38px;
+}
+.client_icon
+{
+	background-image: url(../webyojnaimgYellow/client_icon.jpg);
+	background-repeat: no-repeat;
+	height: 38px;
+	width: 37px;
+}
+.client_text
+{
+	font-family: 'Arial Unicode MS';
+	font-weight: bold;
+	font-size: 16px;
+	color: #000000;
+	text-decoration: none;
+}
+.left_box_white_top
+{
+	background-image: url(../webyojnaimgYellow/left_box_white_top.jpg);
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 42px;
+}
+.left_box_white_middle
+{
+	background-image: url(../webyojnaimgYellow/left_box_white_middle.jpg);
+	background-repeat: repeat-y;
+	width: 250px;
+}
+.left_box_white_bottom
+{
+	background-image: url(../webyojnaimgYellow/left_box_white_bottom.jpg);
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 12px;
+}
+/* ======================== CapsLock img css start ========================= */
+.capslock_div
+{
+	width: 326px;
+	height: 120px;
+	position: absolute;
+	top: 260px;
+	left: 500px;
+}
+.capslock_img
+{
+	background-image: url(../webyojnaimgYellow/capslock_img.gif);
+	background-repeat: no-repeat;
+	width: 326px;
+	height: 120px;
+}
+
+.EnterPwdcapslock_div
+{
+	width: 326px;
+	height: 120px;
+	position: absolute;
+	top: 220px;
+	left: 300px;
+}
+
+.ReEnterPwdcapslock_div
+{
+	width: 326px;
+	height: 120px;
+	position: absolute;
+	top: 250px;
+	left: 300px;
+}
+
+.OldPwdcapslock_div
+{
+	width: 326px;
+	height: 120px;
+	position: absolute;
+	top: 240px;
+	left: 300px;
+}
+
+.NewPwdcapslock_div
+{
+	width: 326px;
+	height: 120px;
+	position: absolute;
+	top: 270px;
+	left: 300px;
+}
+
+.frmChangepasswordpage_OldPwd
+{
+	width: 326px;
+	height: 120px;
+	position: absolute;
+	top: 160px;
+	left: 550px;
+}
+
+.frmChangepasswordpage_NewPwd
+{
+	width: 326px;
+	height: 120px;
+	position: absolute;
+	top: 190px;
+	left: 550px;
+}
+
+
+/*Right Menu button for Voucher form*/
+/*.btnPanel
+{
+width: 25px;
+height: 100px;
+margin: 0px;
+float: right;
+background-image: url(../webyojnaimgYellow/tab1.gif);
+background-repeat: no-repeat;
+cursor: pointer;
+font-weight: bold;
+font-size: 12px;
+text-align:center;
+color:Black;
+}
+
+.btnPanel_2
+{
+width: 25px;
+height: 100px;
+margin: 0px;
+float: right;
+border:none;
+background-image: url(../webyojnaimgYellow/tab2.gif);
+background-repeat: no-repeat;
+cursor: pointer;
+font-weight: bold;
+font-size: 12px;
+text-align:center;
+color:White
+}
+.ContentPanel
+{
+width:50%;
+height:200px;
+background-color:White;
+border:1px solid gray;
+position: absolute;
+top:50px;
+left:440px;
+right:0px;
+bottom:300px;
+text-align: justify;
+}
+*/
+.Show_budget_btn
+{
+	width: 25px;
+	height: 54px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/show_bgt.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.upload_bill_btn
+{
+	width: 25px;
+	height: 76px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/upload_bill.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.unpaid_bill_btn
+{
+	width: 25px;
+	height: 81px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/unpaid_bill.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.Sanction_Note_btn
+{
+	width: 25px;
+	height: 88px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/Sanction_Note.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.new_agency_btn
+{
+	width: 25px;
+	height: 90px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/new_agency.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.fill_trn_btn
+{
+	width: 25px;
+	height: 86px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/fill_trn.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.fill_wp_btn
+{
+	width: 25px;
+	height: 90px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/fill_wp.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.RegisterChequebook_btn
+{
+	width: 25px;
+	height: 125px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/registerchquebook.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+/*=================Hindi Button==================*/
+.Show_budget_btn_Hindi
+{
+	width: 25px;
+	height: 47px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/show_bgt_Hindi.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.upload_bill_btn_Hindi
+{
+	width: 25px;
+	height: 98px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/upload_bill_Hindi.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.unpaid_bill_btn_Hindi
+{
+	width: 25px;
+	height: 116px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/unpaid_bill_Hindi.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.Sanction_Note_btn_Hindi
+{
+	width: 25px;
+	height: 120px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/Sanction_Note_Hindi.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.new_agency_btn_Hindi
+{
+	width: 25px;
+	height: 90px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/new_agency_Hindi.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.fill_trn_btn_Hindi
+{
+	width: 25px;
+	height: 87px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/fill_trn_Hindi.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.fill_wp_btn_Hindi
+{
+	width: 25px;
+	height: 90px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/fill_wp_Hindi.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.RegisterChequebook_btn_Hindi
+{
+	width: 25px;
+	height: 116px;
+	margin: 0px;
+	float: right;
+	border: none;
+	background-image: url(../webyojnaimgYellow/registerchquebook_Hindi.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.CrossButton
+{
+	width: 15px;
+	height: 15px;
+	margin: 0px;
+	border: none;
+	background-image: url(../webyojnaimgYellow/cross.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.PupUp
+{
+	background-color: #993333;
+	font-family: Arial Unicode MS;
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.RedCrossButton
+{
+	padding-left: 5px;
+	width: 24px;
+	height: 21px;
+	margin: 5px;
+	border: none;
+	background-image: url(../webyojnaimgYellow/red_cross.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.PanelBorder
+{
+	border: 3px solid #c1c1c1;
+}
+/* Added by sikander for SOR/frm_ItemMeasurement.aspx */
+.btnSubmit
+{
+	background-color: #FF3300;
+	font-family: 'Arial Unicode MS';
+	border: 2px outset #FFFFFF;
+	cursor: pointer;
+	font-size: x-small;
+	color: #FFFFFF;
+	font-weight: normal;
+	text-decoration: none;
+}
+.TDLeft
+{
+	text-align: left;
+	width: 80px;
+}
+.TDRightData
+{
+	text-align: left;
+	width: 150px;
+}
+.TDRight
+{
+	text-align: right;
+}
+.modalpopup
+{
+	background-color: #F0EAC6;
+	padding: 6px;
+	width: 340px;
+	height: 220px;
+}
+.modalBackground
+{
+	background-color: #666666;
+}
+/*-------- Add by uttam this css for new  Menu pan.aspx ----------*/
+
+/* The outermost container of the Menu Bar, an auto width box with no margin or padding */
+ul.MenuBarHorizontal
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	cursor: default;
+	width: auto;
+}
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html */
+ul.MenuBarActive
+{
+	z-index: 1000;
+}
+/* Menu item containers, position children relative to this container and are a fixed width */
+ul.MenuBarHorizontal li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+	float: left;
+}
+/* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+ul.MenuBarHorizontal ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	z-index: 1024;
+	cursor: default;
+	position: absolute;
+	left: -1000em;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to auto so it comes onto the screen below its parent menu item */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
+{
+	left: auto;
+	width: 200px;
+}
+/* Menu item containers are same fixed width as parent */
+ul.MenuBarHorizontal ul li
+{
+	width: 200px;
+	border-bottom: 1px solid #FFF;
+}
+/* Submenus should appear slightly overlapping to the right (95%) and up (-5%) */
+ul.MenuBarHorizontal ul ul
+{
+	position: absolute;
+	margin: 0% 0 0 100%;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to 0 so it comes onto the screen */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible
+{
+	left: auto;
+	top: 0;
+}
+/* Submenu containers have borders on all sides */
+ul.MenuBarHorizontal ul
+{
+	border: 1px solid #FFF;
+}
+/* Menu items are a light gray block with padding and no text decoration */
+ul.MenuBarHorizontal a
+{
+	padding: 5px 12px;
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	background: #f7892c; /*background of tabs (default state)*/
+	border-right: 1px solid #FFF;
+	text-decoration: none;
+}
+/* Menu items that have mouse over or focus have a blue background and white text */
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
+{
+	/*background-color: #edec9e;*/
+	background-color: #515151;
+	color: #FFF;
+}
+/* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text */
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
+{
+	background-color: #515151;
+	color: #FFF;
+}
+
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal a.MenuBarItemSubmenu
+{
+	background-image: url(../down.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenu
+{
+	background-image: url(../right.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal a.MenuBarItemSubmenuHover
+{
+	background-image: url(../down.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenuHover
+{
+	background-image: url(../right.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+
+/* HACK FOR IE: to make sure the sub menus show above form controls, we underlay each submenu with an iframe */
+ul.MenuBarHorizontal iframe
+{
+	position: absolute;
+	z-index: 1010;
+}
+/* HACK FOR IE: to stabilize appearance of menu items; the slash in float is to keep IE 5.0 from parsing */
+@media screen, projection
+{
+	ul.MenuBarHorizontal li.MenuBarItemIE
+	{
+		display: inline;
+		float: left;
+		background: #FFF;
+	}
+}
+/*--------------------End-----------------*/
+
+/*============New Css For Label Font Size big Hindi=============*/
+.Frm_Txt_Hindi
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.btn_Hindi
+{
+	background: #658f1f;
+	padding: 7px 20px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	border: 0px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: 'Arial Unicode MS';
+	font-size: 15px;
+}
+.Frm_Head_Hindi
+{
+	font-family: Arial Unicode MS;
+	font-size: 25px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+.txt_Hindi
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #4d4d4d;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #FFF;
+	border-right: 1px groove #000000;
+	border-bottom: 1px groove #000000;
+}
+.ddl_Hindi
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #4d4d4d;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #CCFF99;
+	border-right: 1px groove #000000;
+	border-bottom: 1px groove #000000;
+}
+.show_btn_bg_Hindi
+{
+	background-color: #007cc2;
+	padding-left: 10px;
+	font-family: Arial Unicode MS;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+.RedText
+{
+	font-family: Arial Unicode MS;
+	font-size: 16px;
+	color: #FF3300;
+	font-weight: bold;
+	text-decoration: none;
+}
+.BlueText
+{
+	font-family: Arial Unicode MS;
+	font-size: 16px;
+	color: #FF0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.BlackText
+{
+	font-family: Arial Unicode MS;
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+.Strike_img
+{
+	height: 30px;
+	border: none;
+	background-image: url(../webyojnaimgYellow/Strike.jpg);
+	background-repeat: repeat-x;
+}
+
+/*=============================New Default Page Css Start =============================*/
+.body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #4c4c4c;
+	font-family: 'Arial Unicode MS';
+}
+.HometableColor
+{
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: "Arial Unicode MS";
+}
+
+.Homelogo
+{
+	background-image: url(../webyojnaimgYellow/logo.jpg);
+	background-repeat: no-repeat;
+	width: 337px;
+	height: 50px;
+	background-position: bottom;
+}
+.punchline
+{
+	background-image: url(../webyojnaimgYellow/punchline.jpg);
+	background-repeat: no-repeat;
+	width: 337px;
+	height: 30px;
+}
+.lightGreenColor
+{
+	background-color: #e7e7e7;
+}
+.Homemenuleft
+{
+	background-image: url(../webyojnaimgYellow/menuleftimg.jpg);
+	background-repeat: no-repeat;
+	width: 13px;
+	height: 35px;
+}
+.Homemenumiddle
+{
+	background-image: url(../webyojnaimgYellow/menumiddleimg.jpg);
+	background-repeat: repeat-x;
+	height: 35px;
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.Homemenuright
+{
+	background-image: url(../webyojnaimgYellow/menurightimg.jpg);
+	background-repeat: no-repeat;
+	width: 13px;
+	height: 35px;
+}
+
+.HomeProjectLink a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #d75100;
+	text-decoration: none;
+}
+.HomeProjectLink a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #d75100;
+	text-decoration: none;
+}
+.HomeProjectLink a:hover
+{
+	color: #000;
+	text-decoration: none;
+}
+.Homebanner
+{
+	background-image: url(../webyojnaimgYellow/banner.jpg);
+	background-repeat: no-repeat;
+	width: 589px;
+	height: 150px;
+}
+.Homeleftboxbottom
+{
+	background-color: #e8f5fe;
+	border: 1px solid #989c9f;
+}
+.lightBlackColor
+{
+	background-color: #f0f0f0;
+}
+.Homeline
+{
+	background-image: url(../webyojnaimgYellow/Homeline.jpg);
+	background-repeat: no-repeat;
+	width: 393px;
+	height: 10px;
+}
+
+.pHomeText
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.Hometxt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+h1
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.HomeRedText
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #b61e00;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.HomeBlackText
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.HomedotIcon
+{
+	background-image: url(../webyojnaimgYellow/dotIcon.gif);
+	background-repeat: repeat-x;
+	background-position: center;
+	height: 10px;
+}
+.HomeLink a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #b61e00;
+	text-decoration: none;
+	font-weight: bold;
+}
+.HomeLink a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #b61e00;
+	text-decoration: none;
+	font-weight: bold;
+}
+.HomeLink a:hover
+{
+	color: #4b4f00;
+	text-decoration: none;
+}
+
+.Homefootercolor
+{
+	background-color: #6b6b6b;
+	color: #FFFFFF;
+}
+
+.Homefooterdot
+{
+	background-image: url(../webyojnaimgYellow/footerdot.gif);
+	background-repeat: repeat-y;
+	background-position: center;
+	width: 20px;
+}
+
+h2
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #b61e00;
+	font-weight: bold;
+	padding-left: 10px;
+}
+h3
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.Homefooterlink a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.Homefooterlink a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.Homefooterlink a:hover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.HomeAbout
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #990000;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.Homeinnerbanner
+{
+	background-image: url(../webyojnaimgYellow/innerbanner.jpg);
+	background-repeat: no-repeat;
+	width: 950px;
+	height: 150px;
+}
+
+.UnderCunstruction_img
+{
+	background-image: url(../webyojnaimgYellow/under_construction.jpg);
+	background-repeat: no-repeat;
+	width: 655px;
+	height: 300px;
+}
+.Blue_bg
+{
+	background-color: #004f79;
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.Homeread_more a:link
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 12px;
+	color: #990000;
+	text-decoration: underline;
+}
+.Homeread_more a:visited
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 12px;
+	color: #990000;
+	text-decoration: underline;
+}
+.Homeread_more a:hover
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.Technology_Strip
+{
+	background-image: url(../webyojnaimgYellow/Technology_Strip.jpg);
+	background-repeat: no-repeat;
+	width: 264px;
+	height: 29px;
+}
+
+.CaseStudies_Strip
+{
+	background-image: url(../webyojnaimgYellow/CaseStudies_Strip_Strip.jpg);
+	background-repeat: no-repeat;
+	width: 264px;
+	height: 29px;
+}
+
+.Project_Strip
+{
+	background-image: url(../webyojnaimgYellow/project_Strip.jpg);
+	background-repeat: no-repeat;
+	width: 264px;
+	height: 29px;
+}
+
+.Sitemap_bg
+{
+	background-image: url(../webyojnaimgYellow/Sitemap.jpg);
+	background-repeat: no-repeat;
+	width: 900px;
+	height: 359px;
+	background-position: center top;
+}
+.Homebtn
+{
+	background-color: #8dd8ff;
+	font-family: 'Arial Unicode MS';
+	border: 2px outset #FFFFFF;
+	cursor: pointer;
+	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*==============End===================*/
+.Welcome_img
+{
+	width: 518px;
+	height: 230px;
+	background-image: url(../webyojnaimgYellow/welcome_img.jpg);
+	background-repeat: no-repeat;
+}
+
+.txtcolor
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #4d4d4d;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #f1f1f1;
+	border-right: 1px groove #000000;
+	border-bottom: 1px groove #000000;
+}
+.ddlcolor
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #4d4d4d;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #ffc8b1;
+	border-right: 1px groove #000000;
+	border-bottom: 1px groove #000000;
+}
+.AddNew
+{
+	color: Blue;
+	font-family: 'Arial Unicode MS';
+	font-size: 13px;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.DottedPanelBorder
+{
+	border: none;
+	-moz-box-shadow: 2px 2px 5px #c1c1c1;
+}
+
+.DotBorder
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.Frm_Txt
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.lbl
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.tableBorder
+{
+	border: 1px dashed #c1bc82;
+}
+
+.Bulb_img
+{
+	width: 24px;
+	height: 30px;
+	background-image: url(../webyojnaimgYellow/Bulb_img.gif);
+	background-repeat: no-repeat;
+}
+
+
+
+/*========= Usermanagement Button ===============*/
+.User_btn
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/user_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 17px;
+	font-weight: bold;
+	color: #4d4d4d;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+.Ledger_btn
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/ledger_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+.Scheme_btn
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/scheme_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+.Category_btn
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/category_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+.Agency_btn
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/branch_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+.FormRight_btn
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/form_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+
+.AgencyType_btn
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/category_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+.AgencyType_btn_Hindi
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/category_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	font-weight: bold;
+	color: #4d4d4d;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+
+/*========= Usermanagement Hindi Button ===============*/
+.User_btn_Hindi
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/user_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 18px;
+	font-weight: bold;
+	color: #4d4d4d;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+.Ledger_btn_Hindi
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/ledger_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	font-weight: bold;
+	color: #4d4d4d;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+.Scheme_btn_Hindi
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/scheme_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	font-weight: bold;
+	color: #4d4d4d;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+.Category_btn_Hindi
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/category_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+.Agency_btn_Hindi
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/branch_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+.FormRight_btn_Hindi
+{
+	width: 123px;
+	height: 102px;
+	background-image: url(../img/form_icon.gif);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	font-family: 'Arial Unicode MS';
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 60px;
+}
+
+/*======================New Css Add For Page Wise Tab Created============================*/
+.trcls, .thcls, .tdcls
+{
+	border-collapse: collapse;
+	border-color: Black;
+	font-family: Verdana;
+}
+.trcls1, .thcls1, .tdcls1
+{
+	border-collapse: collapse;
+	border-color: Black;
+	background-color: #dfdfdf;
+	font-family: Verdana;
+}
+.tabberlive .tabbertabhide
+{
+	display: none;
+}
+.tabber
+{
+}
+.tabberlive
+{
+	margin-top: 1em;
+}
+ul.tabbernav
+{
+	margin: 0;
+	padding: 3px 0;
+	border-bottom: 1px dashed #c1bc82;
+	font: bold 12px Verdana, sans-serif;
+}
+ul.tabbernav li
+{
+	list-style: none;
+	margin: 0;
+	display: inline;
+}
+ul.tabbernav li a
+{
+	padding: 3px 0.5em;
+	margin-left: 3px;
+	border: 1px dashed #c1bc82;
+	-moz-box-shadow: 2px 2px 5px #c1c1c1;
+	border-bottom: none;
+	background: #690;
+	text-decoration: none;
+}
+ul.tabbernav li a:link
+{
+	color: #FFF;
+}
+ul.tabbernav li a:visited
+{
+	color: #FFF;
+}
+ul.tabbernav li a:hover
+{
+	color: #FFF;
+	background: #4d4d4d;
+	border-color: #227;
+}
+ul.tabbernav li.tabberactive a
+{
+	background-color: #690;
+	color: #4d4d4d;
+	border-bottom: 1px solid #fff;
+}
+ul.tabbernav li.tabberactive a:hover
+{
+	color: #000;
+	background: white;
+	border-bottom: 1px solid white;
+}
+.tabberlive .tabbertab
+{
+	padding: 5px;
+	font-family: Verdana;
+	border: 1px dashed #c1bc82;
+	-moz-box-shadow: 2px 2px 5px #c1c1c1;
+	border-top: 0;
+}
+/* If desired, hide the heading since a heading is provided by the tab */.tabberlive .tabbertab h2
+{
+	display: none;
+}
+.tabberlive .tabbertab h3
+{
+	display: none;
+}
+/* Example of using an ID to set different styles for the tabs on the page */.tabberlive#tab1
+{
+}
+.tabberlive#tab2
+{
+}
+.tabberlive#tab2 .tabbertab
+{
+	height: 200px;
+	overflow: auto;
+}
+
+.HERadioButton
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color: #FFF;
+	text-decoration: none;
+}
+.Menu_Color
+{
+	background:#f0fcdb; border-bottom:1px solid #a3d451; padding: 0 10px;
+}
+
+.TrailBalance_link a:link
+{
+	color: #000;
+	text-decoration: none;
+}
+.TrailBalance_link a:visited
+{
+	color: #000;
+	text-decoration: none;
+}
+.TrailBalance_link a:active
+{
+	color: #000;
+	text-decoration: none;
+}
+.TrailBalance_link a:hover
+{
+	color: #000;
+	text-decoration: none;
+}
+
+/*=================== Added for Budget Allotment(23/05/2013)=====================*/
+.DataHide
+{
+	display: none;
+}
+.txtRightAlign
+{
+	text-align: right;
+}
+.EffectiveRow
+{
+	background-color: #00CC00;
+}
+.NormalRow
+{
+	background-color: #F5F6E5;
+}
+.Select
+{
+	width: 205px;
+}
+.hidden
+{
+	display: none;
+}
+
+.btn_hilight
+{
+	background-color: Maroon;
+	font-family: 'Arial Unicode MS';
+	border: 2px outset #FFFFFF;
+	cursor: pointer;
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*========================New Pan Link change css Task No:(1676)=============================*/
+.jqueryslidemenu2
+{
+	width: 100%;
+}
+.jqueryslidemenu2 ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+/*Top level list items*/
+.jqueryslidemenu2 ul li
+{
+	position: relative;
+	display: inline;
+	float: left;
+	background:#f0fcdb;
+		border-right:#658f1f solid 1px;
+}
+/*Top level menu link items style*/
+.jqueryslidemenu2 ul li a
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color:#7c7c7c;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	padding: 8px 2px;	
+	border-right:none;
+	text-decoration: none;
+	font-weight:normal;
+
+}
+* html .jqueryslidemenu2 ul li a
+{
+	/*IE6 hack to get sub menu links to behave correctly*/
+	display: inline-block;
+}
+.jqueryslidemenu2 ul li a:link, .jqueryslidemenu2 ul li a:visited
+{
+	color: #000000;
+}
+.jqueryslidemenu2 ul li a:hover
+{
+	/*background-color: #000000; tab link background during hover state*/
+	border-right: 1px solid #FFF;	
+	color:#696969;
+	background:#f7f7f7;
+}
+/*1st sub level menu*/
+.jqueryslidemenu2 ul li ul
+{
+	position: absolute;
+	left: 0;
+	display: block;
+	visibility: hidden;
+	color: #000000;
+}
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu2 ul li ul li
+{
+	display: list-item;
+	float: none;
+}
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu2 ul li ul li ul
+{
+	top: 0;
+}
+/* Sub level menu links style */
+.jqueryslidemenu2 ul li ul li a
+{
+	font-family: 'Arial Unicode MS';
+	font-size: 14px;
+	color:#7c7c7c;
+	text-align: left;
+	width: 200px;
+	padding: 5px;
+	margin: 0;
+	border-right: 1px solid #FFF;
+	text-decoration: none;
+	border-top: 1px solid #FFF;
+}
+.jqueryslidemenu2 ul li ul li a:hover
+{
+	color:#696969;
+	background:#f7f7f7;
+}
+
+

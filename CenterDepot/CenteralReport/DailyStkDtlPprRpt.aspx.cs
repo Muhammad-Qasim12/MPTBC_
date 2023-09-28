@@ -1,0 +1,90 @@
+using System;
+using System.Collections.Generic;
+
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using Microsoft.Reporting.WebForms;
+using MPTBCBussinessLayer.Paper;
+using MPTBCBussinessLayer;
+
+public partial class Paper_PublishAndCoverPaperAllotmentAndSupplyReport : System.Web.UI.Page
+{
+
+    public class PPR_RDLCDataNew
+    {
+        public System.Data.DataTable DailyStockRptCD(string AcYear)
+        {
+            DBAccess obDBAccess = new DBAccess();
+            //obDBAccess.execute("USP_PPR0025_PaperTotStockWithYear", DBAccess.SQLType.IS_PROC);
+            //obDBAccess.execute("USP_PPR0025_PaperTotStockWithYear_15122020", DBAccess.SQLType.IS_PROC);
+            //obDBAccess.execute("USP_PPR0025_PaperTotStockWithYear_01042021", DBAccess.SQLType.IS_PROC);
+            //obDBAccess.execute("USP_PPR0025_PaperTotStockWithYear_14112021", DBAccess.SQLType.IS_PROC);
+            //obDBAccess.execute("USP_PPR0025_PaperTotStockWithYear_31032021", DBAccess.SQLType.IS_PROC);
+            obDBAccess.execute("USP_PPR0025_PaperTotStockWithYear_01042023", DBAccess.SQLType.IS_PROC);
+            obDBAccess.addParam("mAcYear", AcYear);
+            return obDBAccess.records1();
+        }
+    }
+    DataTable Dt;
+    PPR_RDLCDataNew objReportsNew = new PPR_RDLCDataNew();
+    PPR_RDLCData objReports = new PPR_RDLCData();
+    CommonFuction obCommonFuction = new CommonFuction();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!Page.IsPostBack)
+        {
+            LoadReport("LabInspection");
+        }
+    }
+    public void LoadReport(string Flag)
+    {
+        string AcYear = "";
+        AcYear = ddlYear.SelectedItem.Text;
+
+        Dt = new DataTable();
+        Dt = objReportsNew.DailyStockRptCD(AcYear);
+      
+        if (Dt.Rows.Count > 0)
+        {
+            ReportDataSource rds = new ReportDataSource("DataSet1", Dt);
+            ReportViewer1.LocalReport.ReportPath = Server.MapPath("~/CenterDepot/CenteralReport/DailyStockWithPpr.rdlc");
+            ReportViewer1.LocalReport.DataSources.Clear();
+            ReportViewer1.LocalReport.DataSources.Add(rds);
+            // ReportViewer1.LocalReport.EnableExternalImages = true;
+
+            ReportParameter[] Param = new ReportParameter[2];
+            Param[0] = new ReportParameter("Date", System.DateTime.Now.ToString("dd/MM/yyyy"));
+            Param[1] = new ReportParameter("Session",  ddlYear.SelectedItem.Text);
+            ReportViewer1.LocalReport.SetParameters(Param);
+            ReportViewer1.ShowPrintButton = true;
+            ReportViewer1.LocalReport.Refresh();
+            ReportViewer1.Visible = true;
+        }
+        else
+        {
+            ReportViewer1.Visible = false;
+            ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script>alert('No Record Found.');</script>");
+        }
+    }
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+        LoadReport("LabInspection");
+    }
+
+    protected void ddlYear_Init(object sender, EventArgs e)
+    {
+        Dis_TentativeDemandHistory objTentativeDemandHistory = new Dis_TentativeDemandHistory();
+        ddlYear.DataSource = objTentativeDemandHistory.TentativeDemandAcadminYearFill();
+        ddlYear.DataTextField = "AcYear";
+        ddlYear.DataValueField = "AcYear";
+        ddlYear.DataBind();
+        ddlYear.Items.Insert(0, "Select");
+        try
+        {
+            ddlYear.Items.FindByText(obCommonFuction.FillDatasetByProc("select GetAcYear()").Tables[0].Rows[0][0].ToString()).Selected = true;
+        }
+        catch { }
+    }
+}

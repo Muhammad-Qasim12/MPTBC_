@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsGSRRpt" targetNamespace="http://tempuri.org/DsGSRRpt.xsd" xmlns:mstns="http://tempuri.org/DsGSRRpt.xsd" xmlns="http://tempuri.org/DsGSRRpt.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsGSRRpt" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DsGSRRpt" msprop:Generator_UserDSName="DsGSRRpt">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DtGSRPraapti" msprop:Generator_TableClassName="DtGSRPraaptiDataTable" msprop:Generator_TableVarName="tableDtGSRPraapti" msprop:Generator_RowChangedName="DtGSRPraaptiRowChanged" msprop:Generator_TablePropName="DtGSRPraapti" msprop:Generator_RowDeletingName="DtGSRPraaptiRowDeleting" msprop:Generator_RowChangingName="DtGSRPraaptiRowChanging" msprop:Generator_RowEvHandlerName="DtGSRPraaptiRowChangeEventHandler" msprop:Generator_RowDeletedName="DtGSRPraaptiRowDeleted" msprop:Generator_RowClassName="DtGSRPraaptiRow" msprop:Generator_UserTableName="DtGSRPraapti" msprop:Generator_RowEvArgName="DtGSRPraaptiRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReceivedDate" msprop:Generator_ColumnVarNameInTable="columnReceivedDate" msprop:Generator_ColumnPropNameInRow="ReceivedDate" msprop:Generator_ColumnPropNameInTable="ReceivedDateColumn" msprop:Generator_UserColumnName="ReceivedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="PaperVendorName_V" msprop:Generator_ColumnVarNameInTable="columnPaperVendorName_V" msprop:Generator_ColumnPropNameInRow="PaperVendorName_V" msprop:Generator_ColumnPropNameInTable="PaperVendorName_VColumn" msprop:Generator_UserColumnName="PaperVendorName_V" type="xs:string" minOccurs="0" />
+              <xs:element name="NoOfReels" msprop:Generator_ColumnVarNameInTable="columnNoOfReels" msprop:Generator_ColumnPropNameInRow="NoOfReels" msprop:Generator_ColumnPropNameInTable="NoOfReelsColumn" msprop:Generator_UserColumnName="NoOfReels" type="xs:string" minOccurs="0" />
+              <xs:element name="NoOfSheets" msprop:Generator_ColumnVarNameInTable="columnNoOfSheets" msprop:Generator_ColumnPropNameInRow="NoOfSheets" msprop:Generator_ColumnPropNameInTable="NoOfSheetsColumn" msprop:Generator_UserColumnName="NoOfSheets" type="xs:string" minOccurs="0" />
+              <xs:element name="NoOfBundles" msprop:Generator_ColumnVarNameInTable="columnNoOfBundles" msprop:Generator_ColumnPropNameInRow="NoOfBundles" msprop:Generator_ColumnPropNameInTable="NoOfBundlesColumn" msprop:Generator_UserColumnName="NoOfBundles" type="xs:string" minOccurs="0" />
+              <xs:element name="CoverInformation" msprop:Generator_ColumnVarNameInTable="columnCoverInformation" msprop:Generator_ColumnPropNameInRow="CoverInformation" msprop:Generator_ColumnPropNameInTable="CoverInformationColumn" msprop:Generator_UserColumnName="CoverInformation" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceivedQty" msprop:Generator_ColumnVarNameInTable="columnReceivedQty" msprop:Generator_ColumnPropNameInRow="ReceivedQty" msprop:Generator_ColumnPropNameInTable="ReceivedQtyColumn" msprop:Generator_UserColumnName="ReceivedQty" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceivedDate11" msprop:Generator_ColumnVarNameInTable="columnReceivedDate11" msprop:Generator_ColumnPropNameInRow="ReceivedDate11" msprop:Generator_ColumnPropNameInTable="ReceivedDate11Column" msprop:Generator_UserColumnName="ReceivedDate11" type="xs:string" minOccurs="0" />
+              <xs:element name="PaperMstrTrId_I" msprop:Generator_ColumnVarNameInTable="columnPaperMstrTrId_I" msprop:Generator_ColumnPropNameInRow="PaperMstrTrId_I" msprop:Generator_ColumnPropNameInTable="PaperMstrTrId_IColumn" msprop:Generator_UserColumnName="PaperMstrTrId_I" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DtGSRSupply" msprop:Generator_TableClassName="DtGSRSupplyDataTable" msprop:Generator_TableVarName="tableDtGSRSupply" msprop:Generator_TablePropName="DtGSRSupply" msprop:Generator_RowDeletingName="DtGSRSupplyRowDeleting" msprop:Generator_RowChangingName="DtGSRSupplyRowChanging" msprop:Generator_RowEvHandlerName="DtGSRSupplyRowChangeEventHandler" msprop:Generator_RowDeletedName="DtGSRSupplyRowDeleted" msprop:Generator_UserTableName="DtGSRSupply" msprop:Generator_RowChangedName="DtGSRSupplyRowChanged" msprop:Generator_RowEvArgName="DtGSRSupplyRowChangeEvent" msprop:Generator_RowClassName="DtGSRSupplyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SupplyDate" msdata:Caption="ReceivedDate" msprop:Generator_ColumnVarNameInTable="columnSupplyDate" msprop:Generator_ColumnPropNameInRow="SupplyDate" msprop:Generator_ColumnPropNameInTable="SupplyDateColumn" msprop:Generator_UserColumnName="SupplyDate" type="xs:string" minOccurs="0" />
+              <xs:element name="PaperVendorName_V" msprop:Generator_ColumnVarNameInTable="columnPaperVendorName_V" msprop:Generator_ColumnPropNameInRow="PaperVendorName_V" msprop:Generator_ColumnPropNameInTable="PaperVendorName_VColumn" msprop:Generator_UserColumnName="PaperVendorName_V" type="xs:string" minOccurs="0" />
+              <xs:element name="NoOfReels" msprop:Generator_ColumnVarNameInTable="columnNoOfReels" msprop:Generator_ColumnPropNameInRow="NoOfReels" msprop:Generator_ColumnPropNameInTable="NoOfReelsColumn" msprop:Generator_UserColumnName="NoOfReels" type="xs:string" minOccurs="0" />
+              <xs:element name="NoOfSheets" msprop:Generator_ColumnVarNameInTable="columnNoOfSheets" msprop:Generator_ColumnPropNameInRow="NoOfSheets" msprop:Generator_ColumnPropNameInTable="NoOfSheetsColumn" msprop:Generator_UserColumnName="NoOfSheets" type="xs:string" minOccurs="0" />
+              <xs:element name="NoOfBundles" msprop:Generator_ColumnVarNameInTable="columnNoOfBundles" msprop:Generator_ColumnPropNameInRow="NoOfBundles" msprop:Generator_ColumnPropNameInTable="NoOfBundlesColumn" msprop:Generator_UserColumnName="NoOfBundles" type="xs:string" minOccurs="0" />
+              <xs:element name="CoverInformation" msprop:Generator_ColumnVarNameInTable="columnCoverInformation" msprop:Generator_ColumnPropNameInRow="CoverInformation" msprop:Generator_ColumnPropNameInTable="CoverInformationColumn" msprop:Generator_UserColumnName="CoverInformation" type="xs:string" minOccurs="0" />
+              <xs:element name="SendQty" msdata:Caption="ReceivedQty" msprop:Generator_ColumnVarNameInTable="columnSendQty" msprop:Generator_ColumnPropNameInRow="SendQty" msprop:Generator_ColumnPropNameInTable="SendQtyColumn" msprop:Generator_UserColumnName="SendQty" type="xs:string" minOccurs="0" />
+              <xs:element name="SupplyDate11" msdata:Caption="ReceivedDate11" msprop:Generator_ColumnVarNameInTable="columnSupplyDate11" msprop:Generator_ColumnPropNameInRow="SupplyDate11" msprop:Generator_ColumnPropNameInTable="SupplyDate11Column" msprop:Generator_UserColumnName="SupplyDate11" type="xs:string" minOccurs="0" />
+              <xs:element name="PaperMstrTrId_I" msprop:Generator_ColumnVarNameInTable="columnPaperMstrTrId_I" msprop:Generator_ColumnPropNameInRow="PaperMstrTrId_I" msprop:Generator_ColumnPropNameInTable="PaperMstrTrId_IColumn" msprop:Generator_UserColumnName="PaperMstrTrId_I" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

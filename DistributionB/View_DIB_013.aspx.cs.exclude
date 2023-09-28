@@ -1,0 +1,46 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using MPTBCBussinessLayer.DistributionB;
+
+public partial class Paper_ViewPPR_002_TechBid : System.Web.UI.Page
+{
+    InsuranceTechnicalBid ObjTechnicalBid = null;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!Page.IsPostBack)
+        {
+            GridFillLoad();
+        }
+    }
+    public void GridFillLoad()
+    {
+        try
+        {
+            ObjTechnicalBid = new InsuranceTechnicalBid();
+            GrdLabMaster.DataSource = ObjTechnicalBid.Select();
+            GrdLabMaster.DataBind();
+        }
+        catch { }
+
+    }
+   
+    protected void GrdLabMaster_PageIndexChanging(object sender, GridViewPageEventArgs e)
+    {
+        GrdLabMaster.PageIndex = e.NewPageIndex;
+        GridFillLoad();
+    }
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            ObjTechnicalBid = new InsuranceTechnicalBid();
+            GrdLabMaster.DataSource = ObjTechnicalBid.SearchTender(txtSearch.Text);
+            GrdLabMaster.DataBind();
+        }
+        catch { }
+    }
+}

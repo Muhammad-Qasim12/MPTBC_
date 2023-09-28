@@ -1,0 +1,205 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<html lang="en">
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>M.P. Text Book Corporation</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link href="assets/css/style_new.css?v0.5" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css?v0.4" rel="stylesheet"  media="all" />
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet" media="all" />
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet"  media="all" />
+    <link href="assets/css/multiple-select.css" rel="stylesheet" media="all" />
+    <link href="assets/css/menu.css?v0.8" rel="stylesheet" media="all" />
+    <%--<link href="css/ui.css?v0.1" rel="stylesheet" media="all" />--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="wrapper d-flex align-items-stretch">
+            <nav id="sidebar" class="img">
+                <div class="custom-menu">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary"><i class="bi bi-list"></i><span class="sr-only">Toggle Menu</span></button></div>
+                <div class="p-3">
+                    <h1><a href="#" class="logo">
+                        <img src="../assets/img/logo_wht.png" width="99%" /></a></h1>
+                    </div>
+                    <nav class="sidebar mb-4">
+                        <asp:Menu ID="mnuLinks" RenderingMode="List" Orientation="Horizontal" runat="server" Visible="false">
+                        </asp:Menu>
+                        <div id="menu_navbar" runat="server"></div>
+                    </nav>
+                
+            </nav>
+            <div id="content">
+                <div class="top_hdr d-flex align-items-center">
+                    <nav class="header-nav ms-auto">
+                        <ul class="d-flex align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-icon" href="#" data-bs-toggle="dropdown">
+                                    <i class="bi bi-house"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-icon" href="#" data-bs-toggle="dropdown">
+                                    <i class="bi bi-bell"></i>
+                                    <span class="badge bg-primary badge-number">4</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                                    <li class="dropdown-header">You have 4 new notifications <a href="#">
+                                        <span class="badge rounded-pill bg-primary p-2 ms-2">View all</span>
+                                    </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="notification-item">
+                                        <i class="bi bi-exclamation-circle text-warning"></i>
+                                        <div>
+                                            <h4>Lorem Ipsum</h4>
+                                            <p>Quae dolorem earum veritatis oditseno</p>
+                                            <p>30 min. ago</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="notification-item">
+                                        <i class="bi bi-x-circle text-danger"></i>
+                                        <div>
+                                            <h4>Atque rerum nesciunt</h4>
+                                            <p>Quae dolorem earum veritatis oditseno</p>
+                                            <p>1 hr. ago</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="notification-item">
+                                        <i class="bi bi-check-circle text-success"></i>
+                                        <div>
+                                            <h4>Sit rerum fuga</h4>
+                                            <p>Quae dolorem earum veritatis oditseno</p>
+                                            <p>2 hrs. ago</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="notification-item">
+                                        <i class="bi bi-info-circle text-primary"></i>
+                                        <div>
+                                            <h4>Dicta reprehenderit</h4>
+                                            <p>Quae dolorem earum veritatis oditseno</p>
+                                            <p>4 hrs. ago</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="dropdown-footer">
+                                        <a href="#">Show all notifications</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown pe-3">
+                                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+                                    Welcome! <asp:Label ID="lblUserName" runat="server" Text="" class="d-none d-md-block dropdown-toggle ps-2"></asp:Label>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                                    <li class="dropdown-header">
+                                        <h6 id="h6username" runat="server"></h6>
+                                       <%-- <span>Bhopal</span>--%>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="nav-link d-flex align-items-center" href="users-profile.html">
+                                            <i class="bi bi-person"></i>
+                                            <span>My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="lbtnLogout" CausesValidation="false" CssClass="nav-link d-flex align-items-center" OnClick="lbtnLogout_Click" runat="server">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Sign Out</span>
+                                        </asp:LinkButton>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <section class="p-3 p-md-3 pt-3">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <button onclick="goBack()">Go Back</button>
+                        <br />
+                    </asp:ContentPlaceHolder>
+                </section>
+                <div class="box text-center">
+                    <p><a href="#" class="logo" title="Admintasia">M.P. Text Book Corporation</a><br />
+                    Copyright &copy; 2023. Design & Developed By <b>MPTBC</b></p>
+                    <asp:RadioButton ID="rbcore" runat="server" Text="Switch To Core Module" Visible="false" AutoPostBack="true" OnCheckedChanged="rbcore_CheckedChanged" GroupName="d" />
+                </div>
+            </div>
+        </div>
+
+        <div id="fadeDiv" class="modalBackground" style="display: none;">
+        </div>
+        <script type="text/javascript" src="../../assets/js/jquery-3.7.0.js"></script>
+         <script src="../../assets/Script.js"></script>
+        <!-- Include SweetAlert -->
+        <link href="../../assets/sweetalert2.min.css" rel="stylesheet" />
+        <script src="../../assets/sweetalert2.all.min.js"></script>
+        <script type="text/javascript" src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="../../assets/js/jquery.dataTables.js"></script>
+        <script type="text/javascript" src="../../assets/js/dataTables.bootstrap5.min.js"></script>
+        <script src="../../assets/js/main.js"></script>
+        <script type="text/javascript" src="../../assets/js/multiple-select.js"></script>
+        <script type="text/javascript" src="../../assets/js/multi-select.js"></script>
+        <script src="../../assets/js/jquery.nice-select.js"></script>
+        <script src="../../assets/js/nice-select.js"></script>
+        <script type="text/javascript">
+            window.setInterval(function () { LogOutAutometically() }, 25000);
+
+            function LogOutAutometically() {
+                var dt = new Date();
+                var pageUrl = "../logoutAutometically.aspx?dt=" + dt.getTime();
+                //		    alert(pageUrl);
+                var result = $.ajax({
+                    type: "GET", url: pageUrl, success: function (data) {
+                        //alert(data);
+                    }
+                });
+            }
+            const counters = document.querySelectorAll(".counter");
+
+            counters.forEach((counter) => {
+                counter.innerText = "0";
+                const updateCounter = () => {
+                    const target = +counter.getAttribute("data-target");
+                    const count = +counter.innerText;
+                    const increment = target / 400;
+                    if (count < target) {
+                        counter.innerText = `${Math.ceil(count + increment)}`;
+                        setTimeout(updateCounter, 1);
+                    } else counter.innerText = target;
+                };
+                updateCounter();
+            });
+
+        </script>
+    </form>
+</body>
+</html>

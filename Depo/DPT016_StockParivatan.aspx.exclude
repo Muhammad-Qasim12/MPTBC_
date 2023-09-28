@@ -1,0 +1,585 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="DPT016_StockParivatan.aspx.cs" Inherits="Depo_DPT016_StockParivatan" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+ <div class="box">
+        <div class="card-header">
+            <h2>
+                <span>स्टॉक  परिवर्तन</span></h2>
+        </div>
+        <div style="padding-right: 10px; padding-left: 10px; padding-bottom: 0px; padding-top: 0px">
+
+            <cc1:TabContainer ID="TabContainer1" runat="server">
+                <cc1:TabPanel ID="TabPanel1" HeaderText="पुस्तक प्रकार परिवर्तन" runat="server">
+                    <ContentTemplate>
+                      <table width="100%">
+                <tr>
+                    <td style="height: 32px">
+                        दिनांक</td>
+                    <td colspan="4" style="height: 32px">
+                        <asp:TextBox ID="TextBox2" runat="server" CssClass="txtbox"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 32px">
+                        माध्यम</td>
+                    <td colspan="4" style="height: 32px">
+                         <asp:DropDownList ID="DropDownList1" runat="server" CssClass="txtbox">
+                                    <asp:ListItem></asp:ListItem>
+                                    
+                                </asp:DropDownList>
+                       </td>
+                </tr>
+                <tr>
+                    <td style="height: 32px">
+                        कक्षा</td>
+                    <td colspan="4" style="height: 32px">
+                        <asp:DropDownList ID="DropDownList2" runat="server" CssClass="txtbox">
+                                    <asp:ListItem>Select..</asp:ListItem>
+                                    <asp:ListItem>1</asp:ListItem>
+                                    <asp:ListItem>2</asp:ListItem>
+                                    <asp:ListItem>3</asp:ListItem>
+                                    <asp:ListItem>4</asp:ListItem>
+                                    <asp:ListItem>5</asp:ListItem>
+                                    <asp:ListItem>6</asp:ListItem>
+                                    <asp:ListItem>7</asp:ListItem>
+                                    <asp:ListItem>8</asp:ListItem>
+                                    <asp:ListItem>9</asp:ListItem>
+                                    <asp:ListItem>10</asp:ListItem>
+                                    <asp:ListItem>11</asp:ListItem>
+                                    <asp:ListItem>12</asp:ListItem>
+                                    <asp:ListItem>1-5</asp:ListItem>
+                                    <asp:ListItem>6-8</asp:ListItem>
+                                    <asp:ListItem>1-8</asp:ListItem>
+                                    <asp:ListItem>9-12</asp:ListItem>
+                                    <asp:ListItem>All</asp:ListItem>                                   
+                                </asp:DropDownList>
+                               </td>
+                </tr>
+                <tr>
+                    <td>
+                        पुस्तक का नाम
+                    </td>
+                    <td>
+                        <asp:DropDownList ID="DropDownList4" runat="server">
+                            <asp:ListItem> भाषा भारती </asp:ListItem>
+                            <asp:ListItem> इंग्लिश रीडर</asp:ListItem>
+                            <asp:ListItem> गणित </asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 32px">
+                        वेयरहाउस / गोदाम का नाम</td>
+                    <td colspan="4" style="height: 32px">
+                        <asp:DropDownList ID="DropDownList3" runat="server" CssClass="txtbox">
+                                   <asp:ListItem>Select..</asp:ListItem>
+                                    <asp:ListItem> 1 </asp:ListItem>
+                                    <asp:ListItem> 2 </asp:ListItem>
+                                    <asp:ListItem> 3 </asp:ListItem>
+                                    <asp:ListItem> 4 </asp:ListItem>
+                                    <asp:ListItem> 6 </asp:ListItem>
+                                    <asp:ListItem>  </asp:ListItem>
+                                    
+                                    <asp:ListItem></asp:ListItem>
+                                </asp:DropDownList>
+                          </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="height: 32px">
+                        <table class="tab" style="width: 100%">
+                            <tr>
+                                <th>
+                                    क्र.</th>
+                                <th>
+                                    विषय
+                                </th>
+                                <th style="width: 126px">
+                                    सामान्य
+                                </th>
+                                <th style="width: 212px">
+                                    योजना में परिवर्तन करे
+                                </th>
+                                <th>
+                                    &nbsp;गोदाम का नाम</th>
+                                <th>
+                                   बंडल एवं पुस्तक क्रमांक
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1</td>
+                                <td>
+                                    भाषा भारती</td>
+                                <td style="width: 126px">
+                                    1000</td>
+                                <td style="width: 212px">
+                                    <asp:TextBox ID="TextBox5" runat="server" CssClass="txtbox" Width="86px"></asp:TextBox></td>
+                                <td>
+                                     <asp:DropDownList ID="DropDownList5" runat="server" CssClass="txtbox">
+                                   <asp:ListItem>Select..</asp:ListItem>
+                                    <asp:ListItem> 1 </asp:ListItem>
+                                    <asp:ListItem> 2 </asp:ListItem>
+                                    <asp:ListItem> 3 </asp:ListItem>
+                                    <asp:ListItem> 4 </asp:ListItem>
+                                    <asp:ListItem> 6 </asp:ListItem>
+                                    <asp:ListItem>  </asp:ListItem>
+                                    
+                                    <asp:ListItem></asp:ListItem>
+                                </asp:DropDownList>
+                                </td>
+                                <td>
+                                     <asp:LinkButton ID="LinkButton6" OnClick="LinkButton2_Click" runat="server">Click here</asp:LinkButton>
+                                </td>
+                            </tr>
+                          
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <asp:Button ID="Button1" runat="server" CssClass="btn" Text="जोड़े" /></td>
+                </tr>
+                 <tr>
+                    <td colspan="5" style="height: 32px">
+                        <table class="tab" style="width: 100%">
+                            <tr>
+                                <th>
+                                    क्र.</th>
+                                <th>
+                                    विषय
+                                </th>
+                                <th style="width: 126px">
+                                    सामान्य
+                                </th>
+                                <th style="width: 212px">
+                                    योजना में परिवर्तन करे
+                                </th>
+                                <th>
+                                    &nbsp;गोदाम का नाम</th>
+                                <th>
+                                   बंडल एवं पुस्तक क्रमांक
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1</td>
+                                <td>
+                                    भाषा भारती</td>
+                                <td style="width: 126px">
+                                    800</td>
+                                <td style="width: 212px">
+                                   200
+                                 </td>
+                                <td>
+                                     1 
+                                    
+                                </td>
+                                <td>
+                                     <asp:LinkButton ID="LinkButton3" OnClick="LinkButton2_Click" runat="server">Click here</asp:LinkButton>
+                                </td>
+                            </tr>
+                          
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <asp:Button ID="Button10" runat="server" CssClass="btn" Text="सुरक्षित करें" /></td>
+                </tr>
+            </table>
+              <div id="fadeDiv" runat="server" class="modalBackground" style="display: none">
+                    </div>
+                    <div id="Messages" runat="server" class="popupnew" style="display: none">
+                        <h2>
+                            &nbsp;</h2>
+                        <div class="msg MT10">
+                            <p>
+                                 <table>
+                                <tr>
+                                    <td>
+                                        <input id="Radio1" name="radio1"  type="radio" />                                
+                                    </td>
+                                    <td>
+                                       
+                                    </td>
+                                </tr>
+                                <tr>                                   
+                                    <td colspan="2">
+                                        <table class="tab">
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th> </th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <asp:Button ID="Button3" runat="server" CssClass="btn" Text="" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> <input id="Radio2"  name="radio1" type="radio" /> </td>
+                                    <td>
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            
+                                            <textarea id="TextArea1" cols="20" rows="2" style="width:900px;" ></textarea>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            </p>
+                             <asp:Button ID="Button4" runat="server" CssClass="btn" OnClick="Button2_Click" Text="" />
+                            <asp:Button ID="Button2" runat="server" CssClass="btn" OnClick="Button2_Click" Text="" /></div>
+                    </div>
+                    </ContentTemplate>
+                </cc1:TabPanel>
+                <cc1:TabPanel ID="TabPanel2" HeaderText="पुस्तक स्थिति परिवर्तन" runat="server">
+                <ContentTemplate>
+                       <table width="100%">
+                <tr>
+                    <td style="height: 32px">
+                        दिनांक</td>
+                    <td colspan="4" style="height: 32px">
+                        <asp:TextBox ID="TextBox1" runat="server" CssClass="txtbox"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 32px">
+                        माध्यम</td>
+                    <td colspan="4" style="height: 32px">
+                         <asp:DropDownList ID="DropDownList6" runat="server" CssClass="txtbox">
+                                    <asp:ListItem></asp:ListItem>
+                                    <asp:ListItem> </asp:ListItem>
+                                   
+                                </asp:DropDownList>
+                       </td>
+                </tr>
+                <tr>
+                    <td style="height: 32px">
+                        कक्षा</td>
+                    <td colspan="4" style="height: 32px">
+                        <asp:DropDownList ID="DropDownList7" runat="server" CssClass="txtbox">
+                                    <asp:ListItem>Select..</asp:ListItem>
+                                    <asp:ListItem>1</asp:ListItem>
+                                    <asp:ListItem>2</asp:ListItem>
+                                    <asp:ListItem>3</asp:ListItem>
+                                    <asp:ListItem>4</asp:ListItem>
+                                    <asp:ListItem>5</asp:ListItem>
+                                    <asp:ListItem>6</asp:ListItem>
+                                    <asp:ListItem>7</asp:ListItem>
+                                    <asp:ListItem>8</asp:ListItem>
+                                    <asp:ListItem>9</asp:ListItem>
+                                    <asp:ListItem>10</asp:ListItem>
+                                    <asp:ListItem>11</asp:ListItem>
+                                    <asp:ListItem>12</asp:ListItem>
+                                    <asp:ListItem>1-5</asp:ListItem>
+                                    <asp:ListItem>6-8</asp:ListItem>
+                                    <asp:ListItem>1-8</asp:ListItem>
+                                    <asp:ListItem>9-12</asp:ListItem>
+                                    <asp:ListItem>All</asp:ListItem>                                   
+                                </asp:DropDownList>
+                               </td>
+                </tr>
+                <tr>
+                    <td>
+                        पुस्तक का नाम
+                    </td>
+                    <td>
+                        <asp:DropDownList ID="DropDownList8" runat="server">
+                            <asp:ListItem> भाषा भारती </asp:ListItem>
+                            <asp:ListItem> इंग्लिश रीडर</asp:ListItem>
+                            <asp:ListItem> गणित </asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 32px">
+                        वेयरहाउस / गोदाम का नाम</td>
+                    <td colspan="4" style="height: 32px">
+                        <asp:DropDownList ID="DropDownList9" runat="server" CssClass="txtbox">
+                                   <asp:ListItem>Select..</asp:ListItem>
+                                    <asp:ListItem> 1 </asp:ListItem>
+                                    <asp:ListItem> 2 </asp:ListItem>
+                                    <asp:ListItem> 3 </asp:ListItem>
+                                    <asp:ListItem> 4 </asp:ListItem>
+                                    <asp:ListItem> 6 </asp:ListItem>
+                                    <asp:ListItem>  </asp:ListItem>
+                                   
+                                </asp:DropDownList>
+                          </td>
+                </tr>
+                 <tr>
+                    <td>
+                        वर्तमान स्थिति
+                    </td>
+                    <td>
+                        <asp:DropDownList ID="DropDownList12" runat="server">
+                            <asp:ListItem> उपयोगी</asp:ListItem>
+                            <asp:ListItem>अप्रचलित </asp:ListItem>
+                            <asp:ListItem>अनुपयोगी</asp:ListItem>
+                            
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        परिवर्तन करने वाली स्थिति
+                    </td>
+                    <td>
+                        <asp:DropDownList ID="DropDownList13" runat="server">
+                            <asp:ListItem>अप्रचलित </asp:ListItem>
+                            <asp:ListItem>अनुपयोगी</asp:ListItem>
+                            <asp:ListItem>अपलेखिक</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="height: 32px">
+                        <table class="tab" style="width: 100%">
+                            <tr>
+                                <th rowspan="2">
+                                    क्र.
+                                </th>
+                                <th rowspan="2" >
+                                    विषय
+                                </th>
+                                <th colspan="3">
+                                    उपयोगी
+                                </th>
+                                <th colspan="3">
+                                    अनुपयोगी
+                                </th>
+                                <th rowspan="2">
+                                    नवीन गोदाम
+                                </th>
+                                <th rowspan="2">कारण</th>
+                                <th rowspan="2">
+                                   बंडल एवं पुस्तक क्रमांक
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>सामान्य</th>
+                                <th>योजना</th>
+                                 <th>कुल</th>
+                                 <th>सामान्य</th>
+                                <th>योजना</th>
+                                <th>कुल</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1</td>
+                                <td>
+                                    भाषा भारती</td>
+                                <td>
+                                    200</td>
+                                <td>1000</td>
+                                <td>1200</td>
+                                <td>
+                                    <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
+                                 </td>
+                                <td>
+                                    <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
+                                 </td>
+                                <td>
+                                    <asp:TextBox ID="TextBox3" runat="server" CssClass="txtbox" Width="86px"></asp:TextBox>
+                                </td>
+                               
+                                <td>
+                                     <asp:DropDownList ID="DropDownList10" runat="server" CssClass="txtbox">
+                                   <asp:ListItem>Select..</asp:ListItem>
+                                    <asp:ListItem> 1 </asp:ListItem>
+                                    <asp:ListItem> 2 </asp:ListItem>
+                                    <asp:ListItem> 3 </asp:ListItem>
+                                    <asp:ListItem> 4 </asp:ListItem>
+                                    <asp:ListItem> 6 </asp:ListItem>
+                                
+                                </asp:DropDownList>
+                                </td>
+                                <td>
+                                    <asp:DropDownList ID="DropDownList11" runat="server">
+                                        <asp:ListItem>मुद्रण की त्रुटी</asp:ListItem>
+                                        <asp:ListItem>रखरखाव में त्रुटी</asp:ListItem>
+                                        <asp:ListItem>अन्य </asp:ListItem>
+                                    </asp:DropDownList>
+                                </td>
+                                <td>
+                                     <asp:LinkButton ID="LinkButton1" OnClick="LinkButton2_Click" runat="server">Click here</asp:LinkButton>
+                                </td>
+                            </tr>
+                          
+                        </table>
+                    </td>
+                </tr>
+                  <tr>
+                    <td colspan="5">
+                        <asp:Button ID="Button9" runat="server" CssClass="btn" Text="जोड़े" /></td>
+                </tr>
+                 <td colspan="5" style="height: 32px">
+                        <table class="tab" style="width: 100%">
+                            <tr>
+                                <th rowspan="2">
+                                    क्र.
+                                </th>
+                                <th rowspan="2" >
+                                    विषय
+                                </th>
+                                <th colspan="3">
+                                    उपयोगी
+                                </th>
+                                <th colspan="3">
+                                    अनुपयोगी
+                                </th>
+                                <th rowspan="2">
+                                    नवीन गोदाम
+                                </th>
+                                <th rowspan="2">कारण</th>
+                                <th rowspan="2">
+                                   बंडल एवं पुस्तक क्रमांक
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>सामान्य</th>
+                                <th>योजना</th>
+                                <th>कुल</th>
+                                 <th>सामान्य</th>
+                                <th>योजना</th>
+                                <th>कुल</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1</td>
+                                <td>
+                                    भाषा भारती</td>
+                                <td>
+                                    200</td>
+                                <td>1000</td>
+                                <td>1200</td>
+                                <td>
+                                    100
+                                 </td>
+                                <td>
+                                    100
+                                 </td>
+                                <td>
+                                    200
+                                </td>
+                               
+                                <td>
+                                      1 
+                                </td>
+                                <td>
+                                    रखरखाव में त्रुटी
+                                    
+                                </td>
+                                <td>
+                                     <asp:LinkButton ID="LinkButton2" OnClick="LinkButton2_Click" runat="server">Click here</asp:LinkButton>
+                                </td>
+                            </tr>
+                          
+                        </table>
+                    </td>
+                <tr>
+                    <td colspan="5">
+                        <asp:Button ID="Button5" runat="server" CssClass="btn" Text="सुरक्षित करे " /></td>
+                </tr>
+            </table>
+              <div id="Div1" runat="server" class="modalBackground" style="display: none">
+                    </div>
+                    <div id="Div2" runat="server" class="popupnew" style="display: none">
+                        <h2>
+                            &nbsp;</h2>
+                        <div class="msg MT10">
+                            <p>
+                                 <table>
+                                <tr>
+                                    <td>
+                                        <input id="Radio3" name="radio1"  type="radio" />   &#2346;&#2376;&#2325; &#2348;&#2306;&#2337;&#2354;                                     
+                                    </td>
+                                    <td>
+                                       
+                                    </td>
+                                </tr>
+                                <tr>                                   
+                                    <td colspan="2">
+                                        <table class="tab">
+                                            <tr>
+                                               <th>क्रमांक</th>
+                                                <th>बंडल क्रमांक से</th>
+                                                <th>बंडल क्रमांक तक</th>
+                                                <th>प्रति बंडल पुस्तकों की संख्या</th>
+                                                <th>पुस्तक क्रमांक से </th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <asp:Button ID="Button6" runat="server" CssClass="btn" Text="&#2332;&#2379;&#2396;&#2375;" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> <input id="Radio4"  name="radio1" type="radio" /> </td>
+                                    <td>
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table>
+                                            
+                                            <textarea id="TextArea2" cols="20" rows="2" style="width:900px;" ></textarea>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            </p>
+                             <asp:Button ID="Button7" runat="server" CssClass="btn" OnClick="Button2_Click" Text="&#2360;&#2369;&#2352;&#2325;&#2381;&#2359;&#2367;&#2340; &#2325;&#2352;&#2375;&#2306;" />
+                            <asp:Button ID="Button8" runat="server" CssClass="btn" OnClick="Button2_Click" Text="&#2348;&#2306;&#2342; &#2325;&#2352;&#2375;&#2306;" /></div>
+                    </div> 
+                </ContentTemplate>
+                </cc1:TabPanel>
+            </cc1:TabContainer>
+
+
+          
+        </div>
+    </div>
+</asp:Content>
+

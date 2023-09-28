@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MDDeashboard" targetNamespace="http://tempuri.org/MDDeashboard.xsd" xmlns:mstns="http://tempuri.org/MDDeashboard.xsd" xmlns="http://tempuri.org/MDDeashboard.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MDDeashboard" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="MDDeashboard" msprop:Generator_UserDSName="MDDeashboard">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowClassName="DataTable2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pending" msprop:Generator_ColumnVarNameInTable="columnpending" msprop:Generator_ColumnPropNameInRow="pending" msprop:Generator_ColumnPropNameInTable="pendingColumn" msprop:Generator_UserColumnName="pending" type="xs:string" minOccurs="0" />
+              <xs:element name="Resoled" msprop:Generator_ColumnVarNameInTable="columnResoled" msprop:Generator_ColumnPropNameInRow="Resoled" msprop:Generator_ColumnPropNameInTable="ResoledColumn" msprop:Generator_UserColumnName="Resoled" type="xs:string" minOccurs="0" />
+              <xs:element name="Newcase" msprop:Generator_ColumnVarNameInTable="columnNewcase" msprop:Generator_ColumnPropNameInRow="Newcase" msprop:Generator_ColumnPropNameInTable="NewcaseColumn" msprop:Generator_UserColumnName="Newcase" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ComplaintReceived" msprop:Generator_ColumnVarNameInTable="columnComplaintReceived" msprop:Generator_ColumnPropNameInRow="ComplaintReceived" msprop:Generator_ColumnPropNameInTable="ComplaintReceivedColumn" msprop:Generator_UserColumnName="ComplaintReceived" type="xs:string" minOccurs="0" />
+              <xs:element name="ComplaintResolve" msprop:Generator_ColumnVarNameInTable="columnComplaintResolve" msprop:Generator_ColumnPropNameInRow="ComplaintResolve" msprop:Generator_ColumnPropNameInTable="ComplaintResolveColumn" msprop:Generator_UserColumnName="ComplaintResolve" type="xs:string" minOccurs="0" />
+              <xs:element name="Pendingcomplaint" msprop:Generator_ColumnVarNameInTable="columnPendingcomplaint" msprop:Generator_ColumnPropNameInRow="Pendingcomplaint" msprop:Generator_ColumnPropNameInTable="PendingcomplaintColumn" msprop:Generator_UserColumnName="Pendingcomplaint" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Demand" msprop:Generator_TableClassName="DemandDataTable" msprop:Generator_TableVarName="tableDemand" msprop:Generator_TablePropName="Demand" msprop:Generator_RowDeletingName="DemandRowDeleting" msprop:Generator_UserTableName="Demand" msprop:Generator_RowChangingName="DemandRowChanging" msprop:Generator_RowEvHandlerName="DemandRowChangeEventHandler" msprop:Generator_RowDeletedName="DemandRowDeleted" msprop:Generator_RowEvArgName="DemandRowChangeEvent" msprop:Generator_RowChangedName="DemandRowChanged" msprop:Generator_RowClassName="DemandRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NoOfBooksRSK" msprop:Generator_ColumnVarNameInTable="columnNoOfBooksRSK" msprop:Generator_ColumnPropNameInRow="NoOfBooksRSK" msprop:Generator_ColumnPropNameInTable="NoOfBooksRSKColumn" msprop:Generator_UserColumnName="NoOfBooksRSK" type="xs:string" minOccurs="0" />
+              <xs:element name="NoOfBooksDPI" msprop:Generator_ColumnVarNameInTable="columnNoOfBooksDPI" msprop:Generator_ColumnPropNameInRow="NoOfBooksDPI" msprop:Generator_ColumnPropNameInTable="NoOfBooksDPIColumn" msprop:Generator_UserColumnName="NoOfBooksDPI" type="xs:string" minOccurs="0" />
+              <xs:element name="CurntYearDmndBook_I" msprop:Generator_ColumnVarNameInTable="columnCurntYearDmndBook_I" msprop:Generator_ColumnPropNameInRow="CurntYearDmndBook_I" msprop:Generator_ColumnPropNameInTable="CurntYearDmndBook_IColumn" msprop:Generator_UserColumnName="CurntYearDmndBook_I" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BookonDepo" msprop:Generator_TableClassName="BookonDepoDataTable" msprop:Generator_TableVarName="tableBookonDepo" msprop:Generator_TablePropName="BookonDepo" msprop:Generator_RowDeletingName="BookonDepoRowDeleting" msprop:Generator_UserTableName="BookonDepo" msprop:Generator_RowChangingName="BookonDepoRowChanging" msprop:Generator_RowEvHandlerName="BookonDepoRowChangeEventHandler" msprop:Generator_RowDeletedName="BookonDepoRowDeleted" msprop:Generator_RowEvArgName="BookonDepoRowChangeEvent" msprop:Generator_RowChangedName="BookonDepoRowChanged" msprop:Generator_RowClassName="BookonDepoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DepoName_V" msprop:Generator_ColumnVarNameInTable="columnDepoName_V" msprop:Generator_ColumnPropNameInRow="DepoName_V" msprop:Generator_ColumnPropNameInTable="DepoName_VColumn" msprop:Generator_UserColumnName="DepoName_V" type="xs:string" minOccurs="0" />
+              <xs:element name="Books" msprop:Generator_ColumnVarNameInTable="columnBooks" msprop:Generator_ColumnPropNameInRow="Books" msprop:Generator_ColumnPropNameInTable="BooksColumn" msprop:Generator_UserColumnName="Books" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Paper" msprop:Generator_TableClassName="PaperDataTable" msprop:Generator_TableVarName="tablePaper" msprop:Generator_TablePropName="Paper" msprop:Generator_RowDeletingName="PaperRowDeleting" msprop:Generator_UserTableName="Paper" msprop:Generator_RowChangingName="PaperRowChanging" msprop:Generator_RowEvHandlerName="PaperRowChangeEventHandler" msprop:Generator_RowDeletedName="PaperRowDeleted" msprop:Generator_RowEvArgName="PaperRowChangeEvent" msprop:Generator_RowChangedName="PaperRowChanged" msprop:Generator_RowClassName="PaperRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CoverInformation" msprop:Generator_ColumnVarNameInTable="columnCoverInformation" msprop:Generator_ColumnPropNameInRow="CoverInformation" msprop:Generator_ColumnPropNameInTable="CoverInformationColumn" msprop:Generator_UserColumnName="CoverInformation" type="xs:string" minOccurs="0" />
+              <xs:element name="PaperType" msprop:Generator_ColumnVarNameInTable="columnPaperType" msprop:Generator_ColumnPropNameInRow="PaperType" msprop:Generator_ColumnPropNameInTable="PaperTypeColumn" msprop:Generator_UserColumnName="PaperType" type="xs:string" minOccurs="0" />
+              <xs:element name="TotAllot" msprop:Generator_ColumnVarNameInTable="columnTotAllot" msprop:Generator_ColumnPropNameInRow="TotAllot" msprop:Generator_ColumnPropNameInTable="TotAllotColumn" msprop:Generator_UserColumnName="TotAllot" type="xs:string" minOccurs="0" />
+              <xs:element name="Bal" msprop:Generator_ColumnVarNameInTable="columnBal" msprop:Generator_ColumnPropNameInRow="Bal" msprop:Generator_ColumnPropNameInTable="BalColumn" msprop:Generator_UserColumnName="Bal" type="xs:string" minOccurs="0" />
+              <xs:element name="TotReq" msprop:Generator_ColumnVarNameInTable="columnTotReq" msprop:Generator_ColumnPropNameInRow="TotReq" msprop:Generator_ColumnPropNameInTable="TotReqColumn" msprop:Generator_UserColumnName="TotReq" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DepoPhysical" targetNamespace="http://tempuri.org/DepoPhysical.xsd" xmlns:mstns="http://tempuri.org/DepoPhysical.xsd" xmlns="http://tempuri.org/DepoPhysical.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DepoPhysical" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DepoPhysical" msprop:Generator_UserDSName="DepoPhysical">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TitleHindi_V" msprop:Generator_ColumnVarNameInTable="columnTitleHindi_V" msprop:Generator_ColumnPropNameInRow="TitleHindi_V" msprop:Generator_ColumnPropNameInTable="TitleHindi_VColumn" msprop:Generator_UserColumnName="TitleHindi_V" type="xs:string" minOccurs="0" />
+              <xs:element name="OpenYojna" msprop:Generator_ColumnVarNameInTable="columnOpenYojna" msprop:Generator_ColumnPropNameInRow="OpenYojna" msprop:Generator_ColumnPropNameInTable="OpenYojnaColumn" msprop:Generator_UserColumnName="OpenYojna" type="xs:string" minOccurs="0" />
+              <xs:element name="Opensamany" msprop:Generator_ColumnVarNameInTable="columnOpensamany" msprop:Generator_ColumnPropNameInRow="Opensamany" msprop:Generator_ColumnPropNameInTable="OpensamanyColumn" msprop:Generator_UserColumnName="Opensamany" type="xs:string" minOccurs="0" />
+              <xs:element name="PrinterYojna" msprop:Generator_ColumnVarNameInTable="columnPrinterYojna" msprop:Generator_ColumnPropNameInRow="PrinterYojna" msprop:Generator_ColumnPropNameInTable="PrinterYojnaColumn" msprop:Generator_UserColumnName="PrinterYojna" type="xs:string" minOccurs="0" />
+              <xs:element name="PrinterSamany" msprop:Generator_ColumnVarNameInTable="columnPrinterSamany" msprop:Generator_ColumnPropNameInRow="PrinterSamany" msprop:Generator_ColumnPropNameInTable="PrinterSamanyColumn" msprop:Generator_UserColumnName="PrinterSamany" type="xs:string" minOccurs="0" />
+              <xs:element name="InterDepoYojna" msprop:Generator_ColumnVarNameInTable="columnInterDepoYojna" msprop:Generator_ColumnPropNameInRow="InterDepoYojna" msprop:Generator_ColumnPropNameInTable="InterDepoYojnaColumn" msprop:Generator_UserColumnName="InterDepoYojna" type="xs:string" minOccurs="0" />
+              <xs:element name="InterDepoSamany" msprop:Generator_ColumnVarNameInTable="columnInterDepoSamany" msprop:Generator_ColumnPropNameInRow="InterDepoSamany" msprop:Generator_ColumnPropNameInTable="InterDepoSamanyColumn" msprop:Generator_UserColumnName="InterDepoSamany" type="xs:string" minOccurs="0" />
+              <xs:element name="DEpoManager" msprop:Generator_ColumnVarNameInTable="columnDEpoManager" msprop:Generator_ColumnPropNameInRow="DEpoManager" msprop:Generator_ColumnPropNameInTable="DEpoManagerColumn" msprop:Generator_UserColumnName="DEpoManager" type="xs:string" minOccurs="0" />
+              <xs:element name="StoreKeeper" msprop:Generator_ColumnVarNameInTable="columnStoreKeeper" msprop:Generator_ColumnPropNameInRow="StoreKeeper" msprop:Generator_ColumnPropNameInTable="StoreKeeperColumn" msprop:Generator_UserColumnName="StoreKeeper" type="xs:string" minOccurs="0" />
+              <xs:element name="PhyOfficer" msprop:Generator_ColumnVarNameInTable="columnPhyOfficer" msprop:Generator_ColumnPropNameInRow="PhyOfficer" msprop:Generator_ColumnPropNameInTable="PhyOfficerColumn" msprop:Generator_UserColumnName="PhyOfficer" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowClassName="DataTable2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="avantan" msprop:Generator_ColumnVarNameInTable="columnavantan" msprop:Generator_ColumnPropNameInRow="avantan" msprop:Generator_ColumnPropNameInTable="avantanColumn" msprop:Generator_UserColumnName="avantan" type="xs:string" minOccurs="0" />
+              <xs:element name="pradayYojna" msprop:Generator_ColumnVarNameInTable="columnpradayYojna" msprop:Generator_ColumnPropNameInRow="pradayYojna" msprop:Generator_ColumnPropNameInTable="pradayYojnaColumn" msprop:Generator_UserColumnName="pradayYojna" type="xs:string" minOccurs="0" />
+              <xs:element name="pradaySamany" msprop:Generator_ColumnVarNameInTable="columnpradaySamany" msprop:Generator_ColumnPropNameInRow="pradaySamany" msprop:Generator_ColumnPropNameInTable="pradaySamanyColumn" msprop:Generator_UserColumnName="pradaySamany" type="xs:string" minOccurs="0" />
+              <xs:element name="extrAvantan" msprop:Generator_ColumnVarNameInTable="columnextrAvantan" msprop:Generator_ColumnPropNameInRow="extrAvantan" msprop:Generator_ColumnPropNameInTable="extrAvantanColumn" msprop:Generator_UserColumnName="extrAvantan" type="xs:string" minOccurs="0" />
+              <xs:element name="ExtraYojna" msprop:Generator_ColumnVarNameInTable="columnExtraYojna" msprop:Generator_ColumnPropNameInRow="ExtraYojna" msprop:Generator_ColumnPropNameInTable="ExtraYojnaColumn" msprop:Generator_UserColumnName="ExtraYojna" type="xs:string" minOccurs="0" />
+              <xs:element name="ExtraSamany" msprop:Generator_ColumnVarNameInTable="columnExtraSamany" msprop:Generator_ColumnPropNameInRow="ExtraSamany" msprop:Generator_ColumnPropNameInTable="ExtraSamanyColumn" msprop:Generator_UserColumnName="ExtraSamany" type="xs:string" minOccurs="0" />
+              <xs:element name="EnterDepoYojna" msprop:Generator_ColumnVarNameInTable="columnEnterDepoYojna" msprop:Generator_ColumnPropNameInRow="EnterDepoYojna" msprop:Generator_ColumnPropNameInTable="EnterDepoYojnaColumn" msprop:Generator_UserColumnName="EnterDepoYojna" type="xs:string" minOccurs="0" />
+              <xs:element name="EnterDepoSamany" msprop:Generator_ColumnVarNameInTable="columnEnterDepoSamany" msprop:Generator_ColumnPropNameInRow="EnterDepoSamany" msprop:Generator_ColumnPropNameInTable="EnterDepoSamanyColumn" msprop:Generator_UserColumnName="EnterDepoSamany" type="xs:string" minOccurs="0" />
+              <xs:element name="OpenMarket" msprop:Generator_ColumnVarNameInTable="columnOpenMarket" msprop:Generator_ColumnPropNameInRow="OpenMarket" msprop:Generator_ColumnPropNameInTable="OpenMarketColumn" msprop:Generator_UserColumnName="OpenMarket" type="xs:string" minOccurs="0" />
+              <xs:element name="OtherYojan" msprop:Generator_ColumnVarNameInTable="columnOtherYojan" msprop:Generator_ColumnPropNameInRow="OtherYojan" msprop:Generator_ColumnPropNameInTable="OtherYojanColumn" msprop:Generator_UserColumnName="OtherYojan" type="xs:string" minOccurs="0" />
+              <xs:element name="OtherSamany" msprop:Generator_ColumnVarNameInTable="columnOtherSamany" msprop:Generator_ColumnPropNameInRow="OtherSamany" msprop:Generator_ColumnPropNameInTable="OtherSamanyColumn" msprop:Generator_UserColumnName="OtherSamany" type="xs:string" minOccurs="0" />
+              <xs:element name="DEpoManager" msprop:Generator_ColumnVarNameInTable="columnDEpoManager" msprop:Generator_ColumnPropNameInRow="DEpoManager" msprop:Generator_ColumnPropNameInTable="DEpoManagerColumn" msprop:Generator_UserColumnName="DEpoManager" type="xs:string" minOccurs="0" />
+              <xs:element name="StoreKeeper" msprop:Generator_ColumnVarNameInTable="columnStoreKeeper" msprop:Generator_ColumnPropNameInRow="StoreKeeper" msprop:Generator_ColumnPropNameInTable="StoreKeeperColumn" msprop:Generator_UserColumnName="StoreKeeper" type="xs:string" minOccurs="0" />
+              <xs:element name="PhyOfficer" msprop:Generator_ColumnVarNameInTable="columnPhyOfficer" msprop:Generator_ColumnPropNameInRow="PhyOfficer" msprop:Generator_ColumnPropNameInTable="PhyOfficerColumn" msprop:Generator_UserColumnName="PhyOfficer" type="xs:string" minOccurs="0" />
+              <xs:element name="TitleHindi_V" msprop:Generator_ColumnVarNameInTable="columnTitleHindi_V" msprop:Generator_ColumnPropNameInRow="TitleHindi_V" msprop:Generator_ColumnPropNameInTable="TitleHindi_VColumn" msprop:Generator_UserColumnName="TitleHindi_V" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

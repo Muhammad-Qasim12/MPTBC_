@@ -1,0 +1,103 @@
+/* CSS Document */
+
+body {
+    background: #0dacd8 url(../images/bodybg.jpg);
+    font:normal 12px Arial;
+}
+
+.login_wrapper {
+    width: 510px;
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #fff;
+    font-size: 26px;
+    text-shadow: 0 2px 0 #004c6f;
+    margin-top: 5px;
+}
+
+.loginbox {
+    background: url(../images/loginbox_bg.png) no-repeat;
+    min-height: 469px;
+    margin-top: 8px;
+    padding: 4px 90px 0;
+}
+
+.copytxt {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+    .copytxt a {
+        color: #fff;
+    }
+
+.PT10 {
+    padding-top: 10px;
+}
+
+.PT15 {
+    padding-top: 5px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.com-btn {
+    background: url(../images/btnbg.png) no-repeat;
+    width: 190px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 13px 0 10px;
+}
+
+.FP {
+    color: #0374be;
+    text-align: right;
+}
+
+.txtbox {
+    line-height: 1.5em;
+    padding:7px;
+}
+/*span {
+    float:right;
+}*/
+.selectDiv select, .txtbox {
+    /* styling */
+    background: #f1f1f1 ;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    display: inline-block;
+    font: normal 12px arial;
+    color: #333333;
+    line-height: 1.5em;
+    padding: 7px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 98%;
+}
+
+
+    .selectDiv select.minimal {
+        -webkit-appearance: none; /*Removes default chrome and safari style*/
+        -moz-appearance: none; /*Removes default style Firefox*/
+        background-image: linear-gradient(45deg, transparent 50%, #6a6a6a 50%), linear-gradient(135deg, #6a6a6a 50%, transparent 50%);
+        background-position: calc(100% - 16px) calc(1.2em + 2px), calc(100% - 10px) calc(1.2em + 2px), calc(100% - 2.4em) 0.8em;
+        background-size: 7px 6px, 6px 7px, 1px 1.5em;
+        background-repeat: no-repeat;
+    }

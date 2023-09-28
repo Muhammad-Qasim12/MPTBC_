@@ -1,0 +1,67 @@
+﻿body
+{
+	margin-top: 15px;
+	margin-bottom:0px;
+	margin-left:8px;
+	margin-right:8px;
+	padding: 0px;
+	/*background-image: url(../trainingimgGreen/body_bg.jpg);*/
+	background-color:#f4f4f4;
+	background-repeat: repeat-x;
+	font-family: 'Arial Unicode MS';
+	
+}
+div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,iframe,legend,input,textarea,p,blockquote,Label{margin:0;padding:0;}
+.yellow_bg_left {background-image:url(../trainingimgGreen/yellow_bg_left.gif); background-repeat:no-repeat; width:12px; height:42px;}
+
+.yellow_bg_middle {background-image:url(../trainingimgGreen/yellow_bg_middle.gif); background-repeat:repeat-x; height:42px;}
+
+.yellow_bg_right {background-image:url(../trainingimgGreen/yellow_bg_right.gif); background-repeat:no-repeat; width:12px; height:42px;}
+
+.Frm_Head { font-family:Arial Unicode MS; font-size:20px; font-weight:bold; color:#000000; text-decoration:none; }
+
+.hand_icon {background-image:url(../trainingimgGreen/hand_icon.jpg); background-repeat:no-repeat; width:200px; height:42px;}
+
+.Frm_Txt { font-family:Arial Unicode MS; font-size:12px;  color:#000000; text-decoration:none; }
+
+.Frm_top_menu_textNew{color:Black;font-weight:bold;}
+
+.Frm_top_menu_text { font-family:'Arial Unicode MS'; font-weight:bold; font-size:14px; color:#000000; text-decoration:none; }
+
+.Frm_top_menu a:link { font-family:'Arial Unicode MS'; font-weight:bold; font-size:14px; color:#000000; text-decoration:none; }
+.Frm_top_menu a:visited {font-family:'Arial Unicode MS'; font-weight:bold; font-size:14px; color:#000000; text-decoration:none; }
+.Frm_top_menu a:hover { color:#FF0000; text-decoration:none; }
+
+.show_btn_bg { background-color:#4d4d4d; font-family:Arial Unicode MS; font-size:14px; color:#FFFFFF; font-weight:bold; text-decoration:none; }
+
+.ddl { font-family:'Arial Unicode MS'; font-size:14px; color:#000; text-decoration:none; }
+
+.btn { background-image: url(../trainingimgGreen/btn_bg.gif); background-repeat: no-repeat;	cursor: pointer; width: 69px; height: 25px;	font-size: 16px; color: #FFFFFF; border-width: 0px;	font-family: 'Arial Unicode MS'; }
+
+.btn_2 {background-image:url(../trainingimgGreen/btn_bg_2.gif); background-repeat:no-repeat; cursor:pointer; width:150px; height:25px; font-size:16px; color:#FFFFFF; border-width:0px;font-family: 'Arial Unicode MS';}
+
+.txt {font-family:'Arial Unicode MS'; font-size:12px; color:#000000; }
+
+.form_link_btn a:link { font-family:'Arial Unicode MS'; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; }
+.form_link_btn a:visited {font-family:'Arial Unicode MS'; font-size:14px; font-weight:bold; color:#000000; text-decoration:none; }
+.form_link_btn a:hover { color:#000000; text-decoration:underline; }
+ 
+
+.Grid_Btn { border:1px solid #FFFF00; background-image:url(../trainingimgGreen/hindienglish_bg_middle.jpg); background-repeat:repeat-x; font-family:Arial Unicode MS; font-size:14px; font-weight:bold; color:#FFFFFF; text-decoration:none; height:25px; width:80px; cursor:pointer; }
+
+.GridHead {background-image:url(../trainingimgGreen/hindienglish_bg_middle.jpg); background-repeat:repeat; font-family:Arial Unicode MS; font-size:14px; font-weight:bold; color:#FFFFFF; text-decoration:none; }
+
+.GridHead2 {background-image:url(../trainingimgGreen/hindienglish_bg_middle.jpg); background-repeat:repeat; font-family:Arial Unicode MS; font-size:12px; font-weight:bold; color:#FFFFFF; text-decoration:none; }
+
+.BigGridHead { background-color:#333333; font-family:Arial Unicode MS; font-size:14px; font-weight:bold; color:#FFFFFF; text-decoration:none; }
+
+
+.row { margin:0px; padding:0px; background-color:#FFFFFF; font-family:Arial Unicode MS; font-size:14px; color:#000000; text-decoration:none; }
+
+.altrow { margin:0px; padding:0px; background-color:#dfdfdf; font-family:Arial Unicode MS; font-size:14px; color:#000000; text-decoration:none; }
+
+.selrow { margin: 0px;	padding-left: 0px; background-color: #757e8f; font-family:Arial Unicode MS; font-size:14px;  color:#FFFFFF; text-decoration:none; }
+
+.Red_Txt {font-family:'Arial Unicode MS'; font-weight:bold; font-size:16px; color:#CC0000; text-decoration:none; }
+.accordionContentNew { background: #c3e29e;	border: none;  vertical-align: top;
+ text-align: center; }

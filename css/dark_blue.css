@@ -1,0 +1,61 @@
+
+	/* Enlightened Premium dark_blue Style Theme */
+
+a {
+	color:#000;
+	text-decoration:none;
+}
+
+a:hover, #wrapper #page-content #sidebar ul.links li a:hover {
+	color:#005FE1;
+}
+
+	/* Buttons */
+
+#wrapper .navigation a, .but-small, #wrapper .more-link {
+	background:url('../images/button-small.png');
+	color:#fff;
+	text-shadow: #094c94 1px 1px 0px;
+}
+
+body {
+	background:#fff url('../images/home-bg.png') repeat-x;
+}
+
+body.pages-bg {
+	background:#fff url('../images/pages-bg.png') repeat-x;
+}
+
+	/* Blog Sidebar */
+
+#wrapper #page-content #sidebar-blog .box h3 {
+	background:url('../images/dark_blue/sidebar-bg.png') repeat-x;
+	color:#58616a;
+}
+
+#wrapper #from-blog .post h2 a {
+	color:#58616a;
+}
+
+#wrapper #features #feat-content h1.title {
+	text-shadow: #0a5284 2px 2px 2px;
+}
+
+#wrapper #features #feat-content .text {
+	text-shadow: #51aaff 0px 1px 0px;
+}
+
+#wrapper .float-right ul li a:hover, #wrapper .float-right ul li a.active {
+	color:#bfdfff;
+}
+
+#wrapper .navigation a:hover, #wrapper a.more-link:hover, #wrapper .but-big:hover, .but-small:hover {
+	color:#bfdfff;
+}
+
+
+	/* Footer */
+
+#footer .wrapper .box h3 {
+	color:#8fa1b8;
+}

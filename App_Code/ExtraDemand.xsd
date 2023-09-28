@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ExtraDemand" targetNamespace="http://tempuri.org/ExtraDemand.xsd" xmlns:mstns="http://tempuri.org/ExtraDemand.xsd" xmlns="http://tempuri.org/ExtraDemand.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ExtraDemand" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="ExtraDemand" msprop:Generator_UserDSName="ExtraDemand">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TitleHindi_V" msprop:Generator_ColumnVarNameInTable="columnTitleHindi_V" msprop:Generator_ColumnPropNameInRow="TitleHindi_V" msprop:Generator_ColumnPropNameInTable="TitleHindi_VColumn" msprop:Generator_UserColumnName="TitleHindi_V" type="xs:string" minOccurs="0" />
+              <xs:element name="SchemeDemand" msprop:Generator_ColumnVarNameInTable="columnSchemeDemand" msprop:Generator_ColumnPropNameInRow="SchemeDemand" msprop:Generator_ColumnPropNameInTable="SchemeDemandColumn" msprop:Generator_UserColumnName="SchemeDemand" type="xs:string" minOccurs="0" />
+              <xs:element name="OpnMktDemand" msprop:Generator_ColumnVarNameInTable="columnOpnMktDemand" msprop:Generator_ColumnPropNameInRow="OpnMktDemand" msprop:Generator_ColumnPropNameInTable="OpnMktDemandColumn" msprop:Generator_UserColumnName="OpnMktDemand" type="xs:string" minOccurs="0" />
+              <xs:element name="NetSchemeDemand" msprop:Generator_ColumnVarNameInTable="columnNetSchemeDemand" msprop:Generator_ColumnPropNameInRow="NetSchemeDemand" msprop:Generator_ColumnPropNameInTable="NetSchemeDemandColumn" msprop:Generator_UserColumnName="NetSchemeDemand" type="xs:string" minOccurs="0" />
+              <xs:element name="NetOpenMkt" msprop:Generator_ColumnVarNameInTable="columnNetOpenMkt" msprop:Generator_ColumnPropNameInRow="NetOpenMkt" msprop:Generator_ColumnPropNameInTable="NetOpenMktColumn" msprop:Generator_UserColumnName="NetOpenMkt" type="xs:string" minOccurs="0" />
+              <xs:element name="YojnaDistriute" msprop:Generator_ColumnVarNameInTable="columnYojnaDistriute" msprop:Generator_ColumnPropNameInRow="YojnaDistriute" msprop:Generator_ColumnPropNameInTable="YojnaDistriuteColumn" msprop:Generator_UserColumnName="YojnaDistriute" type="xs:string" minOccurs="0" />
+              <xs:element name="SamanyDistriute" msprop:Generator_ColumnVarNameInTable="columnSamanyDistriute" msprop:Generator_ColumnPropNameInRow="SamanyDistriute" msprop:Generator_ColumnPropNameInTable="SamanyDistriuteColumn" msprop:Generator_UserColumnName="SamanyDistriute" type="xs:string" minOccurs="0" />
+              <xs:element name="NewYojnaDemand" msprop:Generator_ColumnVarNameInTable="columnNewYojnaDemand" msprop:Generator_ColumnPropNameInRow="NewYojnaDemand" msprop:Generator_ColumnPropNameInTable="NewYojnaDemandColumn" msprop:Generator_UserColumnName="NewYojnaDemand" type="xs:string" minOccurs="0" />
+              <xs:element name="NewSamanyDemand" msprop:Generator_ColumnVarNameInTable="columnNewSamanyDemand" msprop:Generator_ColumnPropNameInRow="NewSamanyDemand" msprop:Generator_ColumnPropNameInTable="NewSamanyDemandColumn" msprop:Generator_UserColumnName="NewSamanyDemand" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

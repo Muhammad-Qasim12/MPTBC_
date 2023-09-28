@@ -1,0 +1,169 @@
+<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="ADY014_ProjectAmountRelese.aspx.cs" Inherits="ADY_ADY013_ProjectAmountRelese" Title="Amount Release" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Panel ID="panMain" runat="server" Height="534px">
+
+    <table border="1" cellpadding="0" cellspacing="0" class="tblbox" style="width: 671px; height: 609px;" id="TABLE1" onclick="return TABLE1_onclick()">
+        <tr>
+            <td class="heading" colspan="4" style="height: 24px">
+                ADY014-Project Amount released</td>
+        </tr>
+        <tr>
+            <td colspan="15" style="height: 24px">
+                <span style="color: #ff3366"></span></td>
+        </tr>
+        
+        <tr>
+        <td>
+        <asp:Label runat="server" ID="lblULBName" Text="ULB Name"  ></asp:Label>
+        </td>
+        <td colspan="3">
+        <asp:TextBox runat="server" ID="txtUlb" Width="300px" onkeypress="GetTollName();"   ></asp:TextBox>
+        <asp:Button runat="server" ID="btnFillProject" Text="Fill Projects" OnClick ="btnFillProject_Click" CssClass="btn" Height="20px" />
+        </td>
+        </tr>
+        
+        <tr>
+            <td>
+                Project<span style="color: #ff3366">*</span></td>
+            <td colspan="3">
+                <asp:DropDownList ID="ddlProject" runat="server" Width="300px" AutoPostBack="True" OnSelectedIndexChanged="ddlProject_SelectedIndexChanged">
+                </asp:DropDownList></td>
+        </tr>
+        <tr>
+            <td>
+                State Share(Rs)</td>
+            <td>
+                <asp:Label ID="lblStateShare" runat="server" Height="19px"></asp:Label></td>
+            <td>
+                ULB Share(Rs)</td>
+            <td>
+                <asp:Label ID="lblULBshare" runat="server" Height="18px" Width="69px"></asp:Label></td>
+        </tr>
+        <tr>
+            <td>
+                Select Installment</td>
+            <td>
+                <asp:DropDownList ID="ddlInstallment" runat="server" Width="166px">
+                   
+                  
+                    <asp:ListItem Value="1">I Installment</asp:ListItem>
+                    <asp:ListItem Value="2">II Installment</asp:ListItem>
+                    <asp:ListItem Value="3">III Installment</asp:ListItem>
+                    <asp:ListItem Value="4">IV Installment</asp:ListItem>
+                     <asp:ListItem Value="5">V Installment</asp:ListItem>
+                    <asp:ListItem Value="6">VI Installment</asp:ListItem>
+                    <asp:ListItem Value="7">VII Installment</asp:ListItem>
+                    <asp:ListItem Value="8">VIII Installment</asp:ListItem>
+                     <asp:ListItem Value="9">IX Installment</asp:ListItem>
+                    <asp:ListItem Value="10">X Installment</asp:ListItem>
+                    <asp:ListItem Value="11">XI Installment</asp:ListItem>
+                    <asp:ListItem Value="12">XII Installment</asp:ListItem>
+                    <asp:ListItem Value="13">XIII Installment</asp:ListItem>
+                        <asp:ListItem Value="14">XIV Installment</asp:ListItem>
+                </asp:DropDownList></td>
+            <td>
+                <asp:Label ID="lblGoIshare" runat="server" ForeColor="Black" Visible="False"></asp:Label></td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                State Released Amount (Rs)</td>
+            <td>
+                <asp:TextBox ID="txtStateAmt" runat="server" MaxLength="15" Style="text-align: right"
+                    Width="162px"></asp:TextBox></td>
+            <td>
+                State Released Date</td>
+            <td>
+                <asp:TextBox ID="txtStatedate" runat="server" MaxLength="15"
+                    Width="162px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>
+                ULB Released Amount (Rs)</td>
+            <td>
+                <asp:TextBox ID="txtULBAmt" runat="server" MaxLength="15" Style="text-align: right"
+                    Width="162px"></asp:TextBox></td>
+            <td colspan="1">
+                ULB Released Date</td>
+            <td>
+                <asp:TextBox ID="txtULBdate" runat="server" MaxLength="15"
+                    Width="162px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>
+                Remark</td>
+            <td colspan="3">
+                <asp:TextBox ID="txtRemark" runat="server" MaxLength="350"
+                    TextMode="MultiLine" Width="296px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Label ID="lblApprove" runat="server" Text="Approved" Visible="False"></asp:Label></td>
+            <td colspan="3">
+                <asp:CheckBox ID="chkApproval" runat="server" Text="Yes" Visible="False" /></td>
+        </tr>
+        <tr>
+            
+            <td colspan="4" align="center">
+                <asp:Button ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Save"
+                    Width="76px" Height="30px" CssClass="btn" /><asp:Button ID="btnClear" runat="server" CausesValidation="False" OnClick="btnClear_Click"
+                    Text="Clear" Height="30px" Width="67px" CssClass="btn"  /></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <cc1:filteredtextboxextender id="FilteredTextBoxExtender2" runat="server" targetcontrolid="txtStateAmt" ValidChars="0123456789."></cc1:filteredtextboxextender>
+                <cc1:filteredtextboxextender id="FilteredTextBoxExtender3" runat="server" targetcontrolid="txtULBAmt" ValidChars="0123456789."></cc1:filteredtextboxextender>
+                <cc1:filteredtextboxextender id="FilteredTextBoxExtender4" runat="server" targetcontrolid="txtBeniAmt" ValidChars="0123456789."></cc1:filteredtextboxextender>
+                <cc1:filteredtextboxextender id="FilteredTextBoxExtender5" runat="server" targetcontrolid="txtBankActNo" ValidChars="asdfghjklzxcvbnmqwertyuiopASDFGHJKLZXCVBNMQWERTYUIOP-   1234567890.(),&/"></cc1:filteredtextboxextender>
+                <cc1:filteredtextboxextender id="FilteredTextBoxExtender6" runat="server" targetcontrolid="txtRemark" ValidChars="asdfghjklzxcvbnmqwertyuiopASDFGHJKLZXCVBNMQWERTYUIOP-   1234567890.(),&/"></cc1:filteredtextboxextender>
+                <cc1:calendarextender id="CalendarExtender2" runat="server" format="dd/MM/yyyy" targetcontrolid="txtStatedate"></cc1:calendarextender>
+                <cc1:calendarextender id="CalendarExtender3" runat="server" format="dd/MM/yyyy" targetcontrolid="txtULBdate"></cc1:calendarextender>
+                <cc1:calendarextender id="CalendarExtender4" runat="server" format="dd/MM/yyyy" targetcontrolid="txtBeniDate"></cc1:calendarextender>
+                <asp:Label ID="lblBeniShare" runat="server" Visible="False"></asp:Label>
+                <asp:TextBox ID="txtBeniAmt" runat="server" MaxLength="15" Style="text-align: right"
+                    Width="162px" Visible="False"></asp:TextBox>
+                <asp:TextBox ID="txtBankActNo" runat="server" MaxLength="50" Style="text-align: right"
+                    Width="162px" Visible="False"></asp:TextBox>
+                <asp:TextBox ID="txtBeniDate" runat="server" MaxLength="15"
+                    Width="162px" Visible="False"></asp:TextBox></td>
+        </tr>
+    </table>
+    </asp:Panel>
+    
+    
+    <link href="../Css/jquery-ui.css" type="text/css" rel="stylesheet" />
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    
+     <script type="text/javascript">
+    
+     function GetTollName()
+	    {
+	        
+	        $("#ctl00_ContentPlaceHolder1_txtUlb").autocomplete({
+	            source: function(request, response) {
+	                $.ajax({
+	                    type: "POST",
+	                    contentType: "application/json; charset=utf-8",
+	                    url: "../Autofill.asmx/AutoCompleteLocationULB",
+	                    data: "{'location':'" + document.getElementById('ctl00_ContentPlaceHolder1_txtUlb').value + "'}",
+	                    dataType: "json",
+	                    success: function(data) {
+	                     response(data);
+	                    },
+	                    error: function(result) {
+	                        alert("Error");
+	                    }
+	                });
+	            }
+          });
+       }
+    
+    
+    </script>
+    
+    
+</asp:Content>
+
